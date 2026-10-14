@@ -1,0 +1,96 @@
+
+# ============================================================
+# HAIR-RXI | Git Ignore Rules
+# Scope: ~/mac_workspace/artslink/_hair_rxi/
+# ============================================================
+
+# --- OS & Editor Noise ---
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.vscode/
+.idea/
+
+
+# --- Secrets & Local Configuration ---
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# SSH private-key filenames
+id_rsa
+id_ed25519
+id_ecdsa
+id_dsa
+
+# Local credential files
+credentials.json
+secrets.json
+
+
+# --- Python ---
+
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+
+# --- Logs & Runtime Artifacts ---
+
+*.log
+logs/
+tmp/
+temp/
+
+# PID and transient runtime files
+*.pid
+*.seed
+
+
+# --- Local Databases & State ---
+
+*.sqlite
+*.sqlite3
+*.db
+
+# Local-only state snapshots; review before committing
+*.local.json
+*.local.yaml
+*.local.yml
+
+
+# --- Build & Distribution Artifacts ---
+
+build/
+dist/
+*.egg-info/
+
+
+# --- Temporary & Backup Files ---
+
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.orig
