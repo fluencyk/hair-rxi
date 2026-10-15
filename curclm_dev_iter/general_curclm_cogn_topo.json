@@ -1,0 +1,576 @@
+{
+  "schema_version": "0.1.0",
+  "package_id": "RXI-CURRICULUM-MASTER-001",
+  "package_name": "RXI-Lab Interdisciplinary Engineering and Design Curriculum",
+  "status": "draft",
+  "design_principles": [
+    "outcome_based",
+    "project_centered",
+    "research_informed",
+    "interdisciplinary",
+    "portfolio_evidence",
+    "human_ai_collaboration",
+    "authenticity_and_academic_integrity"
+  ],
+
+  "target_learners": {
+    "primary_context": "Mainland China students preparing for international academic pathways",
+    "age_bands": [
+      {
+        "id": "AGE-14-16",
+        "label": "Early Exploration",
+        "focus": "兴趣探索、基础能力、引导式项目"
+      },
+      {
+        "id": "AGE-17-18",
+        "label": "Pre-University Preparation",
+        "focus": "学科深化、独立项目、研究意识"
+      },
+      {
+        "id": "AGE-18-22",
+        "label": "Advanced Academic Preparation",
+        "focus": "专业方法、独立研究、复杂项目与学术表达"
+      }
+    ],
+    "adaptation_policy": "Adjust prerequisites, depth, autonomy and assessment by learner readiness; do not equate age with ability."
+  },
+
+  "curriculum_architecture": {
+    "shared_foundation_course_ids": [
+      "RXI-310",
+      "RXI-315"
+    ],
+    "convergence_course_id": "RXI-356",
+    "pathway_ids": [
+      "PATH-SOFTWARE",
+      "PATH-AI",
+      "PATH-ROBOTICS",
+      "PATH-BUSINESS",
+      "PATH-INDUSTRIAL-DESIGN",
+      "PATH-HCI"
+    ],
+    "course_relationship_policy": {
+      "reference_by_id": true,
+      "inheritance_is_implicit": false,
+      "prerequisites_must_be_declared": true,
+      "pathway_courses_may_reference_shared_courses": true
+    }
+  },
+
+  "shared_courses": {
+    "RXI-310": {
+      "course_id": "RXI-310",
+      "title": "Fundamentals of Engineering",
+      "title_zh": "工程学基础",
+      "course_role": "shared_foundation",
+      "purpose": "建立问题定义、系统化分析、工程实践与证据表达的共同基础。",
+      "learning_outcomes": [
+        "LO-310-01: Define a problem and identify its stakeholders and constraints.",
+        "LO-310-02: Decompose a problem into manageable components.",
+        "LO-310-03: Use appropriate tools to develop and test a preliminary solution.",
+        "LO-310-04: Communicate decisions using evidence and clear reasoning."
+      ],
+      "module_outline": [
+        "Engineering Thinking and Problem Framing",
+        "Requirements, Constraints and Stakeholders",
+        "Measurement, Evidence and Basic Experimentation",
+        "Prototyping, Testing and Iteration",
+        "Technical Communication and Project Reflection"
+      ],
+      "assessment_evidence": [
+        "problem_definition",
+        "requirements_and_constraints",
+        "prototype_or_model",
+        "test_record",
+        "technical_reflection"
+      ],
+      "prerequisites": [],
+      "status": "proposed"
+    },
+
+    "RXI-315": {
+      "course_id": "RXI-315",
+      "title": "Systems Design and Abstract Modeling",
+      "title_zh": "系统设计与抽象建模",
+      "course_role": "shared_foundation",
+      "purpose": "培养将复杂问题抽象为系统、模型、关系与可验证方案的能力。",
+      "learning_outcomes": [
+        "LO-315-01: Identify system boundaries, components and relationships.",
+        "LO-315-02: Construct an appropriate conceptual or computational model.",
+        "LO-315-03: Analyze assumptions, trade-offs and system behavior.",
+        "LO-315-04: Validate a model against evidence or defined criteria."
+      ],
+      "module_outline": [
+        "Systems Thinking and Boundary Definition",
+        "Abstraction, Representation and Modeling",
+        "Dependencies, Feedback and Emergent Behavior",
+        "Trade-off Analysis and Decision Models",
+        "Model Validation and Design Review"
+      ],
+      "assessment_evidence": [
+        "system_diagram",
+        "model_and_assumptions",
+        "trade_off_analysis",
+        "validation_report"
+      ],
+      "prerequisites": [
+        "RXI-310"
+      ],
+      "status": "proposed"
+    },
+
+    "RXI-356": {
+      "course_id": "RXI-356",
+      "title": "Applied Convergence of Design and Technology",
+      "title_zh": "设计与技术的应用融合",
+      "course_role": "interdisciplinary_convergence",
+      "purpose": "连接用户需求、技术可行性、设计质量与社会情境，形成跨学科项目能力。",
+      "learning_outcomes": [
+        "LO-356-01: Integrate human, technical and contextual requirements.",
+        "LO-356-02: Compare alternative design approaches.",
+        "LO-356-03: Develop and evaluate an interdisciplinary prototype.",
+        "LO-356-04: Explain design decisions to technical and nontechnical audiences."
+      ],
+      "module_outline": [
+        "Design Research and Opportunity Framing",
+        "Technology Affordances and Constraints",
+        "Cross-Disciplinary Concept Development",
+        "Prototype Integration and User or Stakeholder Evaluation",
+        "Final Demonstration and Critical Reflection"
+      ],
+      "assessment_evidence": [
+        "research_brief",
+        "design_rationale",
+        "integrated_prototype",
+        "evaluation_evidence",
+        "final_presentation"
+      ],
+      "prerequisites": [
+        "RXI-310",
+        "RXI-315"
+      ],
+      "status": "proposed"
+    }
+  },
+
+  "pathways": {
+    "PATH-SOFTWARE": {
+      "pathway_id": "PATH-SOFTWARE",
+      "title": "Modern Software Development",
+      "title_zh": "现代软件开发与工程实践",
+      "academic_orientation": [
+        "computer_science",
+        "software_engineering",
+        "human_centered_computing"
+      ],
+      "purpose": "从程序设计发展到能够定义需求、设计架构、实现、测试并解释软件系统的工程能力。",
+      "shared_course_refs": [
+        "RXI-310",
+        "RXI-315",
+        "RXI-356"
+      ],
+      "competency_map": [
+        "programming_and_computational_thinking",
+        "data_and_software_architecture",
+        "web_and_interactive_systems",
+        "testing_and_quality",
+        "version_control_and_collaboration",
+        "ai_augmented_development",
+        "technical_communication"
+      ],
+      "module_outline": [
+        "Applied Programming for Human-Centered Problem Solving",
+        "Data Structures, APIs and Application Architecture",
+        "Advanced Web Engineering and Interactive Systems",
+        "Software Engineering, Testing and Agile Practice",
+        "AI-Augmented Software Development",
+        "Integrated Software Project"
+      ],
+      "signature_project": {
+        "title": "A User-Centered Software System",
+        "description": "针对真实或明确界定的问题开发可运行的软件原型，并以需求、测试和用户反馈验证设计。",
+        "deliverables": [
+          "problem_and_requirements_brief",
+          "architecture_diagram",
+          "source_code_repository",
+          "test_results",
+          "working_demo",
+          "engineering_reflection"
+        ]
+      },
+      "research_extension": [
+        "usability_evaluation",
+        "software_quality_comparison",
+        "human_ai_development_workflow"
+      ],
+      "status": "proposed"
+    },
+
+    "PATH-AI": {
+      "pathway_id": "PATH-AI",
+      "title": "AI and Intelligent Systems",
+      "title_zh": "人工智能与智能系统",
+      "subtitle": "From Generative AI to Agentic Applications",
+      "academic_orientation": [
+        "artificial_intelligence",
+        "machine_learning",
+        "data_intelligence",
+        "human_ai_interaction"
+      ],
+      "purpose": "帮助学生理解 AI 的能力边界，并通过数据、模型评估和智能应用开发形成可验证的实践能力。",
+      "shared_course_refs": [
+        "RXI-310",
+        "RXI-315",
+        "RXI-356"
+      ],
+      "competency_map": [
+        "ai_and_ml_fundamentals",
+        "data_literacy",
+        "generative_ai",
+        "model_evaluation",
+        "agentic_system_design",
+        "human_ai_collaboration",
+        "responsible_ai"
+      ],
+      "module_outline": [
+        "AI Foundations and Literacy",
+        "Data, Statistics and Applied Machine Learning",
+        "Generative AI Studio",
+        "Evaluation, Reliability and Responsible AI",
+        "Agentic Systems and Human-AI Collaboration",
+        "Integrated Intelligent Application Project"
+      ],
+      "signature_project": {
+        "title": "An Evaluated AI-Assisted Application",
+        "description": "构建一个解决具体问题的 AI 应用，明确区分模型能力、程序逻辑、工具调用与人工判断。",
+        "deliverables": [
+          "problem_definition",
+          "system_architecture",
+          "dataset_or_knowledge_source_description",
+          "evaluation_protocol",
+          "failure_case_analysis",
+          "working_demo",
+          "ai_use_disclosure"
+        ]
+      },
+      "research_extension": [
+        "baseline_vs_ai_comparison",
+        "error_and_failure_analysis",
+        "human_ai_collaboration_study"
+      ],
+      "status": "proposed"
+    },
+
+    "PATH-ROBOTICS": {
+      "pathway_id": "PATH-ROBOTICS",
+      "title": "Robotics, Sensors and Intelligent Control",
+      "title_zh": "机器人、传感器与智能控制",
+      "academic_orientation": [
+        "robotics",
+        "mechanical_and_electrical_systems",
+        "control",
+        "embedded_computing"
+      ],
+      "purpose": "通过感知、建模、控制与实体或仿真原型，使学生理解智能系统如何在物理环境中运行。",
+      "shared_course_refs": [
+        "RXI-310",
+        "RXI-315",
+        "RXI-356"
+      ],
+      "competency_map": [
+        "mechanics_and_systems_fundamentals",
+        "sensors_and_measurement",
+        "programming_and_embedded_systems",
+        "kinematics_and_control",
+        "simulation_and_experimentation",
+        "safety_and_system_validation"
+      ],
+      "module_outline": [
+        "Robotics and Physical Systems Foundations",
+        "Sensors, Signals and Data Acquisition",
+        "Programming and Embedded Control",
+        "Kinematics, Motion and Feedback",
+        "Simulation, Experimentation and Validation",
+        "Integrated Robotics Project"
+      ],
+      "signature_project": {
+        "title": "A Sensing and Control Prototype",
+        "description": "设计一个能够感知环境并依据明确规则作出响应的实体或仿真系统。",
+        "deliverables": [
+          "system_model",
+          "sensor_and_actuator_plan",
+          "control_logic",
+          "experiment_log",
+          "performance_metrics",
+          "safety_and_limitations_report",
+          "demonstration"
+        ]
+      },
+      "research_extension": [
+        "sensor_accuracy_study",
+        "control_strategy_comparison",
+        "simulation_vs_real_world"
+      ],
+      "status": "proposed"
+    },
+
+    "PATH-BUSINESS": {
+      "pathway_id": "PATH-BUSINESS",
+      "title": "Business Analytics, Intelligence and Decision Science",
+      "title_zh": "商业分析、商业智能与决策科学",
+      "academic_orientation": [
+        "business_analytics",
+        "statistics",
+        "operations_research",
+        "decision_science"
+      ],
+      "purpose": "训练学生把商业问题转化为可分析的数据问题，并将分析结果转化为有约束、有证据的决策建议。",
+      "shared_course_refs": [
+        "RXI-310",
+        "RXI-315",
+        "RXI-356"
+      ],
+      "competency_map": [
+        "business_problem_framing",
+        "data_collection_and_quality",
+        "statistics_and_visualization",
+        "analytics_and_modeling",
+        "optimization_and_decision_analysis",
+        "business_communication",
+        "responsible_data_use"
+      ],
+      "module_outline": [
+        "Business Problems and Decision Framing",
+        "Data Literacy, Cleaning and Exploration",
+        "Statistics, Visualization and Business Intelligence",
+        "Predictive Analytics and Model Evaluation",
+        "Optimization and Decision Analysis",
+        "Evidence-Based Business Recommendation"
+      ],
+      "signature_project": {
+        "title": "An Evidence-Based Business Decision Study",
+        "description": "基于合法、可说明来源的数据，分析一个明确的商业或运营问题，并提出经过验证的决策建议。",
+        "deliverables": [
+          "business_question",
+          "data_dictionary_and_provenance",
+          "analysis_notebook_or_equivalent",
+          "visualizations",
+          "model_or_decision_framework",
+          "recommendation_report",
+          "limitations_and_bias_analysis"
+        ]
+      },
+      "research_extension": [
+        "hypothesis_testing",
+        "forecasting_comparison",
+        "sensitivity_and_scenario_analysis"
+      ],
+      "status": "proposed"
+    },
+
+    "PATH-INDUSTRIAL-DESIGN": {
+      "pathway_id": "PATH-INDUSTRIAL-DESIGN",
+      "title": "Industrial and Product Design",
+      "title_zh": "工业与产品设计",
+      "subtitle": "From Research to Prototyping",
+      "academic_orientation": [
+        "industrial_design",
+        "product_design",
+        "design_research",
+        "design_engineering"
+      ],
+      "purpose": "把用户与情境研究、概念生成、材料和制造约束、原型制作及设计评价连接起来。",
+      "shared_course_refs": [
+        "RXI-310",
+        "RXI-315",
+        "RXI-356"
+      ],
+      "competency_map": [
+        "contextual_and_user_research",
+        "design_brief_development",
+        "form_and_function",
+        "materials_and_manufacturing_awareness",
+        "prototyping",
+        "design_evaluation",
+        "visual_and_verbal_communication"
+      ],
+      "module_outline": [
+        "Design Research and Contextual Inquiry",
+        "Problem Framing and Design Briefs",
+        "Form, Function, Materials and Constraints",
+        "Concept Generation and Selection",
+        "Physical or Digital Prototyping",
+        "Testing, Iteration and Design Presentation"
+      ],
+      "signature_project": {
+        "title": "A Research-Informed Product Concept",
+        "description": "围绕一个明确的用户需求或使用情境，形成产品概念、原型及基于证据的迭代过程。",
+        "deliverables": [
+          "research_and_observation_record",
+          "design_brief",
+          "concept_sketches",
+          "concept_selection_rationale",
+          "prototype",
+          "evaluation_and_iteration_log",
+          "final_design_presentation"
+        ]
+      },
+      "research_extension": [
+        "comparative_product_analysis",
+        "material_or_form_experiment",
+        "user_feedback_study"
+      ],
+      "status": "proposed"
+    },
+
+    "PATH-HCI": {
+      "pathway_id": "PATH-HCI",
+      "title": "Human-Centered Design and Interactive Systems",
+      "title_zh": "以人为中心的设计与交互系统",
+      "academic_orientation": [
+        "human_computer_interaction",
+        "ux_and_ui",
+        "interaction_design",
+        "social_computing"
+      ],
+      "purpose": "将用户研究、交互设计、原型实现和评价方法结合起来，培养既能设计体验又能解释设计依据的学生。",
+      "shared_course_refs": [
+        "RXI-310",
+        "RXI-315",
+        "RXI-356"
+      ],
+      "competency_map": [
+        "human_centered_design",
+        "qualitative_and_quantitative_research",
+        "interaction_and_information_architecture",
+        "prototyping",
+        "usability_and_accessibility",
+        "evaluation_and_iteration",
+        "design_rationale"
+      ],
+      "module_outline": [
+        "Human Factors and HCI Foundations",
+        "User Research and Research Ethics",
+        "Information Architecture and Interaction Design",
+        "UI Systems and Interactive Prototyping",
+        "Usability Evaluation and Accessibility",
+        "Research-Informed Interactive System Project"
+      ],
+      "signature_project": {
+        "title": "A Research-Informed Interactive Experience",
+        "description": "针对特定用户群体和使用情境，开展用户研究、设计交互原型，并使用适当方法评价体验。",
+        "deliverables": [
+          "research_question",
+          "participant_or_data_ethics_plan",
+          "research_findings",
+          "personas_or_equivalent_models",
+          "interaction_flow",
+          "interactive_prototype",
+          "evaluation_protocol_and_results",
+          "design_rationale"
+        ]
+      },
+      "research_extension": [
+        "usability_study",
+        "accessibility_evaluation",
+        "human_ai_interaction",
+        "information_architecture_comparison"
+      ],
+      "status": "proposed"
+    }
+  },
+
+  "cross_pathway_capabilities": {
+    "capability_ids": [
+      "CAP-PROBLEM-FRAMING",
+      "CAP-RESEARCH",
+      "CAP-SYSTEMS-THINKING",
+      "CAP-PROTOTYPING",
+      "CAP-EVALUATION",
+      "CAP-COMMUNICATION",
+      "CAP-ETHICS",
+      "CAP-COLLABORATION"
+    ],
+    "policy": "Each pathway must demonstrate relevant shared capabilities through its own discipline-specific work; identical assessment artifacts are not required."
+  },
+
+  "academic_evidence_framework": {
+    "purpose": "Support truthful academic development and portfolio presentation, not manufacture research credentials.",
+    "evidence_types": [
+      "problem_and_research_question",
+      "literature_or_source_review",
+      "method_and_design_rationale",
+      "data_or_experiment_record",
+      "prototype_or_implementation",
+      "evaluation_results",
+      "limitations_and_reflection",
+      "presentation_or_poster"
+    ],
+    "provenance_fields": [
+      "student_contribution",
+      "instructor_guidance",
+      "ai_assistance",
+      "external_sources",
+      "collaborator_contributions"
+    ],
+    "integrity_rules": [
+      "Do not fabricate experiments, data, participants or findings.",
+      "Distinguish coursework, independent projects and genuine research.",
+      "Disclose AI assistance according to applicable course and application rules.",
+      "Do not present a prototype as a validated product or a class project as peer-reviewed research.",
+      "Preserve evidence of iteration, decision-making and individual contribution."
+    ]
+  },
+
+  "validation_rules": [
+    {
+      "rule_id": "VAL-001",
+      "description": "Every pathway reference must resolve to an existing shared course or pathway course.",
+      "severity": "error"
+    },
+    {
+      "rule_id": "VAL-002",
+      "description": "Every course must define a purpose and measurable learning outcomes.",
+      "severity": "error"
+    },
+    {
+      "rule_id": "VAL-003",
+      "description": "Every signature project must map to learning outcomes and observable evidence.",
+      "severity": "error"
+    },
+    {
+      "rule_id": "VAL-004",
+      "description": "Prerequisite references must resolve and must not create unintended dependency cycles.",
+      "severity": "error"
+    },
+    {
+      "rule_id": "VAL-005",
+      "description": "Age-band adaptations must change scaffolding and depth without making unsupported claims about student ability.",
+      "severity": "warning"
+    },
+    {
+      "rule_id": "VAL-006",
+      "description": "External claims, datasets, images and references must carry appropriate provenance.",
+      "severity": "error"
+    }
+  ],
+
+  "publication_targets": {
+    "primary_output": "structured_html",
+    "secondary_outputs": [
+      "course_overview",
+      "course_outline",
+      "project_brief",
+      "portfolio_evidence_guide"
+    ],
+    "human_review_required": true,
+    "compiler_must_preserve": [
+      "course_ids",
+      "learning_outcomes",
+      "prerequisites",
+      "evidence_requirements",
+      "provenance",
+      "validation_warnings"
+    ]
+  }
+}
