@@ -12,7 +12,6 @@
     "human_ai_collaboration",
     "authenticity_and_academic_integrity"
   ],
-
   "target_learners": {
     "primary_context": "Mainland China students preparing for international academic pathways",
     "age_bands": [
@@ -34,7 +33,6 @@
     ],
     "adaptation_policy": "Adjust prerequisites, depth, autonomy and assessment by learner readiness; do not equate age with ability."
   },
-
   "curriculum_architecture": {
     "shared_foundation_course_ids": [
       "RXI-310",
@@ -56,7 +54,6 @@
       "pathway_courses_may_reference_shared_courses": true
     }
   },
-
   "shared_courses": {
     "RXI-310": {
       "course_id": "RXI-310",
@@ -87,7 +84,6 @@
       "prerequisites": [],
       "status": "proposed"
     },
-
     "RXI-315": {
       "course_id": "RXI-315",
       "title": "Systems Design and Abstract Modeling",
@@ -118,7 +114,6 @@
       ],
       "status": "proposed"
     },
-
     "RXI-356": {
       "course_id": "RXI-356",
       "title": "Applied Convergence of Design and Technology",
@@ -152,7 +147,6 @@
       "status": "proposed"
     }
   },
-
   "pathways": {
     "PATH-SOFTWARE": {
       "pathway_id": "PATH-SOFTWARE",
@@ -205,7 +199,6 @@
       ],
       "status": "proposed"
     },
-
     "PATH-AI": {
       "pathway_id": "PATH-AI",
       "title": "AI and Intelligent Systems",
@@ -260,7 +253,6 @@
       ],
       "status": "proposed"
     },
-
     "PATH-ROBOTICS": {
       "pathway_id": "PATH-ROBOTICS",
       "title": "Robotics, Sensors and Intelligent Control",
@@ -313,7 +305,6 @@
       ],
       "status": "proposed"
     },
-
     "PATH-BUSINESS": {
       "pathway_id": "PATH-BUSINESS",
       "title": "Business Analytics, Intelligence and Decision Science",
@@ -367,7 +358,6 @@
       ],
       "status": "proposed"
     },
-
     "PATH-INDUSTRIAL-DESIGN": {
       "pathway_id": "PATH-INDUSTRIAL-DESIGN",
       "title": "Industrial and Product Design",
@@ -422,7 +412,6 @@
       ],
       "status": "proposed"
     },
-
     "PATH-HCI": {
       "pathway_id": "PATH-HCI",
       "title": "Human-Centered Design and Interactive Systems",
@@ -479,7 +468,6 @@
       "status": "proposed"
     }
   },
-
   "cross_pathway_capabilities": {
     "capability_ids": [
       "CAP-PROBLEM-FRAMING",
@@ -493,7 +481,6 @@
     ],
     "policy": "Each pathway must demonstrate relevant shared capabilities through its own discipline-specific work; identical assessment artifacts are not required."
   },
-
   "academic_evidence_framework": {
     "purpose": "Support truthful academic development and portfolio presentation, not manufacture research credentials.",
     "evidence_types": [
@@ -521,7 +508,6 @@
       "Preserve evidence of iteration, decision-making and individual contribution."
     ]
   },
-
   "validation_rules": [
     {
       "rule_id": "VAL-001",
@@ -554,7 +540,6 @@
       "severity": "error"
     }
   ],
-
   "publication_targets": {
     "primary_output": "structured_html",
     "secondary_outputs": [
