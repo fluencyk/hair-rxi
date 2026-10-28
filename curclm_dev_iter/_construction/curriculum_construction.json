@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "RXI Curriculum Construction Model",
+    "version": "0.1.0",
+    "status": "MVP Draft",
+    "purpose": "Define the curriculum structure, learning pathways, and advanced portfolio-oriented offerings."
+  },
+  "curriculum": {
+    "name": "Academic-Augmented Design and Technology Curriculum",
+    "description": "An interdisciplinary curriculum integrating engineering, systems thinking, design, and technology through progressive learning and applied practice.",
+    "target_learners": "Students preparing for advanced academic study and portfolio development.",
+    "cores": {
+      "core_model_a": {
+        "name": "Foundation Core",
+        "units": 2,
+        "description": "Establish foundational engineering literacy, analytical reasoning, and systems-oriented problem-solving capabilities.",
+        "courses": [
+          {
+            "id": "RXI-310",
+            "name": "Fundamentals of Engineering",
+            "role": "Introduce engineering principles, scientific reasoning, quantitative analysis, and evidence-based problem-solving."
+          },
+          {
+            "id": "RXI-315",
+            "name": "Systems Design and Abstract Modeling",
+            "role": "Develop systems thinking, abstraction, model construction, and structured design reasoning."
+          }
+        ]
+      },
+      "core_model_b": {
+        "name": "Advanced Core",
+        "units": 4,
+        "description": "Extend foundational capabilities into interdisciplinary design-technology practice and research-oriented communication.",
+        "includes": [
+          "core_model_a"
+        ],
+        "courses": [
+          {
+            "id": "RXI-356",
+            "name": "Applied Convergence of Design and Technology",
+            "role": "Integrate design and technology to investigate needs, develop solutions, prototype, and evaluate outcomes."
+          },
+          {
+            "id": "RXI-SEM",
+            "name": "Research and Academic Seminar",
+            "role": "Develop inquiry, critical reading, evidence-based argumentation, academic discussion, and research communication."
+          }
+        ],
+        "progression": "Foundation Core + Advanced Core"
+      }
+    },
+    "concentrations": {
+      "description": "Specialized learning directions that apply the shared core capabilities within distinct disciplinary and professional contexts.",
+      "options": [
+        {
+          "id": "ui_ux_hci",
+          "name": "UI/UX/HCI",
+          "focus": "Human-computer interaction, user experience, interface design, and human-centered systems."
+        },
+        {
+          "id": "modern_software_development",
+          "name": "Modern Software Development",
+          "focus": "Software engineering, application development, and contemporary development practices."
+        },
+        {
+          "id": "applied_ai_and_intelligent_systems",
+          "name": "Applied AI and Intelligent Systems",
+          "focus": "Applied artificial intelligence, intelligent applications, and AI-enabled systems."
+        },
+        {
+          "id": "robotics",
+          "name": "Robotics",
+          "focus": "Robotic systems, sensing, control, computation, and integrated prototyping."
+        },
+        {
+          "id": "industrial_design_and_engineering",
+          "name": "Industrial Design and Technologies",
+          "focus": "Product design, materials, fabrication, and design-engineering integration."
+        },
+        {
+          "id": "business_intelligence_and_analytics",
+          "name": "Business Intelligence and Analytics",
+          "focus": "Data analysis, visualization, business intelligence, and evidence-informed decision-making."
+        }
+      ]
+    },
+    "pathways": {
+      "description": "Structured combinations of core learning, concentration study, and applied work, tailored to learner goals and intended outcomes.",
+      "design_principles": [
+        "Build on core learning before advanced specialization.",
+        "Connect concentrations with applied projects and demonstrable evidence.",
+        "Allow combinations to reflect learner interests, readiness, and available resources."
+      ],
+      "examples": [
+        {
+          "id": "human_centered_digital_products",
+          "name": "Human-Centered Digital Products",
+          "concentrations": [
+            "ui_ux_hci",
+            "modern_software_development"
+          ],
+          "outcome": "A user-centered digital product supported by design rationale and implementation evidence."
+        },
+        {
+          "id": "ai_enabled_systems",
+          "name": "AI-Enabled Systems",
+          "concentrations": [
+            "applied_ai_and_intelligent_systems",
+            "modern_software_development"
+          ],
+          "outcome": "An AI-enabled application or prototype with documented requirements, implementation, and evaluation."
+        },
+        {
+          "id": "intelligent_physical_products",
+          "name": "Intelligent Physical Products",
+          "concentrations": [
+            "robotics",
+            "industrial_design_and_engineering"
+          ],
+          "outcome": "An integrated physical or robotic prototype supported by design and engineering evidence."
+        },
+        {
+          "id": "data_driven_decision_systems",
+          "name": "Data-Driven Decision Systems",
+          "concentrations": [
+            "business_intelligence_and_analytics",
+            "modern_software_development"
+          ],
+          "outcome": "A data-informed analytical solution or application with interpretable findings."
+        }
+      ]
+    },
+    "electives": {
+      "description": "Flexible learning opportunities that extend the core curriculum and concentration pathways according to learner needs.",
+      "categories": [
+        {
+          "id": "thematic_electives",
+          "name": "Thematic Electives",
+          "description": "Focused modules addressing selected topics, methods, or technologies."
+        },
+        {
+          "id": "project_electives",
+          "name": "Project-Based Electives",
+          "description": "Applied learning organized around a defined problem, project, or demonstrable outcome."
+        }
+      ]
+    },
+    "after_module": {
+      "description": "Advanced, outcome-oriented offerings available after relevant core or concentration learning.",
+      "offerings": [
+        {
+          "id": "advanced_portfolio_training",
+          "name": "Advanced Portfolio Training",
+          "description": "Customized advanced training to strengthen portfolio quality, disciplinary depth, and project evidence."
+        },
+        {
+          "id": "outcome_based_packages",
+          "name": "Outcome-Based Course Packages",
+          "description": "Integrated learning packages organized around specific academic, research, or portfolio outcomes."
+        }
+      ]
+    },
+    "vip_offerings": {
+      "description": "Premium, mentorship-oriented electives designed around progressively more demanding academic and portfolio outcomes.",
+      "shared_prerequisites": [
+        "Pre-Academic Writing"
+      ],
+      "courses": [
+        {
+          "id": "project_success",
+          "name": "Project Success",
+          "level": "Cornerstone",
+          "mentoring": "1:1 instructor mentoring",
+          "outcome": "A completed project with clearly documented objectives, process, and deliverables."
+        },
+        {
+          "id": "research_exploration",
+          "name": "Research Exploration",
+          "level": "Milestone",
+          "mentoring": "Research-oriented instructor guidance",
+          "outcome": "A structured research project with a mini-paper or preprint-style manuscript."
+        },
+        {
+          "id": "admission_track",
+          "name": "Admission Track",
+          "level": "Capstone",
+          "mentoring": "2:1 instructor and advisor mentoring",
+          "outcome": "An admission-oriented academic or portfolio package aligned with the learner's target programs."
+        }
+      ]
+    }
+  }
+}
