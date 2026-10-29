@@ -1,0 +1,56 @@
+
+{
+  "head": {
+    "id": "CCS-ALGO-RADAR",
+    "version": "1.0.0",
+    "instruction": [
+      "Use this radar to discover and verify academic origins for Cognition Space construction.",
+      "Prefer authoritative and primary academic sources over discovery platforms.",
+      "A source URL is evidence only when its content semantically supports the target cognition item.",
+      "Cross-verify important cognition items with independent sources whenever possible.",
+      "LLM prior knowledge may propose candidates but must not be treated as evidence.",
+      "Keep knowledge coverage broad and cognitive depth natural.",
+      "Allow Stems to emerge from Cognition Space rather than pre-constraining Cognition Space.",
+      "Require human review before stable baseline adoption."
+    ],
+    "tiers": {
+      "A0": "disciplinary_authority",
+      "A1": "academic_standard",
+      "A2": "academic_institution",
+      "A3": "scholarly_record",
+      "A4": "discovery_verification",
+      "A5": "emerging_research"
+    }
+  },
+
+  "sources": {
+    "A0": [],
+    "A1": [],
+    "A2": [],
+    "A3": [],
+    "A4": [
+      {
+        "name": "Google Scholar",
+        "url": "https://scholar.google.com/"
+      },
+      {
+        "name": "Semantic Scholar",
+        "url": "https://www.semanticscholar.org/"
+      },
+      {
+        "name": "OpenAlex",
+        "url": "https://openalex.org/"
+      },
+      {
+        "name": "Crossref",
+        "url": "https://www.crossref.org/"
+      }
+    ],
+    "A5": [
+      {
+        "name": "arXiv",
+        "url": "https://arxiv.org/"
+      }
+    ]
+  }
+}
