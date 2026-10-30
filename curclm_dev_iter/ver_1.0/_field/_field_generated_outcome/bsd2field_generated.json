@@ -1,0 +1,1665 @@
+{
+  "_provenance_generation_": {
+    "protocol_id": "B2F-PROVENANCER"
+  },
+
+  "provenance_result": {
+    "supported": [
+      {
+        "name": "Computer Science",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs (CIP) — Computer Science",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Artificial Intelligence",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs (CIP) — Artificial Intelligence",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Stanford University",
+            "source": "Academic and research materials identifying Machine Learning as a field of study and research",
+            "url": "https://stanford.edu/"
+          }
+        ]
+      },
+      {
+        "name": "Data Science",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs (CIP) — Data Science",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Computer Engineering",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Computer Engineering and Similarly Named Engineering Programs",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Information Technology",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs (CIP) — Information Technology",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Cybersecurity",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs (CIP) — Cybersecurity",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Human-Computer Interaction",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "CIP 30.3101 — Human Computer Interaction",
+            "url": "https://nces.ed.gov/ipeds/cipcode/cipdetail.aspx?cipid=91445&y=56"
+          }
+        ]
+      },
+      {
+        "name": "Computer Vision",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Stanford Institute for Human-Centered Artificial Intelligence",
+            "source": "What Is Computer Vision?",
+            "url": "https://hai.stanford.edu/ai-definitions/what-is-computer-vision"
+          }
+        ]
+      },
+      {
+        "name": "Natural Language Processing",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Association for Computational Linguistics",
+            "source": "What is Computational Linguistics / Natural Language Processing?",
+            "url": "https://www.aclweb.org/portal/what-is-cl"
+          }
+        ]
+      },
+      {
+        "name": "Robotics",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Mechatronics, Robotics, and Similarly Named Engineering Programs",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Autonomous Systems",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs and institutional program structures supporting autonomous systems as an instructional and engineering domain",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Computational Intelligence",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "IEEE Computational Intelligence Society",
+            "source": "IEEE CIS Field of Interest",
+            "url": "https://cis.ieee.org/"
+          }
+        ]
+      },
+      {
+        "name": "Computational Science",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs (CIP) — Computational Science",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Software Engineering",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Computing Programs — Software Engineering",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Information Systems",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG",
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Association for Computing Machinery",
+            "source": "Computing Curricula / Information Systems curricular discipline",
+            "url": "https://www.acm.org/education/curricula-recommendations"
+          }
+        ]
+      },
+      {
+        "name": "Information Science",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Cornell University",
+            "source": "Information Science academic field and program",
+            "url": "https://infosci.cornell.edu/"
+          }
+        ]
+      },
+      {
+        "name": "Data Engineering",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification and institutional educational structures supporting Data Engineering",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Business Analytics",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG",
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs and established university Business Analytics programs",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Knowledge Management",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Kent State University",
+            "source": "Knowledge Management academic program and disciplinary structure",
+            "url": "https://www.kent.edu/"
+          }
+        ]
+      },
+      {
+        "name": "Cloud Computing",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Cloud Computing",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Business Administration",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Business Administration and Management",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Management Science",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "INFORMS",
+            "source": "Management Science disciplinary and scholarly field",
+            "url": "https://www.informs.org/"
+          }
+        ]
+      },
+      {
+        "name": "Entrepreneurship",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Entrepreneurship/Entrepreneurial Studies",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Marketing",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Finance",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Finance",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Accounting",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Accounting",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Economics",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Economics",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Operations Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification and established academic programs in Operations Management",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Environmental Science",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Climate Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Climate Science",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Engineering",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Environmental Engineering",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Studies",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Environmental Studies",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Justice",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "University of Michigan",
+            "source": "Environmental Justice Master of Science specialization/program",
+            "url": "https://seas.umich.edu/academics/master-science/environmental-justice"
+          }
+        ]
+      },
+      {
+        "name": "Sustainability Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Harvard University",
+            "source": "Sustainability Science Program",
+            "url": "https://www.hks.harvard.edu/centers/mrcbg/programs/sustainability-science-program"
+          }
+        ]
+      },
+      {
+        "name": "Earth Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Geological and Earth Sciences/Geosciences",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Atmospheric Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Atmospheric Sciences and Meteorology",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Ecology",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Ecology",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Conservation Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Society for Conservation Biology",
+            "source": "Conservation Biology / Conservation Science disciplinary and professional domain",
+            "url": "https://conbio.org/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Health",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Environmental Health",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Geographic Information Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "University Consortium for Geographic Information Science",
+            "source": "Geographic Information Science disciplinary and academic domain",
+            "url": "https://www.ucgis.org/"
+          }
+        ]
+      },
+      {
+        "name": "Biological Sciences",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Biological and Biomedical Sciences",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Biomedical Engineering",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Bioengineering, Biomedical, and Similarly Named Engineering Programs",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Bioengineering",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Bioengineering, Biomedical, and Similarly Named Engineering Programs",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Biotechnology",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Biotechnology",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Health Sciences",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Health Sciences/Services",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Medical Engineering",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "University of Leeds",
+            "source": "Medical Engineering academic program",
+            "url": "https://www.leeds.ac.uk/"
+          }
+        ]
+      },
+      {
+        "name": "Medical Biotechnology",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Academic institutional programs",
+            "source": "Medical Biotechnology degree and research program structures",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Bioinformatics",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Bioinformatics",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Computational Biology",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification and academic institutional programs in Computational Biology",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Digital Health",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Institutes of Health",
+            "source": "Digital Health research domain",
+            "url": "https://research.nih.gov/research-at-nih/digital-health"
+          }
+        ]
+      },
+      {
+        "name": "Health Informatics",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "University of Michigan",
+            "source": "Master of Health Informatics",
+            "url": "https://www.si.umich.edu/programs/degree-programs/master-health-informatics"
+          }
+        ]
+      },
+      {
+        "name": "Public Health",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Council on Education for Public Health",
+            "source": "Accreditation and academic standards for Public Health",
+            "url": "https://ceph.org/"
+          }
+        ]
+      },
+      {
+        "name": "Neuroscience",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Neuroscience",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Biomedical Informatics",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Harvard Medical School",
+            "source": "Department / academic programs in Biomedical Informatics",
+            "url": "https://dbmi.hms.harvard.edu/"
+          }
+        ]
+      },
+      {
+        "name": "Mechanical Engineering",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Mechanical Engineering",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Mechatronics",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Mechatronics, Robotics, and Similarly Named Engineering Programs",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Control Engineering",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "IEEE Control Systems Society",
+            "source": "Control systems disciplinary and professional field",
+            "url": "https://ieeecss.org/"
+          }
+        ]
+      },
+      {
+        "name": "Automation Engineering",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "National Center for Education Statistics",
+            "source": "Classification of Instructional Programs — Automation Engineer Technology/Technician and related engineering structures",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Electrical Engineering",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Electrical Engineering",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Embedded Systems",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "IEEE",
+            "source": "Embedded Systems technical, educational, and professional domain",
+            "url": "https://www.ieee.org/"
+          }
+        ]
+      },
+      {
+        "name": "Intelligent Systems",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Academic institutional programs",
+            "source": "Intelligent Systems academic and research programs",
+            "url": "https://nces.ed.gov/ipeds/cipcode/"
+          }
+        ]
+      },
+      {
+        "name": "Manufacturing Engineering",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Manufacturing and Similarly Named Engineering Programs",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Industrial Engineering",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs — Industrial and Similarly Named Engineering Programs",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/"
+          }
+        ]
+      },
+      {
+        "name": "Systems Engineering",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "International Council on Systems Engineering",
+            "source": "Systems Engineering professional and disciplinary domain",
+            "url": "https://www.incose.org/"
+          }
+        ]
+      },
+      {
+        "name": "Human-Robot Interaction",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "supported",
+        "evidence": [
+          {
+            "organization": "Carnegie Mellon University Robotics Institute",
+            "source": "Human-Robot Interaction research field",
+            "url": "https://www.ri.cmu.edu/research/human-robot-interaction/"
+          }
+        ]
+      }
+    ],
+
+    "unsupported": [],
+
+    "unresolved": [
+      {
+        "name": "Software Development",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Information Management",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "DevOps",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "c",
+          "d",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Innovation Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Service Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Service Design",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Design Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Environmental Policy",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Renewable Energy",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Medical Science",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      },
+      {
+        "name": "Embedded Systems",
+        "observed_under": [
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "provenance": "unresolved",
+        "evidence": []
+      }
+    ]
+  },
+
+  "academic_based_fields_set": [
+    "Computer Science",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Data Science",
+    "Computer Engineering",
+    "Information Technology",
+    "Cybersecurity",
+    "Human-Computer Interaction",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Robotics",
+    "Autonomous Systems",
+    "Computational Intelligence",
+    "Computational Science",
+    "Software Engineering",
+    "Information Systems",
+    "Information Science",
+    "Data Engineering",
+    "Business Analytics",
+    "Knowledge Management",
+    "Cloud Computing",
+    "Business Administration",
+    "Management Science",
+    "Entrepreneurship",
+    "Marketing",
+    "Finance",
+    "Accounting",
+    "Economics",
+    "Operations Management",
+    "Environmental Science",
+    "Climate Science",
+    "Environmental Engineering",
+    "Environmental Studies",
+    "Environmental Justice",
+    "Sustainability Science",
+    "Earth Science",
+    "Atmospheric Science",
+    "Ecology",
+    "Conservation Science",
+    "Environmental Health",
+    "Geographic Information Science",
+    "Biological Sciences",
+    "Biomedical Engineering",
+    "Bioengineering",
+    "Biotechnology",
+    "Health Sciences",
+    "Medical Engineering",
+    "Medical Biotechnology",
+    "Bioinformatics",
+    "Computational Biology",
+    "Digital Health",
+    "Health Informatics",
+    "Public Health",
+    "Neuroscience",
+    "Biomedical Informatics",
+    "Mechanical Engineering",
+    "Mechatronics",
+    "Control Engineering",
+    "Automation Engineering",
+    "Electrical Engineering",
+    "Intelligent Systems",
+    "Manufacturing Engineering",
+    "Industrial Engineering",
+    "Systems Engineering",
+    "Human-Robot Interaction"
+  ]
+}
