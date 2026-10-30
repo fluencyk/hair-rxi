@@ -2,35 +2,54 @@ _b2f_provenancer_:
   id: B2F-PROVENANCER
 
   description: >
-    Qualification protocol for evaluating Field candidates through
-    traceable external provenance and producing academically grounded
-    Field identities for downstream generation.
+    Provenance qualification protocol for evaluating Field candidates
+    through traceable external evidence and projecting sufficiently
+    supported candidates into an academic-based Field set.
 
   input:
     required:
       - bsd2field_candidate.json
 
   instruction:
-    - Treat every candidate in bsd2field_candidate.json as an unresolved Field candidate requiring provenance evaluation.
+    - Treat every entry in bsd2field_candidate.json as a Field candidate requiring provenance qualification.
     - Do not discover or introduce new Field candidates.
-    - Evaluate candidates independently even when they overlap, appear synonymous, occur under multiple BSDs, or differ in granularity.
-    - Use external authoritative sources to determine whether each candidate receives sufficient academic or professional backing as a recognizable Field.
+    - Aggregate only exact same-name candidate occurrences before provenance evaluation.
+    - When exact same-name candidates are aggregated, preserve and combine their observed_under and observed_by values without duplication.
+    - Do not merge synonymous, related, nested, overlapping, or differently named candidates.
+    - Evaluate each aggregated candidate independently.
+    - Use traceable external authoritative sources as provenance evidence.
     - Do not treat model prior knowledge as provenance.
-    - Assign provenance as either supported or unsupported.
-    - Assign supported only when traceable external evidence provides sufficient backing for the candidate as a recognizable academic, scientific, engineering, technological, professional, or interdisciplinary Field.
-    - Assign unsupported when sufficient traceable external backing cannot be established.
+    - Evaluate whether available evidence sufficiently supports each candidate as a recognizable academic, scientific, engineering, technological, professional, or interdisciplinary Field.
+    - Assign provenance as supported, unsupported, or unresolved.
+    - Assign supported when sufficient traceable external evidence backs the candidate as a recognizable Field.
+    - Assign unsupported when available traceable external evidence provides sufficient basis for determining that the candidate does not satisfy the Field qualification requirement.
+    - Assign unresolved when available evidence is insufficient, ambiguous, conflicting, or otherwise unable to establish either supported or unsupported status.
     - Interdisciplinary, convergent, emerging, or cross-domain identity must not by itself cause a candidate to be marked unsupported.
-    - Preserve the original candidate name during provenance evaluation.
-    - Attach evidence only to supported candidates.
+    - Preserve the original candidate name during provenance qualification.
+    - Preserve retrieved evidence used in supported, unsupported, and unresolved qualification outcomes.
     - Do not fabricate organizations, sources, documents, publications, or URLs.
     - Only supported candidates may proceed into academic_based_fields_set.
 
   provenance:
     supported:
+      definition: >
+        Sufficient traceable external evidence supports the candidate
+        as a recognizable Field.
       evidence_required: true
 
     unsupported:
-      evidence_required: false
+      definition: >
+        Traceable external evidence provides sufficient basis for
+        determining that the candidate does not satisfy the Field
+        qualification requirement.
+      evidence_required: true
+
+    unresolved:
+      definition: >
+        Available evidence is insufficient, ambiguous, conflicting,
+        or otherwise unable to establish either supported or
+        unsupported status.
+      evidence_required: true
 
   evidence:
     preferred_sources:
@@ -51,35 +70,51 @@ _b2f_provenancer_:
         Load every Field candidate from bsd2field_candidate.json while
         preserving its name, observed_under, and observed_by values.
 
+    - step: aggregate_exact_identity
+      instruction: >
+        Aggregate candidate occurrences only when their names are exactly
+        identical. Combine their observed_under and observed_by values
+        without duplication. Do not merge candidates based on synonymy,
+        semantic similarity, hierarchy, relatedness, or inferred identity.
+
     - step: retrieve
       instruction: >
-        Search for traceable external evidence relevant to each candidate
-        using the preferred source categories defined by this protocol.
+        Retrieve traceable external evidence relevant to each aggregated
+        candidate using the preferred source categories defined by this
+        protocol. Model prior knowledge may guide retrieval reasoning but
+        must not itself be recorded or treated as provenance evidence.
 
     - step: qualify
       instruction: >
-        Determine whether the retrieved evidence sufficiently supports
-        the candidate as a recognizable academic, scientific, engineering,
-        technological, professional, or interdisciplinary Field.
+        Evaluate the retrieved evidence and assign each candidate exactly
+        one provenance status: supported, unsupported, or unresolved.
+        Qualification concerns the identity of the candidate as a Field,
+        not its ownership by or membership within any particular BSD.
 
     - step: annotate
       instruction: >
-        Assign provenance as supported or unsupported. For supported
-        candidates, attach the evidence used for qualification. For
-        unsupported candidates, do not attach evidence.
+        Attach the assigned provenance status and the traceable evidence
+        used in reaching that qualification outcome. Preserve evidence
+        for supported, unsupported, and unresolved candidates.
 
     - step: project
       instruction: >
         Project only supported candidates into academic_based_fields_set.
-        Preserve unsupported candidates in the provenance result so that
-        the qualification outcome remains observable.
+        Preserve all supported, unsupported, and unresolved qualification
+        outcomes in provenance_result.
+
+    - step: materialize
+      instruction: >
+        Materialize the complete provenance qualification state and
+        academic Field projection into bsd2field_generated.json without
+        modifying bsd2field_candidate.json.
 
   field_schema:
     supported:
       name: ""
       observed_under: []
       observed_by: []
-      provenance: supported
+      provenance: "supported"
       evidence:
         - organization: ""
           source: ""
@@ -89,7 +124,21 @@ _b2f_provenancer_:
       name: ""
       observed_under: []
       observed_by: []
-      provenance: unsupported
+      provenance: "unsupported"
+      evidence:
+        - organization: ""
+          source: ""
+          url: ""
+
+    unresolved:
+      name: ""
+      observed_under: []
+      observed_by: []
+      provenance: "unresolved"
+      evidence:
+        - organization: ""
+          source: ""
+          url: ""
 
   output:
     target: bsd2field_generated.json
@@ -102,5 +151,6 @@ _b2f_provenancer_:
       provenance_result:
         supported: []
         unsupported: []
+        unresolved: []
 
       academic_based_fields_set: []
