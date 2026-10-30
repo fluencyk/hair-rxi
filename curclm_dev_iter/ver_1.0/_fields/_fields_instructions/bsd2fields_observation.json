@@ -1,0 +1,1981 @@
+{
+  "head": {
+    "id": "BSD-MAPPED-FIELDS",
+    "version": "0.1.0-populated",
+    "purpose": "Reconstruct candidate academic and applied Fields from fixed stakeholder-defined Business Strategy Domains through multiple independent observation perspectives.",
+    "principles": [
+      "Business Strategy Domains are stakeholder-defined semantic boundaries and must be preserved without academic reinterpretation at this layer.",
+      "Each observer independently inspects the complete BSD structure before proposing Fields.",
+      "Observers may produce overlapping, conflicting, differently named, or differently scoped Fields.",
+      "Do not force consensus between observers during observation.",
+      "Prefer established Fields over narrow topics, techniques, occupations, or temporary technology labels.",
+      "A Field proposed by an observer should include traceable evidence whenever an authoritative or representative source is available.",
+      "A URL counts as evidence only when its content semantically supports the corresponding observation.",
+      "Field convergence, normalization, deduplication, and final validation occur after multi-observer observation.",
+      "LLM prior knowledge may propose candidates but must not be treated as evidence."
+    ],
+    "observation_model": {
+      "input": "fixed_bsd_structure",
+      "process": "independent_multi_observer_projection",
+      "output": "candidate_field_topologies",
+      "convergence": "deferred"
+    },
+    "status_values": [
+      "supported",
+      "partially_supported",
+      "contradicted",
+      "unverified"
+    ]
+  },
+
+  "bsd": [
+    {
+      "id": "BSD-COMP-AI",
+      "name_zh": "计算机与人工智能",
+      "name_en": "Computing and Artificial Intelligence"
+    },
+    {
+      "id": "BSD-SWEDEV-INFOINSIG",
+      "name_zh": "软件开发与信息洞察",
+      "name_en": "Software Development and Information Insight"
+    },
+    {
+      "id": "BSD-BIZINNO-SERV",
+      "name_zh": "商业创新与服务职能",
+      "name_en": "Business Innovation and Service Functions"
+    },
+    {
+      "id": "BSD-ENVFAIR-CLIMSCI",
+      "name_zh": "环境正义与气候科学",
+      "name_en": "Environmental Justice and Climate Science"
+    },
+    {
+      "id": "BSD-BIOHEAL-MEDTECH",
+      "name_zh": "生物健康与医疗技术",
+      "name_en": "Biological Health and Medical Technology"
+    },
+    {
+      "id": "BSD-ROBOTICS-MECENG",
+      "name_zh": "机器人与机械职能",
+      "name_en": "Robotics and Mechanical Functions"
+    }
+  ],
+
+  "observers": {
+    "commonwealth_education": {
+      "name": "Commonwealth Education Perspective",
+      "description": "Observe the BSD structure primarily through established UK and Commonwealth higher-education subject boundaries and benchmark structures.",
+      "reference_sources": [
+        {
+          "organization": "QAA",
+          "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/"
+        }
+      ],
+      "observations": [
+        {
+          "bsd_id": "BSD-COMP-AI",
+          "fields": [
+            {
+              "id": "FIELD-COMPUTING",
+              "name": "Computing",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Computing",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/computing",
+                  "observation": "Computing is explicitly treated as a broad academic subject discipline."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-COMPUTER-SCIENCE",
+              "name": "Computer Science",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Computing",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/computing",
+                  "observation": "Computer Science is represented within the broader Computing disciplinary framework."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ARTIFICIAL-INTELLIGENCE",
+              "name": "Artificial Intelligence",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Computing",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/computing",
+                  "observation": "AI is academically situated within the broader evolving Computing landscape rather than isolated as a QAA benchmark subject."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-SWEDEV-INFOINSIG",
+          "fields": [
+            {
+              "id": "FIELD-SOFTWARE-ENGINEERING",
+              "name": "Software Engineering",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Computing",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/computing",
+                  "observation": "Software system design and development are core manifestations of the broader Computing discipline."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Systems",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Computing",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/computing",
+                  "observation": "Computing explicitly includes systems supporting organisational goals."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-SCIENCE",
+              "name": "Data Science",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Computing",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/computing",
+                  "observation": "Data-oriented study fits within the broad Computing framework although not represented as a separate benchmark statement."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIZINNO-SERV",
+          "fields": [
+            {
+              "id": "FIELD-BUSINESS-MANAGEMENT",
+              "name": "Business and Management",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Business and Management",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-business-and-management",
+                  "observation": "Business and Management is an explicit benchmark subject covering organisations, management, innovation, analytics, information systems, strategy and entrepreneurship."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-FINANCE",
+              "name": "Finance",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statements",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/",
+                  "observation": "Finance has a dedicated Subject Benchmark Statement."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ECONOMICS",
+              "name": "Economics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statements",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/",
+                  "observation": "Economics has a dedicated Subject Benchmark Statement."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ENVFAIR-CLIMSCI",
+          "fields": [
+            {
+              "id": "FIELD-ENVIRONMENTAL-SCIENCE",
+              "name": "Environmental Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Earth Sciences, Environmental Sciences and Environmental Studies",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/earth-sciences-environmental-science-and-environmental-studies",
+                  "observation": "Environmental Science is explicitly recognized as a distinct but overlapping subject area."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ENVIRONMENTAL-STUDIES",
+              "name": "Environmental Studies",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Earth Sciences, Environmental Sciences and Environmental Studies",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/earth-sciences-environmental-science-and-environmental-studies",
+                  "observation": "Environmental Studies is explicitly represented alongside Environmental and Earth Sciences."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-EARTH-SCIENCES",
+              "name": "Earth Sciences",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Earth Sciences, Environmental Sciences and Environmental Studies",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/earth-sciences-environmental-science-and-environmental-studies",
+                  "observation": "Earth Sciences is an explicit component of the ES3 benchmark."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-GEOGRAPHY",
+              "name": "Geography",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statements",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/",
+                  "observation": "Geography is separately recognized as a benchmark subject and provides a relevant environmental and human-system perspective."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIOHEAL-MEDTECH",
+          "fields": [
+            {
+              "id": "FIELD-BIOSCIENCES",
+              "name": "Biosciences",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Biosciences",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-biosciences",
+                  "observation": "Biosciences is explicitly treated as an academic subject encompassing the study of life."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOMEDICAL-SCIENCES",
+              "name": "Biomedical Sciences",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Biomedical Science and Biomedical Sciences",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-biomedical-science-and-biomedical-sciences",
+                  "observation": "Biomedical Science and Biomedical Sciences have a dedicated benchmark statement."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-HEALTH-STUDIES",
+              "name": "Health Studies",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statements",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/",
+                  "observation": "Health Studies is independently represented in the benchmark framework."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOMEDICAL-ENGINEERING",
+              "name": "Biomedical Engineering",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Engineering",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-engineering",
+                  "observation": "Biomedical Engineering is situated within the broader Engineering disciplinary framework."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ROBOTICS-MECENG",
+          "fields": [
+            {
+              "id": "FIELD-MECHANICAL-ENGINEERING",
+              "name": "Mechanical Engineering",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Engineering",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-engineering",
+                  "observation": "Mechanical Engineering is represented within the broad Engineering benchmark."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ROBOTICS",
+              "name": "Robotics",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Engineering",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-engineering",
+                  "observation": "Robotics is consistent with multidisciplinary engineering study but is not separately benchmarked at the same level."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ELECTRICAL-ELECTRONIC-ENGINEERING",
+              "name": "Electrical and Electronic Engineering",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "QAA",
+                  "title": "Subject Benchmark Statement - Engineering",
+                  "url": "https://www.qaa.ac.uk/the-quality-code/subject-benchmark-statements/subject-benchmark-statement-engineering",
+                  "observation": "Electrical and electronic engineering belongs to the broader Engineering subject boundary."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    "north_american_education": {
+      "name": "North American Education Perspective",
+      "description": "Observe the BSD structure through North American disciplinary curricula, accreditation criteria and degree-program identities.",
+      "reference_sources": [
+        {
+          "organization": "ACM",
+          "url": "https://ccecc.acm.org/guidance"
+        },
+        {
+          "organization": "ABET",
+          "url": "https://www.abet.org/"
+        }
+      ],
+      "observations": [
+        {
+          "bsd_id": "BSD-COMP-AI",
+          "fields": [
+            {
+              "id": "FIELD-COMPUTER-SCIENCE",
+              "name": "Computer Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Curricular Guidance - Sub-Disciplines of Computing",
+                  "url": "https://ccecc.acm.org/guidance",
+                  "observation": "ACM explicitly identifies Computer Science as a computing sub-discipline."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-COMPUTER-ENGINEERING",
+              "name": "Computer Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Curricular Guidance - Sub-Disciplines of Computing",
+                  "url": "https://ccecc.acm.org/guidance",
+                  "observation": "ACM explicitly identifies Computer Engineering as a computing sub-discipline."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ARTIFICIAL-INTELLIGENCE",
+              "name": "Artificial Intelligence",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "ABET provides dedicated proposed program criteria for Artificial Intelligence and similarly named computing programs."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-TECHNOLOGY",
+              "name": "Information Technology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Curricular Guidance - Sub-Disciplines of Computing",
+                  "url": "https://ccecc.acm.org/guidance",
+                  "observation": "ACM explicitly identifies Information Technology as a computing sub-discipline."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-SWEDEV-INFOINSIG",
+          "fields": [
+            {
+              "id": "FIELD-SOFTWARE-ENGINEERING",
+              "name": "Software Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Engineering Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "ABET maintains dedicated criteria for Software and similarly named engineering programs."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "ABET maintains dedicated program criteria for Information Systems."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-SCIENCE",
+              "name": "Data Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "ABET provides dedicated curricular criteria for Data Science programs."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-TECHNOLOGY",
+              "name": "Information Technology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "ABET maintains dedicated criteria for Information Technology programs."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIZINNO-SERV",
+          "fields": [
+            {
+              "id": "FIELD-BUSINESS-ADMINISTRATION",
+              "name": "Business Administration",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "The North American occupational structure recognizes a broad management and business-and-financial domain corresponding to established business education."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "ABET explicitly defines Information Systems environments including business and other organizational domains."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BUSINESS-ANALYTICS",
+              "name": "Business Analytics",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Operations research, management analysis and market research provide established analytical professional boundaries supporting business analytics as an applied field."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ENVFAIR-CLIMSCI",
+          "fields": [
+            {
+              "id": "FIELD-ENVIRONMENTAL-SCIENCE",
+              "name": "Environmental Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Environmental Scientists and Specialists",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Environmental science is represented as an established science and professional field."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ENVIRONMENTAL-ENGINEERING",
+              "name": "Environmental Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Environmental Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Environmental Engineering is represented as a distinct engineering profession."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-EARTH-SCIENCES",
+              "name": "Earth Sciences / Geoscience",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Geoscientists",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Geoscience is represented as an established scientific profession concerned with Earth systems."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-CLIMATE-SCIENCE",
+              "name": "Climate Science",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Climate-related science spans environmental, atmospheric and Earth-science structures rather than mapping to one occupational category."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIOHEAL-MEDTECH",
+          "fields": [
+            {
+              "id": "FIELD-BIOLOGICAL-SCIENCES",
+              "name": "Biological Sciences",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook - Life, Physical, and Social Science",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Life sciences constitute an established educational and professional domain."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOMEDICAL-ENGINEERING",
+              "name": "Biomedical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Bioengineers and Biomedical Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Biomedical Engineering is explicitly represented as an engineering profession combining engineering and sciences."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-HEALTH-SCIENCES",
+              "name": "Health Sciences",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook - Healthcare",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Healthcare and health science activities form a large distinct professional domain."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOINFORMATICS",
+              "name": "Bioinformatics / Computational Biology",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "Computing and data-oriented program structures explicitly support application domains such as healthcare and scientific disciplines, providing a basis for computational biology intersections."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ROBOTICS-MECENG",
+          "fields": [
+            {
+              "id": "FIELD-ROBOTICS",
+              "name": "Robotics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Engineering Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "ABET has dedicated criteria for Mechatronics, Robotics, and similarly named engineering programs."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MECHATRONICS",
+              "name": "Mechatronics Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Engineering Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "Mechatronics is explicitly represented alongside Robotics in engineering program criteria."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MECHANICAL-ENGINEERING",
+              "name": "Mechanical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Mechanical Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Mechanical Engineering is represented as a distinct established engineering profession."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-CONTROL-ENGINEERING",
+              "name": "Control Engineering",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Engineering Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "Control systems are explicitly required within robotics and mechatronics engineering curricula, although Control Engineering is not separately represented here as a program criterion."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    "research_ecosystem": {
+      "name": "Research Ecosystem Perspective",
+      "description": "Observe the BSD structure through mature research communities, scholarly venues, disciplinary societies and research taxonomies.",
+      "reference_sources": [
+        {
+          "organization": "ACM",
+          "url": "https://www.acm.org/"
+        },
+        {
+          "organization": "ACL",
+          "url": "https://aclanthology.org/"
+        },
+        {
+          "organization": "NeurIPS",
+          "url": "https://neurips.cc/"
+        },
+        {
+          "organization": "arXiv",
+          "url": "https://arxiv.org/"
+        }
+      ],
+      "observations": [
+        {
+          "bsd_id": "BSD-COMP-AI",
+          "fields": [
+            {
+              "id": "FIELD-COMPUTER-SCIENCE",
+              "name": "Computer Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM / IEEE-CS / AAAI",
+                  "title": "Computer Science Curricula 2023",
+                  "url": "https://csed.acm.org/",
+                  "observation": "Computer Science is represented through a mature disciplinary body of knowledge jointly maintained by major scholarly organizations."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ARTIFICIAL-INTELLIGENCE",
+              "name": "Artificial Intelligence",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "AI and machine-learning research is represented through a mature interdisciplinary research ecosystem."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MACHINE-LEARNING",
+              "name": "Machine Learning",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "Core machine learning, deep learning, optimization and related research constitute a mature research community."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-COMPUTATIONAL-LINGUISTICS",
+              "name": "Computational Linguistics and Natural Language Processing",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACL",
+                  "title": "ACL Anthology",
+                  "url": "https://aclanthology.org/",
+                  "observation": "ACL explicitly describes its publication ecosystem as covering computational linguistics, speech and natural language processing."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-SWEDEV-INFOINSIG",
+          "fields": [
+            {
+              "id": "FIELD-SOFTWARE-ENGINEERING",
+              "name": "Software Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Computing Curricula",
+                  "url": "https://www.acm.org/education/curricula-recommendations",
+                  "observation": "Software Engineering has a mature scholarly and curricular identity within the computing research ecosystem."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-SCIENCE",
+              "name": "Data Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Computing Competencies for Undergraduate Data Science Curricula",
+                  "url": "https://www.acm.org/education/curricula-recommendations",
+                  "observation": "ACM maintains a distinct curricular body of knowledge for Data Science."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-HUMAN-COMPUTER-INTERACTION",
+              "name": "Human-Computer Interaction",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "ACM Research and Curricular Ecosystem",
+                  "url": "https://www.acm.org/",
+                  "observation": "HCI has a mature scholarly community and established computing research identity."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Computing Curricula",
+                  "url": "https://www.acm.org/education/curricula-recommendations",
+                  "observation": "Information Systems is represented as a distinct computing discipline."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIZINNO-SERV",
+          "fields": [
+            {
+              "id": "FIELD-BUSINESS-MANAGEMENT",
+              "name": "Business and Management",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "arXiv",
+                  "title": "arXiv",
+                  "url": "https://arxiv.org/",
+                  "observation": "Business and management topics intersect with economics, computation, information systems and quantitative research, but this observer is not the strongest authority for defining the broad business field."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Computing Curricula",
+                  "url": "https://www.acm.org/education/curricula-recommendations",
+                  "observation": "Information Systems provides an established scholarly bridge between computing and organizational activity."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-SCIENCE",
+              "name": "Data Science and Analytics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Computing Competencies for Undergraduate Data Science Curricula",
+                  "url": "https://www.acm.org/education/curricula-recommendations",
+                  "observation": "Data Science supplies a mature analytical research structure applicable to business decision environments."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ENVFAIR-CLIMSCI",
+          "fields": [
+            {
+              "id": "FIELD-CLIMATE-SCIENCE",
+              "name": "Climate and Earth System Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "Natural sciences and AI/ML for sustainability are explicitly represented as interdisciplinary research areas."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ENVIRONMENTAL-SCIENCE",
+              "name": "Environmental Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "arXiv",
+                  "title": "arXiv",
+                  "url": "https://arxiv.org/",
+                  "observation": "Environmental and Earth-system research is represented across scientific research categories and interdisciplinary computational work."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-SUSTAINABILITY-SCIENCE",
+              "name": "Sustainability Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "AI/ML for sustainability is explicitly identified as a research area, supporting sustainability as an interdisciplinary research boundary."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIOHEAL-MEDTECH",
+          "fields": [
+            {
+              "id": "FIELD-BIOMEDICAL-SCIENCES",
+              "name": "Biomedical Sciences",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "Life sciences, health and biotechnology are explicitly represented as interdisciplinary research application areas."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOTECHNOLOGY",
+              "name": "Biotechnology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "AI/ML for health and biotechnology is explicitly identified as a research area."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-COMPUTATIONAL-BIOLOGY",
+              "name": "Computational Biology and Bioinformatics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "arXiv",
+                  "title": "arXiv",
+                  "url": "https://arxiv.org/",
+                  "observation": "Quantitative biology and computational life-science research form an established interdisciplinary research ecosystem."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOMEDICAL-ENGINEERING",
+              "name": "Biomedical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "Engineering, health, biotechnology and computational methods intersect as mature research areas."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ROBOTICS-MECENG",
+          "fields": [
+            {
+              "id": "FIELD-ROBOTICS",
+              "name": "Robotics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "Robotics and embodied systems are explicitly identified as research topics."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-CONTROL",
+              "name": "Control and Decision Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "Decision-making, reinforcement learning and control are explicit research topics."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MACHINE-LEARNING",
+              "name": "Machine Learning",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "NeurIPS",
+                  "title": "NeurIPS 2026 Call for Papers",
+                  "url": "https://neurips.cc/Conferences/2026/CallForPapers",
+                  "observation": "Machine learning provides a major computational research component for modern robotics."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    "qinghua_peking_academic": {
+      "name": "Tsinghua and Peking University Academic Perspective",
+      "description": "Observe the BSD structure through disciplinary organization, degree programs, schools, departments and research fields represented by Tsinghua University and Peking University.",
+      "reference_sources": [
+        {
+          "organization": "Tsinghua University",
+          "url": "https://www.tsinghua.edu.cn/en/"
+        },
+        {
+          "organization": "Peking University",
+          "url": "https://english.pku.edu.cn/"
+        }
+      ],
+      "observations": [
+        {
+          "bsd_id": "BSD-COMP-AI",
+          "fields": [
+            {
+              "id": "FIELD-COMPUTER-SCIENCE",
+              "name": "Computer Science and Technology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua University",
+                  "title": "Degree Programs",
+                  "url": "https://www.tsinghua.edu.cn/en/Admissions/Undergraduate/Degree_Programs.htm",
+                  "observation": "Computer Science and Technology is explicitly listed as a degree program."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ARTIFICIAL-INTELLIGENCE",
+              "name": "Artificial Intelligence",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua University",
+                  "title": "Degree Programs",
+                  "url": "https://www.tsinghua.edu.cn/en/Admissions/Undergraduate/Degree_Programs.htm",
+                  "observation": "Artificial Intelligence is explicitly listed as a degree program."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-COMPUTER-ENGINEERING",
+              "name": "Computer Engineering / Computer Systems",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "Peking University",
+                  "title": "School of Computer Science Major Catalog",
+                  "url": "https://admission.pku.edu.cn/zsxx/lxszs/lxszyml/2025/bs/zsml_bs_lxs_en_00101.pdf",
+                  "observation": "Computer architecture, systems software and related systems areas are represented as research fields under Computer Science and Technology rather than as a separately named field."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-SWEDEV-INFOINSIG",
+          "fields": [
+            {
+              "id": "FIELD-SOFTWARE-ENGINEERING",
+              "name": "Software Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua University",
+                  "title": "Degree Programs",
+                  "url": "https://www.tsinghua.edu.cn/en/Admissions/Undergraduate/Degree_Programs.htm",
+                  "observation": "Software Engineering is explicitly listed as a degree program."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-SCIENCE",
+              "name": "Data Science and Information Technology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Data Science and Information Technology is explicitly listed as a graduate major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Management and Information Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua University",
+                  "title": "Programs",
+                  "url": "https://www.sist.tsinghua.edu.cn/sisten/Programs.htm",
+                  "observation": "Information Management and Information System is explicitly represented in the university program structure."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-HUMAN-COMPUTER-INTERACTION",
+              "name": "Human-Computer Interaction",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "Peking University",
+                  "title": "School of Computer Science Major Catalog",
+                  "url": "https://admission.pku.edu.cn/zsxx/lxszs/lxszyml/2025/bs/zsml_bs_lxs_en_00101.pdf",
+                  "observation": "Ubiquitous Computing and Human-Computer Interaction is explicitly listed as a research field under Computer Science and Technology."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIZINNO-SERV",
+          "fields": [
+            {
+              "id": "FIELD-BUSINESS-ADMINISTRATION",
+              "name": "Business Administration",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Business Administration is explicitly listed as an academic major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MANAGEMENT-SCIENCE",
+              "name": "Management Science and Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Management Science and Engineering is explicitly listed as a graduate major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-APPLIED-ECONOMICS",
+              "name": "Applied Economics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Applied Economics is explicitly listed as a graduate major."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ENVFAIR-CLIMSCI",
+          "fields": [
+            {
+              "id": "FIELD-ENVIRONMENTAL-SCIENCE",
+              "name": "Environmental Science and Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Environmental Science and Engineering is explicitly listed as an academic major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-EARTH-SYSTEM-SCIENCE",
+              "name": "Earth System Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua University",
+                  "title": "Schools and Departments",
+                  "url": "https://www.tsinghua.edu.cn/en/Schools___Departments.htm",
+                  "observation": "Tsinghua explicitly maintains a Department of Earth System Science."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-NEW-ENERGY-ENVIRONMENT",
+              "name": "Environment Science and New Energy Technology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Environment Science and New Energy Technology is explicitly represented as a graduate program."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIOHEAL-MEDTECH",
+          "fields": [
+            {
+              "id": "FIELD-BIOLOGY",
+              "name": "Biology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Biology is explicitly listed as a graduate major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOMEDICAL-ENGINEERING",
+              "name": "Biomedical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Biomedical Engineering is explicitly listed as a graduate major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-PRECISION-MEDICINE",
+              "name": "Precision Medicine and Healthcare",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Precision Medicine and Healthcare is explicitly represented in the graduate-program structure."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ROBOTICS-MECENG",
+          "fields": [
+            {
+              "id": "FIELD-MECHANICAL-ENGINEERING",
+              "name": "Mechanical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Mechanical Engineering is explicitly listed as a graduate major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-CONTROL-SCIENCE-ENGINEERING",
+              "name": "Control Science and Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Control Science and Engineering is explicitly listed as a graduate major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ELECTRICAL-ENGINEERING",
+              "name": "Electrical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua SIGS",
+                  "title": "Academic Graduate Programs",
+                  "url": "https://www.sigs.tsinghua.edu.cn/en/list_of_programs/",
+                  "observation": "Electrical Engineering is explicitly listed as a graduate major."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ROBOTICS",
+              "name": "Robotics",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "Tsinghua University",
+                  "title": "Degree Programs and Engineering Programs",
+                  "url": "https://www.tsinghua.edu.cn/en/Admissions/Undergraduate/Degree_Programs.htm",
+                  "observation": "Robotics emerges across automation, mechanical, electrical and computer-related structures rather than appearing here as one canonical standalone degree field."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    "engineering_practice": {
+      "name": "Engineering Practice Perspective",
+      "description": "Observe the BSD structure through professional engineering boundaries, industrial systems, technical practice and implementation responsibilities.",
+      "reference_sources": [
+        {
+          "organization": "ABET",
+          "url": "https://www.abet.org/"
+        },
+        {
+          "organization": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/ooh/"
+        }
+      ],
+      "observations": [
+        {
+          "bsd_id": "BSD-COMP-AI",
+          "fields": [
+            {
+              "id": "FIELD-COMPUTER-ENGINEERING",
+              "name": "Computer Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ACM",
+                  "title": "Curricular Guidance",
+                  "url": "https://ccecc.acm.org/guidance",
+                  "observation": "Computer Engineering is explicitly characterized around processor-based systems integrating hardware, software and communications."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ARTIFICIAL-INTELLIGENCE-ENGINEERING",
+              "name": "Artificial Intelligence Engineering",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "AI system architecture, infrastructure, implementation and integration establish a strong applied engineering dimension."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-CYBERSECURITY",
+              "name": "Cybersecurity",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Information security is represented as a distinct technical professional practice."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-SWEDEV-INFOINSIG",
+          "fields": [
+            {
+              "id": "FIELD-SOFTWARE-ENGINEERING",
+              "name": "Software Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Software and Similarly Named Engineering Programs",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "Software Engineering has an explicit professional engineering curriculum spanning requirements, construction, security, verification, validation, processes and tools."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-ENGINEERING",
+              "name": "Data Engineering",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Criteria for Accrediting Computing Programs 2026-2027",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "Data and knowledge engineering, information management and integrated systems are explicitly represented in computing curricula."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-TECHNOLOGY",
+              "name": "Information Technology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Information Technology Program Criteria",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "IT is explicitly oriented toward selection, integration and administration of secure computing technologies for user goals."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIZINNO-SERV",
+          "fields": [
+            {
+              "id": "FIELD-INDUSTRIAL-ENGINEERING",
+              "name": "Industrial Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Industrial Engineering addresses integrated systems and production processes and provides an engineering bridge to organizational operations."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-OPERATIONS-RESEARCH",
+              "name": "Operations Research",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Operations Research Analysts",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Operations Research is represented as a quantitative professional discipline for solving complex organizational problems."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Information Systems Program Criteria",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "Information Systems explicitly connects computing systems with organizational environments."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ENVFAIR-CLIMSCI",
+          "fields": [
+            {
+              "id": "FIELD-ENVIRONMENTAL-ENGINEERING",
+              "name": "Environmental Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Environmental Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Environmental Engineering is an established engineering practice addressing environmental and planetary-health problems."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-RENEWABLE-ENERGY-ENGINEERING",
+              "name": "Renewable Energy Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Renewable Energy Engineers are identified among growing green-transition roles."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-ENVIRONMENTAL-SCIENCE",
+              "name": "Environmental Science",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Environmental Scientists and Specialists",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Environmental science supplies the scientific basis for environmental engineering practice."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIOHEAL-MEDTECH",
+          "fields": [
+            {
+              "id": "FIELD-BIOMEDICAL-ENGINEERING",
+              "name": "Biomedical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Bioengineers and Biomedical Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Biomedical engineers combine engineering and sciences to create devices, systems and software."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BIOENGINEERING",
+              "name": "Bioengineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Bioengineers and Biomedical Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Bioengineering is explicitly represented alongside Biomedical Engineering."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-HEALTH-INFORMATICS",
+              "name": "Health Informatics",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Information Systems Program Criteria",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-computing-programs-2026-2027/",
+                  "observation": "Healthcare is explicitly identified as an Information Systems application domain, supporting health informatics as a cross-domain engineering area."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ROBOTICS-MECENG",
+          "fields": [
+            {
+              "id": "FIELD-ROBOTICS",
+              "name": "Robotics Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Mechatronics, Robotics, and Similarly Named Engineering Programs",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "Robotics is explicitly recognized through dedicated engineering program criteria."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MECHATRONICS",
+              "name": "Mechatronics Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Mechatronics, Robotics, and Similarly Named Engineering Programs",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "Mechatronics integrates mechanical systems, electronics, control, computer science, sensors, actuators and embedded controllers."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MECHANICAL-ENGINEERING",
+              "name": "Mechanical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Mechanical Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Mechanical Engineering is a mature engineering practice centered on mechanical and thermal systems and devices."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-CONTROL-ENGINEERING",
+              "name": "Control Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Mechatronics, Robotics, and Similarly Named Engineering Programs",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/",
+                  "observation": "Control systems engineering is explicitly required within robotics and mechatronics engineering practice."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    "business_analysis": {
+      "name": "Business Analysis Perspective",
+      "description": "Observe the BSD structure through industries, organizational capabilities, workforce demand, technology markets and commercial application rather than academic departmental boundaries.",
+      "reference_sources": [
+        {
+          "organization": "World Economic Forum",
+          "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025"
+        },
+        {
+          "organization": "U.S. Bureau of Labor Statistics",
+          "url": "https://www.bls.gov/ooh/"
+        }
+      ],
+      "observations": [
+        {
+          "bsd_id": "BSD-COMP-AI",
+          "fields": [
+            {
+              "id": "FIELD-ARTIFICIAL-INTELLIGENCE",
+              "name": "Artificial Intelligence and Machine Learning",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "AI and Machine Learning Specialists are identified among the fastest-growing roles."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-SCIENCE",
+              "name": "Data Science and Big Data",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Big Data Specialists are identified among the fastest-growing technology roles."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-CYBERSECURITY",
+              "name": "Cybersecurity",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Networks and cybersecurity are identified among the fastest-growing skill areas."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-SWEDEV-INFOINSIG",
+          "fields": [
+            {
+              "id": "FIELD-SOFTWARE-ENGINEERING",
+              "name": "Software Engineering and Development",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Software and Applications Developers are identified among the fastest-growing technology roles."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-DATA-SCIENCE",
+              "name": "Data Science and Analytics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "AI, Information Technology, and Employment 2024-34",
+                  "url": "https://www.bls.gov/opub/ted/2026/artificial-intelligence-information-technology-and-employment-2024-34.htm",
+                  "observation": "Data scientists are projected as a high-growth occupation associated with AI and information processing."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INFORMATION-SYSTEMS",
+              "name": "Information Systems and Digital Operations",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Computer systems analysts and computer and information systems managers demonstrate established organizational demand for information-systems capabilities."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIZINNO-SERV",
+          "fields": [
+            {
+              "id": "FIELD-BUSINESS-MANAGEMENT",
+              "name": "Business and Management",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Management and business-and-financial occupations form major organizational capability groups."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-BUSINESS-ANALYTICS",
+              "name": "Business Analytics and Operations Research",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Operations research analysts and management analysts represent established analytical business functions."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MARKETING",
+              "name": "Marketing and Market Research",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Market research analysts and marketing managers constitute established commercial functions."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-OPERATIONS-MANAGEMENT",
+              "name": "Operations and Service Management",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "General and Operations Managers and Project Managers are identified among roles contributing substantial net job growth."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ENVFAIR-CLIMSCI",
+          "fields": [
+            {
+              "id": "FIELD-ENVIRONMENTAL-ENGINEERING",
+              "name": "Environmental Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Environmental Engineers are among growing green-transition roles."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-RENEWABLE-ENERGY",
+              "name": "Renewable Energy",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Renewable Energy Engineers and Technicians are identified as growth areas associated with the green transition."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-SUSTAINABILITY",
+              "name": "Sustainability and Environmental Stewardship",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025 - Skills Outlook",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/3-skills-outlook",
+                  "observation": "Environmental stewardship is identified among rising workforce skills."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-BIOHEAL-MEDTECH",
+          "fields": [
+            {
+              "id": "FIELD-BIOMEDICAL-ENGINEERING",
+              "name": "Biomedical Engineering and Medical Technology",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Bioengineers and Biomedical Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Biomedical engineering directly connects engineering capabilities with medical devices, systems and software."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-HEALTHCARE",
+              "name": "Health and Healthcare Services",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Care-economy and healthcare roles are identified as significant areas of employment growth."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-HEALTH-INFORMATICS",
+              "name": "Digital Health and Health Informatics",
+              "status": "partially_supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Occupational Outlook Handbook",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Medical records, healthcare management, computing and information-system roles demonstrate a persistent digital-health capability intersection."
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "bsd_id": "BSD-ROBOTICS-MECENG",
+          "fields": [
+            {
+              "id": "FIELD-ROBOTICS",
+              "name": "Robotics and Autonomous Systems",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "World Economic Forum",
+                  "title": "Future of Jobs Report 2025",
+                  "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025",
+                  "observation": "Robotics and autonomous systems are identified as major technologies transforming employment and industry."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-MECHANICAL-ENGINEERING",
+              "name": "Mechanical Engineering",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "U.S. Bureau of Labor Statistics",
+                  "title": "Mechanical Engineers",
+                  "url": "https://www.bls.gov/ooh/",
+                  "observation": "Mechanical Engineering remains an established professional capability and employment field."
+                }
+              ]
+            },
+            {
+              "id": "FIELD-INDUSTRIAL-AUTOMATION",
+              "name": "Industrial Automation and Mechatronics",
+              "status": "supported",
+              "evidence": [
+                {
+                  "organization": "ABET",
+                  "title": "Mechatronics Engineering Technology Criteria",
+                  "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-technology-programs-2026-2027/",
+                  "observation": "Mechatronics programs explicitly prepare graduates for robotics, automotive, advanced manufacturing and automation industries."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+
+  "field_schema": {
+    "id": "",
+    "name": "",
+    "status": "unverified",
+    "evidence": [
+      {
+        "organization": "",
+        "title": "",
+        "url": "",
+        "observation": ""
+      }
+    ]
+  }
+}
