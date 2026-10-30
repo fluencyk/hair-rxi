@@ -1,0 +1,128 @@
+{
+  "_field_contract_": {
+    "description": "Academic contract defining how candidate Fields are observed, normalized, evidenced, and represented during BSD-to-Field generation.",
+
+    "instruction": [
+      "Treat a Field as an academically or professionally recognizable knowledge domain rather than as a topic, technique, tool, job title, or arbitrary subdivision of a BSD.",
+      "Observe candidate Fields independently through all declared observers.",
+      "Preserve differences in terminology and granularity across observers before normalization.",
+      "Do not treat BSD naming or BSD membership as evidence of academic Field identity.",
+      "Normalize candidate expressions only when authoritative evidence supports a stable Field identity and semantic definition.",
+      "Require traceable provenance for every normalized Field and its adopted definition.",
+      "Use academic and professional provenance as complementary evidence where available.",
+      "Do not use model prior knowledge as provenance.",
+      "Allow the same Field to occur under multiple BSD observations without forcing exclusive BSD ownership.",
+      "Keep the normalized academic Field collection one-dimensional at this stage and do not infer parent-child, hierarchical, or nested academic topology."
+    ],
+
+    "observers": {
+      "a": {
+        "id": "disciplinary_classification",
+        "description": "Observe formal disciplinary and educational classification systems for recognized Field identities and boundaries.",
+        "focus": "Discipline names, Field definitions, classification boundaries, inclusions, exclusions, and neighboring disciplinary identities.",
+        "source_basis": [
+          "international disciplinary classifications",
+          "national academic discipline classifications",
+          "official fields-of-study classifications",
+          "research-field classifications"
+        ]
+      },
+
+      "b": {
+        "id": "academic_standards",
+        "description": "Observe academic quality, accreditation, and curricular standards for independently defined Fields.",
+        "focus": "Recognized disciplinary scope, curricular boundaries, expected bodies of knowledge, and educational identity.",
+        "source_basis": [
+          "academic quality frameworks",
+          "accreditation standards",
+          "curriculum standards",
+          "official subject benchmark statements"
+        ]
+      },
+
+      "c": {
+        "id": "disciplinary_bodies",
+        "description": "Observe established scholarly and professional disciplinary bodies for recognized Fields and bodies of knowledge.",
+        "focus": "Disciplinary identity, canonical terminology, bodies of knowledge, curricula, standards, and professional definitions.",
+        "source_basis": [
+          "scholarly associations",
+          "professional societies",
+          "disciplinary organizations",
+          "official bodies of knowledge",
+          "disciplinary curriculum recommendations"
+        ]
+      },
+
+      "d": {
+        "id": "research_ecosystem",
+        "description": "Observe persistent research communities and scholarly infrastructures for evidence of stable academic Fields.",
+        "focus": "Persistent research communities, publication ecosystems, conferences, journals, scholarly taxonomies, and research-area continuity.",
+        "source_basis": [
+          "peer-reviewed journals",
+          "established conferences",
+          "scholarly taxonomies",
+          "research repositories",
+          "persistent research communities"
+        ]
+      },
+
+      "e": {
+        "id": "institutional_programs",
+        "description": "Observe established academic institutions for independently instantiated disciplinary and program identities.",
+        "focus": "Schools, departments, degree programs, majors, academic units, and persistent research areas.",
+        "source_basis": [
+          "university schools",
+          "academic departments",
+          "degree programs",
+          "majors",
+          "institutional research areas"
+        ]
+      },
+
+      "f": {
+        "id": "professional_practice",
+        "description": "Observe professional, engineering, occupational, and industrial practice for stable Field identities with applied recognition.",
+        "focus": "Professional domains, engineering practice, occupational structures, industrial standards, and applied bodies of knowledge.",
+        "source_basis": [
+          "professional standards",
+          "engineering standards",
+          "occupational classifications",
+          "industry bodies",
+          "professional competency frameworks"
+        ]
+      }
+    },
+
+    "field_schema": {
+      "name": "",
+      "definition": "",
+
+      "normalization": {
+        "canonical_name": "",
+        "rationale": ""
+      },
+
+      "provenance": {
+        "academic": [
+          {
+            "organization": "",
+            "source": "",
+            "basis": "",
+            "url": ""
+          }
+        ],
+
+        "professional": [
+          {
+            "organization": "",
+            "source": "",
+            "basis": "",
+            "url": ""
+          }
+        ]
+      },
+
+      "observed_by": []
+    }
+  }
+}

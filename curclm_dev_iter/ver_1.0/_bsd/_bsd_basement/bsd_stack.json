@@ -1,0 +1,44 @@
+{
+  "_bsd_stack_": {
+    "description": "Preserved Business Strategy Domain stack providing the authoritative stakeholder-defined boundaries for BSD-to-Field observation and generation.",
+    "instruction": [
+      "Treat the BSD stack as preserved upstream input.",
+      "Do not rename, merge, split, reorder, reinterpret, or redefine any BSD.",
+      "Do not infer academic validity or disciplinary structure directly from BSD names.",
+      "Use BSDs as observation boundaries rather than as academic classification containers.",
+      "Allow the same candidate Field to be observed across multiple BSDs without resolving overlap, duplication, or ownership paradoxes at this stage."
+    ],
+    "stack": [
+      {
+        "id": "BSD-COMP-AI",
+        "name_zh": "计算机与人工智能",
+        "name_en": "Computing and Artificial Intelligence"
+      },
+      {
+        "id": "BSD-SWEDEV-INFOINSIG",
+        "name_zh": "软件开发与信息洞察",
+        "name_en": "Software Development and Information Insight"
+      },
+      {
+        "id": "BSD-BIZINNO-SERV",
+        "name_zh": "商业创新与服务职能",
+        "name_en": "Business Innovation and Service Functions"
+      },
+      {
+        "id": "BSD-ENVFAIR-CLIMSCI",
+        "name_zh": "环境正义与气候科学",
+        "name_en": "Environmental Justice and Climate Science"
+      },
+      {
+        "id": "BSD-BIOHEAL-MEDTECH",
+        "name_zh": "生物健康与医疗技术",
+        "name_en": "Biological Health and Medical Technology"
+      },
+      {
+        "id": "BSD-ROBOTICS-MECENG",
+        "name_zh": "机器人与机械职能",
+        "name_en": "Robotics and Mechanical Functions"
+      }
+    ]
+  }
+}
