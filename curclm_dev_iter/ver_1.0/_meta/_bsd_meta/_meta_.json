@@ -1,17 +1,15 @@
 {
   "_meta_": {
-    "id": "BSD2FIELD-OBSERVATION",
+    "id": "BSD2FIELD-CANDIDATE-OBSERVATION",
     "type": "generative_specification",
     "version": "1.0.0",
-    "updated": "2026-10-30T16:12:00+08:00",
-    "description": "Declarative specification for observing, reasoning, and generating academically grounded Field candidates from preserved Business Strategy Domains.",
+    "updated": "2026-10-30T18:32:00+08:00",
+    "description": "Declarative specification for observing, reasoning, and generating potential Field candidates from preserved Business Strategy Domains.",
     "instruction": [
-      "Treat this artifact as a generative specification rather than as generated Field state.",
+      "Treat this artifact as a generative specification rather than as generated candidate Field state.",
       "Preserve upstream BSD definitions and boundaries without modification.",
-      "Separate BSD-based observation from academic Field normalization.",
-      "Require traceable provenance for academically normalized Field identities and definitions.",
       "Preserve BSD-level overlap, ambiguity, duplication, and ownership paradoxes rather than resolving them prematurely.",
-      "Keep generated state separate from this specification and materialize generation results into bsd2field_generated.json."
+      "Keep candidate state separate from this specification and materialize candidate generation results into bsd2field_candidate.json."
     ],
     "models": []
   }
