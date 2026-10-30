@@ -1,0 +1,114 @@
+{
+  "_flow_": {
+    "id": "BSD2FIELD-GENERATION",
+    "description": "Generative execution flow for transforming the preserved BSD stack into BSD-based Field observations and academically normalized Field identities.",
+
+    "input": {
+      "required": [
+        "_meta_",
+        "_bsd_stack_",
+        "_field_contract_"
+      ]
+    },
+
+    "mutation": {
+      "description": "Controls the degree of observational mutation applied during Field generation by regulating how evenly or selectively reasoning influence is distributed across observers.",
+
+      "mode": {
+        "low": {
+          "example": "Maintain broadly stable observer influence with only minor differentiation when evidence or disciplinary context warrants it.",
+          "explanation": "Introduces limited mutation while keeping the generation close to a balanced multi-observer baseline."
+        },
+
+        "even": {
+          "example": "Maintain approximately equal reasoning influence across all declared observers.",
+          "explanation": "Provides the neutral baseline for BSD-to-Field observation without intentionally privileging any observer."
+        },
+
+        "high": {
+          "example": "Allow substantially differentiated observer influence according to the observed BSD, available evidence, and disciplinary context.",
+          "explanation": "Introduces stronger mutation to expose alternative Field expressions and observer-dependent differences."
+        }
+      },
+
+      "control": {
+        "current_setting": "even"
+      },
+
+      "constraint": {
+        "observer_coverage": "All observers declared in _field_contract_.observers must remain active in every mutation mode.",
+        "weight_range": "[0.0, 1.0]",
+        "weight_sum": 1.0,
+        "weight_semantics": "Observer weights represent reasoning influence allocated during the current generation run. They do not represent truth probability, confidence, evidence strength, or academic authority.",
+        "runtime_record": "The actual observer weights determined during generation must be recorded in _generation_.mutation.observer_weights."
+      }
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Load and preserve the complete BSD stack defined in _bsd_stack_. Do not modify BSD identities, names, order, or boundaries."
+      },
+
+      {
+        "step": "mutate",
+        "instruction": "Read mutation.control.current_setting and dynamically determine the reasoning influence of observers a through f according to the selected mutation mode. Keep every declared observer active and record the actual observer weights used during this generation run."
+      },
+
+      {
+        "step": "observe",
+        "instruction": "Observe every BSD independently through every observer defined in _field_contract_.observers. Retrieve observer-appropriate evidence and preserve differences in terminology, granularity, overlap, and interpretation."
+      },
+
+      {
+        "step": "project_bsd",
+        "instruction": "Generate bsd_based_fields_set as the direct BSD-based observation projection. Preserve Field duplication across BSDs, overlapping ownership, ambiguity, granularity differences, and apparent classification paradoxes without prematurely resolving them."
+      },
+
+      {
+        "step": "normalize",
+        "instruction": "Compare observed Field expressions across the complete BSD stack and normalize academically defensible Field identities according to _field_contract_. Require authoritative provenance for every adopted canonical Field identity and semantic definition, and provide an explicit normalization rationale."
+      },
+
+      {
+        "step": "project_academic",
+        "instruction": "Generate academic_based_fields_set as a deduplicated one-dimensional collection of normalized academic Field identities. Do not organize Fields by BSD ownership and do not infer hierarchical, parent-child, nested, or other academic topology at this stage."
+      },
+
+      {
+        "step": "validate",
+        "instruction": "Verify that every normalized Field conforms to _field_contract_.field_schema, that its canonical identity, definition, and normalization rationale are supported by traceable provenance, and that model prior knowledge has not been represented as provenance."
+      },
+
+      {
+        "step": "materialize",
+        "instruction": "Materialize the complete generation result into bsd2field_generated.json without modifying the source specification, preserved BSD basement, or Field contract."
+      }
+    ],
+
+    "output": {
+      "target": "bsd2field_generated.json",
+      "mode": "structured_json",
+
+      "schema": {
+        "_generation_": {
+          "mutation": {
+            "setting": "",
+            "observer_weights": {
+              "a": 0.0,
+              "b": 0.0,
+              "c": 0.0,
+              "d": 0.0,
+              "e": 0.0,
+              "f": 0.0
+            }
+          }
+        },
+
+        "bsd_based_fields_set": {},
+
+        "academic_based_fields_set": []
+      }
+    }
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "_generation_": {
+    "flow_id": "BSD2FIELD-GENERATION",
+    "specification_id": "BSD2FIELD-OBSERVATION",
+    "run_type": "prompting_dry_run",
+    "mutation": {
+      "setting": "even",
+      "observer_weights": {
+        "a": 0.17,
+        "b": 0.17,
+        "c": 0.17,
+        "d": 0.16,
+        "e": 0.16,
+        "f": 0.17
+      }
+    },
+    "notes": [
+      "BSD boundaries were preserved as stakeholder-defined observation boundaries.",
+      "BSD-level overlap, duplication, ambiguity, and ownership paradoxes were intentionally retained.",
+      "Academic normalization was performed independently from BSD ownership.",
+      "Only academically or professionally defensible Field identities with traceable provenance were promoted into academic_based_fields_set.",
+      "The academic Field set remains one-dimensional; no academic topology is inferred in this run."
+    ]
+  },
+
+  "bsd_based_fields_set": {
+    "BSD-COMP-AI": [
+      "Computer Science",
+      "Artificial Intelligence",
+      "Data Science",
+      "Computer Engineering",
+      "Information Technology",
+      "Cybersecurity",
+      "Software Engineering"
+    ],
+
+    "BSD-SWEDEV-INFOINSIG": [
+      "Software Engineering",
+      "Computer Science",
+      "Information Systems",
+      "Information Technology",
+      "Data Science",
+      "Cybersecurity"
+    ],
+
+    "BSD-BIZINNO-SERV": [
+      "Business Administration",
+      "Information Systems",
+      "Data Science",
+      "Economics and Business"
+    ],
+
+    "BSD-ENVFAIR-CLIMSCI": [
+      "Environmental Science",
+      "Earth and Environmental Sciences",
+      "Environmental Engineering",
+      "Climate Science",
+      "Environmental Justice"
+    ],
+
+    "BSD-BIOHEAL-MEDTECH": [
+      "Biological Sciences",
+      "Health Sciences",
+      "Biomedical Engineering",
+      "Medical Engineering",
+      "Medical Biotechnology",
+      "Data Science"
+    ],
+
+    "BSD-ROBOTICS-MECENG": [
+      "Mechanical Engineering",
+      "Computer Engineering",
+      "Electrical Engineering",
+      "Robotics",
+      "Computer Science",
+      "Artificial Intelligence"
+    ]
+  },
+
+  "academic_based_fields_set": [
+    {
+      "name": "Computer Science",
+      "definition": "A computing discipline centered on computational foundations, algorithms, programming, abstraction, software, information management, systems, and related computational methods.",
+      "normalization": {
+        "canonical_name": "Computer Science",
+        "rationale": "Retained as an independent Field because it has explicit disciplinary identity in computing curriculum frameworks and dedicated accreditation criteria rather than functioning merely as a BSD-derived label."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "ACM / IEEE Computer Society / AAAI",
+            "source": "Computer Science Curricula 2023",
+            "basis": "Dedicated international curriculum framework for Computer Science with an explicit body of knowledge.",
+            "url": "SOURCE-01"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET / CSAB",
+            "source": "Criteria for Accrediting Computing Programs 2026-2027",
+            "basis": "Defines dedicated program criteria for Computer Science and similarly named computing programs.",
+            "url": "SOURCE-02"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Software Engineering",
+      "definition": "An engineering-oriented computing discipline concerned with systematic specification, design, construction, verification, validation, evolution, and professional development of complex software systems.",
+      "normalization": {
+        "canonical_name": "Software Engineering",
+        "rationale": "Normalized from software development and related BSD expressions because authoritative computing and engineering frameworks distinguish Software Engineering as a disciplinary identity extending beyond programming or software development activity."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "ACM / IEEE Computer Society",
+            "source": "Computing Curricula 2020",
+            "basis": "Recognizes Software Engineering as a distinct computing discipline and characterizes its engineering rigor and software-system focus.",
+            "url": "SOURCE-03"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET / CSAB / IEEE",
+            "source": "Criteria for Accrediting Engineering Programs 2026-2027",
+            "basis": "Provides dedicated criteria for Software and Similarly Named Engineering Programs.",
+            "url": "SOURCE-04"
+          }
+        ]
+      },
+      "observed_by": ["b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Information Systems",
+      "definition": "A computing discipline concerned with the development, delivery, use, and management of information systems within organizational and other domains of human activity.",
+      "normalization": {
+        "canonical_name": "Information Systems",
+        "rationale": "Retained independently from Information Technology because accreditation criteria define a distinct organizational and information-system environment, scope, and curriculum."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "ACM / IEEE Computer Society",
+            "source": "Computing Curricula 2020",
+            "basis": "Recognizes Information Systems as a distinct computing discipline.",
+            "url": "SOURCE-03"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET / CSAB",
+            "source": "Criteria for Accrediting Computing Programs 2026-2027",
+            "basis": "Defines dedicated Information Systems program criteria and an Information Systems Environment.",
+            "url": "SOURCE-02"
+          }
+        ]
+      },
+      "observed_by": ["b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Information Technology",
+      "definition": "A computing discipline concerned with selecting, developing, applying, integrating, administering, and supporting computing technologies and infrastructure to meet user and organizational needs.",
+      "normalization": {
+        "canonical_name": "Information Technology",
+        "rationale": "Retained as a separate Field because computing curriculum and accreditation frameworks distinguish its applied systems, infrastructure, integration, administration, and user-oriented scope."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "ACM",
+            "source": "Computing Curricula disciplinary guidance",
+            "basis": "Recognizes Information Technology as one of the established computing disciplines.",
+            "url": "SOURCE-05"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET / CSAB",
+            "source": "Criteria for Accrediting Computing Programs 2026-2027",
+            "basis": "Provides dedicated Information Technology program criteria.",
+            "url": "SOURCE-02"
+          }
+        ]
+      },
+      "observed_by": ["b", "c", "e", "f"]
+    },
+
+    {
+      "name": "Data Science",
+      "definition": "An interdisciplinary computing and quantitative Field concerned with acquiring, managing, analyzing, modeling, and interpreting data to derive knowledge, supported by computing, mathematics, statistics, governance, and application-domain knowledge.",
+      "normalization": {
+        "canonical_name": "Data Science",
+        "rationale": "Retained independently because modern computing curriculum and accreditation frameworks recognize a coherent Data Science curriculum and lifecycle rather than treating it solely as analytics activity inside another BSD."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "ACM / IEEE Computer Society",
+            "source": "Computing Curricula 2020",
+            "basis": "Recognizes Data Science in the contemporary computing disciplinary landscape and describes its characteristic knowledge areas.",
+            "url": "SOURCE-03"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Computing Programs",
+            "basis": "Defines curricular expectations spanning the data-science lifecycle, statistics, mathematics, computing, governance, ethics, and application context.",
+            "url": "SOURCE-06"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Cybersecurity",
+      "definition": "A computing Field concerned with protecting data, software, components, connections, systems, people, organizations, and societal infrastructure against security risks and threats.",
+      "normalization": {
+        "canonical_name": "Cybersecurity",
+        "rationale": "Retained as an independent Field because dedicated accreditation criteria recognize cybersecurity and similarly named programs with a coherent cross-cutting body of knowledge."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "ACM / IEEE Computer Society",
+            "source": "Computing Curricula 2020",
+            "basis": "Treats cybersecurity as a distinct computing discipline in the contemporary computing landscape.",
+            "url": "SOURCE-03"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET / CSAB",
+            "source": "Criteria for Accrediting Computing Programs",
+            "basis": "Defines dedicated Cybersecurity program criteria and characteristic security knowledge areas.",
+            "url": "SOURCE-02"
+          }
+        ]
+      },
+      "observed_by": ["b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Computer Engineering",
+      "definition": "An engineering and computing Field concerned with the design and integration of processor-based systems combining hardware, software, communications, and related computational components.",
+      "normalization": {
+        "canonical_name": "Computer Engineering",
+        "rationale": "Retained independently because computing frameworks distinguish Computer Engineering by its integration of hardware and software, while engineering accreditation recognizes computer-modified engineering programs."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "ACM",
+            "source": "Computing Curricula disciplinary guidance",
+            "basis": "Identifies Computer Engineering as an established computing discipline focused on processor-based hardware/software systems.",
+            "url": "SOURCE-05"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs 2026-2027",
+            "basis": "Recognizes engineering programs with computer modifiers and associated engineering and computing requirements.",
+            "url": "SOURCE-07"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "e", "f"]
+    },
+
+    {
+      "name": "Environmental Science",
+      "definition": "An interdisciplinary natural and applied science Field that integrates physical, chemical, biological, earth, quantitative, and human-impact knowledge to understand environmental systems and environmental change.",
+      "normalization": {
+        "canonical_name": "Environmental Science",
+        "rationale": "Normalized as Environmental Science rather than Environmental Justice or Climate Science because formal educational and accreditation frameworks establish Environmental Science as a stable disciplinary identity, while the latter expressions may represent narrower or cross-disciplinary areas."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "UNESCO Institute for Statistics",
+            "source": "ISCED Fields of Education and Training 2013",
+            "basis": "Recognizes Environment as a detailed educational Field within Natural Sciences, Mathematics and Statistics.",
+            "url": "SOURCE-08"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Applied and Natural Science Programs",
+            "basis": "Provides dedicated Environmental Science program criteria.",
+            "url": "SOURCE-09"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Environmental Engineering",
+      "definition": "An engineering Field applying engineering and scientific principles to environmental systems, environmental protection, sustainability, infrastructure, pollution control, and related human-environment problems.",
+      "normalization": {
+        "canonical_name": "Environmental Engineering",
+        "rationale": "Retained separately from Environmental Science because formal R&D classification and engineering accreditation recognize environmental engineering as an engineering identity rather than merely an environmental-science application."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "OECD",
+            "source": "Frascati Manual 2015 — Fields of R&D",
+            "basis": "Lists Environmental Engineering within Engineering and Technology.",
+            "url": "SOURCE-10"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET",
+            "source": "Accredited and criteria-based Environmental Engineering program framework",
+            "basis": "Recognizes Environmental Engineering and similarly named engineering programs.",
+            "url": "SOURCE-11"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Biological Sciences",
+      "definition": "A natural-science Field concerned with living organisms, biological systems, their structures, functions, processes, interactions, and related forms of biological knowledge.",
+      "normalization": {
+        "canonical_name": "Biological Sciences",
+        "rationale": "Normalized from the broad BSD expression Biological Health to a recognized scientific Field identity explicitly represented in international education and R&D classifications."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "UNESCO Institute for Statistics",
+            "source": "ISCED Fields of Education and Training 2013",
+            "basis": "Recognizes Biological and Related Sciences as an educational Field.",
+            "url": "SOURCE-08"
+          },
+          {
+            "organization": "OECD",
+            "source": "Frascati Manual 2015 — Fields of R&D",
+            "basis": "Recognizes Biological Sciences within Natural Sciences.",
+            "url": "SOURCE-10"
+          }
+        ],
+        "professional": []
+      },
+      "observed_by": ["a", "d", "e"]
+    },
+
+    {
+      "name": "Health Sciences",
+      "definition": "A Field within medical and health sciences concerned with scientific knowledge and practices relating to health, health systems, populations, prevention, care, and health-related outcomes.",
+      "normalization": {
+        "canonical_name": "Health Sciences",
+        "rationale": "Retained as a broad normalized Field because international R&D classification explicitly recognizes Health Sciences within Medical and Health Sciences."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "OECD",
+            "source": "Frascati Manual 2015 — Fields of R&D",
+            "basis": "Lists Health Sciences as a second-level Field within Medical and Health Sciences.",
+            "url": "SOURCE-10"
+          },
+          {
+            "organization": "UNESCO Institute for Statistics",
+            "source": "ISCED Fields of Education and Training 2013",
+            "basis": "Recognizes Health within the Health and Welfare educational classification.",
+            "url": "SOURCE-08"
+          }
+        ],
+        "professional": []
+      },
+      "observed_by": ["a", "d", "e", "f"]
+    },
+
+    {
+      "name": "Biomedical Engineering",
+      "definition": "An engineering Field applying engineering, biological, physiological, physical, mathematical, and computational principles to problems involving living systems, medical devices, biomedical systems, and healthcare technologies.",
+      "normalization": {
+        "canonical_name": "Biomedical Engineering",
+        "rationale": "Normalized from biomedical, medical-engineering, and medical-technology expressions because dedicated engineering accreditation criteria establish Bioengineering/Biomedical Engineering as a stable program identity."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "OECD",
+            "source": "Frascati Manual 2015 — Fields of R&D",
+            "basis": "Recognizes Medical Engineering within Engineering and Technology.",
+            "url": "SOURCE-10"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET / Biomedical Engineering Society",
+            "source": "Criteria for Accrediting Engineering Programs 2026-2027",
+            "basis": "Provides dedicated Bioengineering and Biomedical Engineering program criteria.",
+            "url": "SOURCE-12"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Mechanical Engineering",
+      "definition": "An engineering Field concerned with the analysis, design, modeling, realization, and operation of mechanical systems, components, processes, energy systems, and related physical technologies.",
+      "normalization": {
+        "canonical_name": "Mechanical Engineering",
+        "rationale": "Retained directly because international R&D classification recognizes Mechanical Engineering as an established engineering Field and it has persistent academic and professional institutional identity."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "OECD",
+            "source": "Frascati Manual 2015 — Fields of R&D",
+            "basis": "Lists Mechanical Engineering as a second-level Field within Engineering and Technology.",
+            "url": "SOURCE-10"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET",
+            "source": "Engineering accreditation framework",
+            "basis": "Engineering accreditation maintains discipline-specific criteria and professional governance for mechanical and related engineering programs.",
+            "url": "SOURCE-07"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Electrical Engineering",
+      "definition": "An engineering Field concerned with electrical, electronic, communication, signal, computational, and related physical systems and technologies.",
+      "normalization": {
+        "canonical_name": "Electrical Engineering",
+        "rationale": "Retained as an independent engineering Field rather than subsuming it under Robotics because formal R&D and accreditation classifications recognize electrical and electronic engineering independently."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "OECD",
+            "source": "Frascati Manual 2015 — Fields of R&D",
+            "basis": "Recognizes Electrical Engineering and Electronic Engineering within Engineering and Technology.",
+            "url": "SOURCE-10"
+          }
+        ],
+        "professional": [
+          {
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs 2026-2027",
+            "basis": "Defines curricular expectations for electrical, electronic, computer, communications, and similarly named engineering programs.",
+            "url": "SOURCE-07"
+          }
+        ]
+      },
+      "observed_by": ["a", "b", "c", "d", "e", "f"]
+    },
+
+    {
+      "name": "Business Administration",
+      "definition": "A business Field concerned with the organization, management, operation, decision-making, and administration of enterprises and other organizations.",
+      "normalization": {
+        "canonical_name": "Business Administration",
+        "rationale": "Normalized from the broad stakeholder expression Business Innovation and Service Functions because formal educational classification recognizes Business and Administration, while innovation and service functions alone do not establish equivalent Field identities."
+      },
+      "provenance": {
+        "academic": [
+          {
+            "organization": "UNESCO Institute for Statistics",
+            "source": "ISCED Fields of Education and Training 2013",
+            "basis": "Recognizes Business and Administration within Business, Administration and Law.",
+            "url": "SOURCE-08"
+          },
+          {
+            "organization": "OECD",
+            "source": "Frascati Manual 2015 — Fields of R&D",
+            "basis": "Recognizes Economics and Business within Social Sciences.",
+            "url": "SOURCE-10"
+          }
+        ],
+        "professional": []
+      },
+      "observed_by": ["a", "b", "d", "e", "f"]
+    }
+  ]
+}

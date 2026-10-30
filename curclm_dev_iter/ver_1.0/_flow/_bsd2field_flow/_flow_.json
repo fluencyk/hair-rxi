@@ -1,7 +1,8 @@
 {
   "_flow_": {
-    "id": "BSD2FIELD-GENERATION",
-    "description": "Generative execution flow for transforming the preserved BSD stack into BSD-based Field observations and academically normalized Field identities.",
+    "id": "BSD2FIELD-CANDIDATE-GENERATION",
+
+    "description": "Generative execution flow for broadly observing and expanding potential Field candidates from the preserved BSD stack and materializing them as an intermediate candidate state for later qualification.",
 
     "input": {
       "required": [
@@ -12,22 +13,22 @@
     },
 
     "mutation": {
-      "description": "Controls the degree of observational mutation applied during Field generation by regulating how evenly or selectively reasoning influence is distributed across observers.",
+      "description": "Controls the degree of observational mutation applied during candidate Field generation by regulating how evenly or selectively reasoning influence is distributed across observers.",
 
       "mode": {
         "low": {
-          "example": "Maintain broadly stable observer influence with only minor differentiation when evidence or disciplinary context warrants it.",
-          "explanation": "Introduces limited mutation while keeping the generation close to a balanced multi-observer baseline."
+          "example": "Maintain broadly stable observer influence with only minor differentiation according to BSD context.",
+          "explanation": "Introduces limited mutation while keeping candidate expansion close to a balanced multi-observer baseline."
         },
 
         "even": {
           "example": "Maintain approximately equal reasoning influence across all declared observers.",
-          "explanation": "Provides the neutral baseline for BSD-to-Field observation without intentionally privileging any observer."
+          "explanation": "Provides the neutral baseline for broad candidate Field expansion without intentionally privileging any observer."
         },
 
         "high": {
-          "example": "Allow substantially differentiated observer influence according to the observed BSD, available evidence, and disciplinary context.",
-          "explanation": "Introduces stronger mutation to expose alternative Field expressions and observer-dependent differences."
+          "example": "Allow substantially differentiated observer influence according to the observed BSD and its disciplinary, technological, professional, or interdisciplinary context.",
+          "explanation": "Introduces stronger mutation to expose alternative, emerging, interdisciplinary, and observer-dependent candidate Field expressions."
         }
       },
 
@@ -39,8 +40,8 @@
         "observer_coverage": "All observers declared in _field_contract_.observers must remain active in every mutation mode.",
         "weight_range": "[0.0, 1.0]",
         "weight_sum": 1.0,
-        "weight_semantics": "Observer weights represent reasoning influence allocated during the current generation run. They do not represent truth probability, confidence, evidence strength, or academic authority.",
-        "runtime_record": "The actual observer weights determined during generation must be recorded in _generation_.mutation.observer_weights."
+        "weight_semantics": "Observer weights represent reasoning influence allocated during the current candidate generation run. They do not represent truth probability, confidence, validity, disciplinary authority, or final Field qualification.",
+        "runtime_record": "The actual observer weights determined during candidate generation must be recorded in _candidate_generation_.mutation.observer_weights."
       }
     },
 
@@ -52,46 +53,43 @@
 
       {
         "step": "mutate",
-        "instruction": "Read mutation.control.current_setting and dynamically determine the reasoning influence of observers a through f according to the selected mutation mode. Keep every declared observer active and record the actual observer weights used during this generation run."
+        "instruction": "Read mutation.control.current_setting and dynamically determine the reasoning influence of observers a through f according to the selected mutation mode. Keep every declared observer active and record the actual observer weights used during this candidate generation run."
       },
 
       {
         "step": "observe",
-        "instruction": "Observe every BSD independently through every observer defined in _field_contract_.observers. Retrieve observer-appropriate evidence and preserve differences in terminology, granularity, overlap, and interpretation."
+        "instruction": "Observe every BSD independently through every observer defined in _field_contract_.observers. Broadly identify plausible disciplinary, scientific, engineering, technological, professional, interdisciplinary, convergent, established, and emerging Field candidates. Prioritize candidate coverage and semantic possibility over premature precision."
       },
 
       {
-        "step": "project_bsd",
-        "instruction": "Generate bsd_based_fields_set as the direct BSD-based observation projection. Preserve Field duplication across BSDs, overlapping ownership, ambiguity, granularity differences, and apparent classification paradoxes without prematurely resolving them."
+        "step": "expand",
+        "instruction": "Expand the candidate Field space freely from the observations. Preserve plausible candidates even when their final disciplinary independence, canonical identity, academic status, professional status, semantic boundary, or relationship to other Fields remains unresolved. Prefer retaining a plausible candidate for later evaluation rather than prematurely excluding it."
       },
 
       {
-        "step": "normalize",
-        "instruction": "Compare observed Field expressions across the complete BSD stack and normalize academically defensible Field identities according to _field_contract_. Require authoritative provenance for every adopted canonical Field identity and semantic definition, and provide an explicit normalization rationale."
+        "step": "project_candidate",
+        "instruction": "Generate bsd_based_fields_set as the BSD-based candidate projection. Preserve duplication across BSDs, overlapping ownership, synonymous expressions, ambiguity, granularity differences, interdisciplinary expressions, potential nesting, and apparent classification paradoxes without resolving them."
       },
 
       {
-        "step": "project_academic",
-        "instruction": "Generate academic_based_fields_set as a deduplicated one-dimensional collection of normalized academic Field identities. Do not organize Fields by BSD ownership and do not infer hierarchical, parent-child, nested, or other academic topology at this stage."
-      },
-
-      {
-        "step": "validate",
-        "instruction": "Verify that every normalized Field conforms to _field_contract_.field_schema, that its canonical identity, definition, and normalization rationale are supported by traceable provenance, and that model prior knowledge has not been represented as provenance."
+        "step": "validate_candidate_state",
+        "instruction": "Verify only that the generated candidate state conforms to _field_contract_.candidate_schema and preserves observation traceability through observed_under and observed_by. Do not perform academic qualification, professional qualification, canonical normalization, provenance validation, hierarchy inference, or final Field acceptance at this stage."
       },
 
       {
         "step": "materialize",
-        "instruction": "Materialize the complete generation result into bsd2field_generated.json without modifying the source specification, preserved BSD basement, or Field contract."
+        "instruction": "Materialize the complete intermediate candidate state into bsd2field_candidate.json without modifying the source specification, preserved BSD basement, or Field contract."
       }
     ],
 
     "output": {
-      "target": "bsd2field_generated.json",
+      "target": "bsd2field_candidate.json",
       "mode": "structured_json",
 
       "schema": {
-        "_generation_": {
+        "_candidate_generation_": {
+          "flow_id": "BSD2FIELD-CANDIDATE-GENERATION",
+
           "mutation": {
             "setting": "",
             "observer_weights": {
@@ -105,9 +103,7 @@
           }
         },
 
-        "bsd_based_fields_set": {},
-
-        "academic_based_fields_set": []
+        "bsd_based_fields_set": {}
       }
     }
   }
