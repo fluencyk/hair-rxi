@@ -1,0 +1,80 @@
+_field2agenda_context_:
+
+  description: >
+    Instructional and product context for generating RXI curriculum
+    structures from academic Field knowledge into Syllabus and Agenda
+    states.
+
+  educational_context: >
+    The curriculum is designed as an extracurricular academic research
+    experience for students in international secondary-school education.
+
+    It should extend beyond ordinary school coursework while remaining
+    appropriate for pre-university learners.
+
+  student_context: >
+    Learners are primarily international-school students preparing for
+    future undergraduate study.
+
+    The curriculum should expose students to authentic academic,
+    scientific, engineering, and research practices without assuming
+    undergraduate-level disciplinary completeness.
+
+  curriculum_intent: >
+    The curriculum should provide academically grounded exploratory
+    experiences that help students develop disciplinary understanding,
+    research awareness, analytical reasoning, and project-oriented
+    academic experience.
+
+    Curriculum generation should prioritize meaningful intellectual
+    engagement over exhaustive disciplinary coverage.
+
+  instructional_positioning: >
+    The resulting curriculum is neither a conventional secondary-school
+    course nor a compressed university degree course.
+
+    It should function as a guided academic exploration and research
+    experience situated between secondary education and undergraduate
+    disciplinary study.
+
+  research_orientation: >
+    Whenever appropriate, the curriculum should connect theoretical
+    knowledge with research questions, inquiry, experimentation,
+    engineering practice, design investigation, analysis, or
+    project-based exploration.
+
+    Research activities should emerge from the selected academic Field
+    and Stem structures rather than being artificially attached to the
+    curriculum.
+
+  weeks_length_setting:
+    description: >
+      Controls the intended instructional length of the generated
+      curriculum. The curriculum must be structured within a range of
+      5 to 10 instructional weeks.
+
+      The selected length should influence curriculum depth, knowledge
+      distribution, instructional sequencing, and Agenda construction
+      without changing the academic identity of the upstream Field or
+      its underlying Stem structure.
+
+      A shorter curriculum should prioritize essential knowledge and
+      coherent progression rather than mechanically compressing all
+      available content. A longer curriculum may provide greater depth,
+      research exploration, project development, and integration across
+      relevant Stems.
+
+    range:
+      minimum: 5
+      maximum: 10
+
+    current_setting: 8
+
+  generation_guidance:
+    - Preserve academic grounding while adapting depth to pre-university learners.
+    - Prefer coherent knowledge progression over exhaustive Field coverage.
+    - Connect theory with authentic research or project opportunities where appropriate.
+    - Avoid reducing the curriculum to vocational training, software tutorials, or tool demonstrations.
+    - Avoid reproducing university curricula mechanically at reduced depth.
+    - Keep generated Syllabus and Agenda structures suitable for guided extracurricular academic study.
+    - Respect weeks_length_setting when determining curriculum depth, sequencing, and Agenda structure.

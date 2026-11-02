@@ -1,0 +1,138 @@
+_bsd2field_cand2acad_prov_:
+  id: BSD2FIELD-CANDIDATE-TO-ACADEMIC-PROVENANCE
+
+  description: >
+    Provenance specification for qualifying candidate Fields generated
+    from preserved Business Strategy Domains through traceable external
+    evidence and projecting academically grounded Field identities for
+    downstream use.
+
+  input:
+    required:
+      - bsd2field_candidate.json
+
+  instruction:
+    - Treat every entry in bsd2field_candidate.json as a candidate Field requiring provenance qualification.
+    - Do not discover or introduce new Field candidates.
+    - Preserve the original candidate name during qualification.
+
+    - Aggregate only exact same-name candidate occurrences before qualification.
+    - When exact same-name candidates are aggregated, combine their observed_under and observed_by values without duplication.
+    - Do not merge synonymous, related, nested, overlapping, or differently named candidates.
+
+    - Use traceable external authoritative sources as provenance evidence.
+    - Model prior knowledge may guide retrieval but must not itself be treated as provenance evidence.
+
+    - Qualify whether available evidence supports the candidate as a recognizable academically grounded Field, including disciplinary, scientific, engineering, technological, professional, applied, or interdisciplinary forms.
+
+    - Assign each candidate exactly one status: supported, unsupported, or unresolved.
+    - Assign supported when sufficient traceable external evidence supports the candidate as a recognizable academically grounded Field.
+    - Assign unsupported only when traceable external evidence provides sufficient basis for determining that the candidate does not satisfy the Field qualification requirement.
+    - Assign unresolved when available evidence is insufficient, ambiguous, conflicting, or otherwise unable to establish either supported or unsupported status.
+
+    - Absence of sufficient supporting evidence must not by itself be interpreted as evidence that a candidate is unsupported.
+    - Interdisciplinary, convergent, emerging, applied, professional, or cross-domain identity must not by itself cause a candidate to be marked unsupported.
+
+    - Qualification concerns Field identity and academic grounding, not exclusive ownership by or membership within any particular BSD.
+
+    - Preserve the evidence used in supported, unsupported, and unresolved qualification outcomes.
+    - Do not fabricate organizations, sources, documents, publications, standards, programs, or URLs.
+
+    - Only supported candidates may proceed into academic_based_fields_set.
+
+  evidence:
+    preferred_sources:
+      - disciplinary_authority
+      - accreditation_or_academic_standard
+      - academic_institution
+      - scholarly_or_research_ecosystem
+      - professional_body
+
+    schema:
+      category: ""
+      organization: ""
+      source: ""
+      url: ""
+
+  qualification:
+    claim: >
+      The candidate constitutes a recognizable academically grounded Field,
+      including disciplinary, scientific, engineering, technological,
+      professional, applied, or interdisciplinary forms.
+
+    status:
+      - supported
+      - unsupported
+      - unresolved
+
+  process:
+    - step: resolve
+      instruction: >
+        Load every candidate Field from bsd2field_candidate.json while
+        preserving its name, observed_under, and observed_by values.
+
+    - step: aggregate
+      instruction: >
+        Aggregate only exact same-name candidate occurrences. Combine
+        observed_under and observed_by values without duplication.
+        Do not perform semantic normalization or inferred identity merging.
+
+    - step: retrieve
+      instruction: >
+        Retrieve traceable external evidence relevant to each candidate
+        using the preferred source categories defined by this specification.
+
+    - step: qualify
+      instruction: >
+        Evaluate the retrieved evidence against the Field qualification
+        claim and assign exactly one status: supported, unsupported,
+        or unresolved.
+
+    - step: annotate
+      instruction: >
+        Attach qualification_status and the evidence used for the
+        qualification outcome to each evaluated candidate.
+
+    - step: project
+      instruction: >
+        Project only supported candidates into academic_based_fields_set
+        while preserving every qualification outcome in provenance_result.
+
+    - step: validate
+      instruction: >
+        Verify identity conservation across all exact-name aggregated input
+        candidates; verify that supported, unsupported, and unresolved are
+        mutually exclusive; and verify that academic_based_fields_set contains
+        exactly the names of supported candidates.
+
+    - step: materialize
+      instruction: >
+        Materialize the provenance result and supported academic Field
+        projection into bsd2field_generated.json without modifying
+        bsd2field_candidate.json.
+
+  candidate_schema:
+    name: ""
+    observed_under: []
+    observed_by: []
+    qualification_status: ""
+    evidence:
+      - category: ""
+        organization: ""
+        source: ""
+        url: ""
+
+  output:
+    target: bsd2field_generated.json
+    mode: structured_json
+
+    schema:
+      _provenance_generation_:
+        protocol_id: BSD2FIELD-CANDIDATE-TO-ACADEMIC-PROVENANCE
+
+      provenance_result:
+        supported: []
+        unsupported: []
+        unresolved: []
+
+      academic_based_fields_set: []

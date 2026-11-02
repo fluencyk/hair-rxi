@@ -1,0 +1,87 @@
+{
+  "_flow_": {
+    "id": "FIELD2AGENDA-GENERATION",
+
+    "description": "Composite generative execution flow for transforming provenance-qualified academic Field state into structured lecturable Agenda state through Field-to-Stem, Stem-to-Syllabus, and Syllabus-to-Agenda reasoning.",
+
+    "input": {
+      "required": [
+        "bsd2field_generated.json",
+        "_field2agenda_context_.yml"
+      ],
+      "optional": [
+        "rag"
+      ]
+    },
+
+    "control": {
+      "bsd_selector": "",
+      "field_selector": []
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Resolve the selected BSD and its provenance-qualified academic Fields from bsd2field_generated.json. Use field_selector as an optional fine-grained alignment focus within the resolved BSD scope."
+      },
+
+      {
+        "step": "field2stem",
+        "instruction": "Reason from the resolved academic Field structure and available RAG to generate curriculum-ready knowledge Stems. Treat Stems as major knowledge structures rather than isolated topics, tools, techniques, products, activities, or implementation details. Preserve Field-to-Stem lineage."
+      },
+
+      {
+        "step": "reconcile_stems",
+        "instruction": "Reconcile generated Stems across the active Field scope by resolving unnecessary duplication and overlap while preserving meaningful disciplinary distinctions, dependencies, and interdisciplinary relationships."
+      },
+
+      {
+        "step": "stem2syllabus",
+        "instruction": "Transform the reconciled Stem structure into a coherent Syllabus according to _field2agenda_context_. Derive learning objectives, curriculum depth, knowledge dependencies, sequencing, and instructional organization from the Stem state rather than mechanically mapping individual Stems to individual course units."
+      },
+
+      {
+        "step": "syllabus2agenda",
+        "instruction": "Transform the Syllabus into a lecturable Agenda according to the educational context and weeks_length_setting declared by _field2agenda_context_. Organize the curriculum into coherent instructional weeks or sessions with explicit learning intent, knowledge focus, progression, research or project activity where appropriate, and expected learning outcomes."
+      },
+
+      {
+        "step": "validate",
+        "instruction": "Validate structural continuity from Field through Stem and Syllabus to Agenda, conformity with the active instructional context and configured course length, and preservation of upstream semantic lineage."
+      },
+
+      {
+        "step": "materialize",
+        "instruction": "Materialize the generated Stem, Syllabus, and Agenda states as structured JSON for downstream instructional generation."
+      }
+    ],
+
+    "output": {
+      "mode": "structured_json",
+
+      "schema": {
+        "_field2agenda_generation_": {
+          "flow_id": "FIELD2AGENDA-GENERATION",
+          "bsd_selector": "",
+          "field_selector": []
+        },
+
+        "stem_state": {
+          "fields": [],
+          "stems": []
+        },
+
+        "syllabus_state": {
+          "title": "",
+          "learning_objectives": [],
+          "modules": []
+        },
+
+        "agenda_state": {
+          "title": "",
+          "weeks": []
+        }
+      }
+    }
+  }
+}

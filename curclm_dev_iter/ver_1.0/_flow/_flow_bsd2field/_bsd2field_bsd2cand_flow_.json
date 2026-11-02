@@ -1,0 +1,103 @@
+{
+  "_flow_": {
+    "id": "BSD2FIELD-CANDIDATE-GENERATION",
+
+    "description": "Generative execution flow for observing and expanding potential Field candidates from the preserved BSD stack according to the Field contract and materializing the resulting intermediate candidate state for later qualification.",
+
+    "input": {
+      "required": [
+        "_meta_",
+        "_bsd_stack_",
+        "_field_contract_"
+      ]
+    },
+
+    "mutation": {
+      "description": "Controls how reasoning influence is distributed across declared observers during candidate Field generation.",
+
+      "mode": {
+        "balanced": {
+          "example": "Maintain approximately equal reasoning influence across all declared observers.",
+          "explanation": "Provides the neutral baseline for broad candidate Field expansion without intentionally privileging any observer."
+        },
+
+        "adaptive": {
+          "example": "Allow moderate differentiation of observer influence according to the semantic context of each BSD.",
+          "explanation": "Adapts observer influence to BSD context while maintaining broad multi-observer coverage."
+        },
+
+        "exploratory": {
+          "example": "Allow stronger differentiation of observer influence according to disciplinary, technological, professional, research, or interdisciplinary characteristics observed around each BSD.",
+          "explanation": "Encourages broader exploration of alternative, emerging, interdisciplinary, and observer-dependent candidate expressions."
+        }
+      },
+
+      "control": {
+        "current_setting": "balanced"
+      },
+
+      "constraint": {
+        "observer_coverage": "Every observer declared in _field_contract_.observers must remain active in every mutation mode.",
+        "weight_range": "[0.0, 1.0]",
+        "weight_sum": 1.0,
+        "weight_semantics": "Observer weights represent reasoning influence allocated during the current candidate generation run. They do not represent truth probability, confidence, validity, disciplinary authority, evidence strength, or final Field qualification.",
+        "runtime_record": "Record one runtime observer weight for every observer declared in _field_contract_.observers under _candidate_generation_.mutation.observer_weights."
+      }
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Load the complete BSD stack from _bsd_stack_ and preserve its identities, names, order, and boundaries."
+      },
+
+      {
+        "step": "mutate",
+        "instruction": "Read mutation.control.current_setting and determine the reasoning influence of every observer declared in _field_contract_.observers according to the selected mutation mode. Keep every declared observer active and record the actual observer weights used during this generation run."
+      },
+
+      {
+        "step": "observe",
+        "instruction": "Observe every BSD independently through every observer declared in _field_contract_.observers and identify potential Field candidates according to the candidate admission semantics defined in _field_contract_."
+      },
+
+      {
+        "step": "expand",
+        "instruction": "Expand the candidate Field space from the independent observations according to _field_contract_, retaining admissible candidates without performing later-stage qualification, canonicalization, topology inference, or semantic resolution."
+      },
+
+      {
+        "step": "project_candidate",
+        "instruction": "Generate bsd_based_fields_set as the BSD-based candidate projection. Preserve each candidate's BSD observation trace through observed_under and observer trace through observed_by, while retaining unresolved duplication, overlap, synonymy, granularity differences, interdisciplinary expressions, and potential nesting permitted by _field_contract_."
+      },
+
+      {
+        "step": "validate_candidate_state",
+        "instruction": "Validate only structural conformance to _field_contract_.candidate_schema and complete observation traceability through observed_under and observed_by. Do not perform academic or professional qualification, provenance evaluation, canonical normalization, hierarchy inference, or final Field acceptance."
+      },
+
+      {
+        "step": "materialize",
+        "instruction": "Materialize the complete intermediate candidate state into bsd2field_candidate.json without modifying _meta_, _bsd_stack_, or _field_contract_."
+      }
+    ],
+
+    "output": {
+      "target": "bsd2field_candidate.json",
+      "mode": "structured_json",
+
+      "schema": {
+        "_candidate_generation_": {
+          "flow_id": "BSD2FIELD-CANDIDATE-GENERATION",
+
+          "mutation": {
+            "setting": "",
+            "observer_weights": {}
+          }
+        },
+
+        "bsd_based_fields_set": {}
+      }
+    }
+  }
+}

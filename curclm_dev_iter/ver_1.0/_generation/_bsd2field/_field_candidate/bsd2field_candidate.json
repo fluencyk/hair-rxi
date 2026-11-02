@@ -2,14 +2,14 @@
   "_candidate_generation_": {
     "flow_id": "BSD2FIELD-CANDIDATE-GENERATION",
     "mutation": {
-      "setting": "even",
+      "setting": "balanced",
       "observer_weights": {
-        "a": 0.1667,
-        "b": 0.1667,
-        "c": 0.1667,
-        "d": 0.1667,
-        "e": 0.1666,
-        "f": 0.1666
+        "a": 0.166667,
+        "b": 0.166667,
+        "c": 0.166667,
+        "d": 0.166667,
+        "e": 0.166666,
+        "f": 0.166666
       }
     }
   },
@@ -29,7 +29,7 @@
       {
         "name": "Machine Learning",
         "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Data Science",
@@ -47,6 +47,11 @@
         "observed_by": ["a", "b", "c", "e", "f"]
       },
       {
+        "name": "Information Science",
+        "observed_under": ["BSD-COMP-AI"],
+        "observed_by": ["a", "b", "c", "d", "e"]
+      },
+      {
         "name": "Cybersecurity",
         "observed_under": ["BSD-COMP-AI"],
         "observed_by": ["a", "b", "c", "d", "e", "f"]
@@ -54,37 +59,43 @@
       {
         "name": "Human-Computer Interaction",
         "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Computer Vision",
         "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Natural Language Processing",
         "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["b", "c", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Robotics",
         "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Autonomous Systems",
         "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["c", "d", "e", "f"]
-      },
-      {
-        "name": "Computational Intelligence",
-        "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["c", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Computational Science",
         "observed_under": ["BSD-COMP-AI"],
-        "observed_by": ["a", "b", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e"]
+      },
+      {
+        "name": "Computational Intelligence",
+        "observed_under": ["BSD-COMP-AI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
+      },
+
+      {
+        "name": "Intelligent Systems",
+        "observed_under": ["BSD-COMP-AI"],
+        "observed_by": ["b", "c", "d", "e", "f"]
       }
     ],
 
@@ -97,7 +108,7 @@
       {
         "name": "Software Development",
         "observed_under": ["BSD-SWEDEV-INFOINSIG"],
-        "observed_by": ["b", "c", "e", "f"]
+        "observed_by": ["b", "c", "d", "e", "f"]
       },
       {
         "name": "Information Systems",
@@ -127,22 +138,22 @@
       {
         "name": "Business Analytics",
         "observed_under": ["BSD-SWEDEV-INFOINSIG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Information Management",
         "observed_under": ["BSD-SWEDEV-INFOINSIG"],
-        "observed_by": ["a", "b", "c", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Knowledge Management",
         "observed_under": ["BSD-SWEDEV-INFOINSIG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Human-Computer Interaction",
         "observed_under": ["BSD-SWEDEV-INFOINSIG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Cybersecurity",
@@ -152,18 +163,28 @@
       {
         "name": "Cloud Computing",
         "observed_under": ["BSD-SWEDEV-INFOINSIG"],
-        "observed_by": ["c", "d", "e", "f"]
+        "observed_by": ["b", "c", "d", "e", "f"]
       },
       {
         "name": "DevOps",
         "observed_under": ["BSD-SWEDEV-INFOINSIG"],
-        "observed_by": ["c", "d", "f"]
+        "observed_by": ["b", "c", "d", "f"]
+      },
+      {
+        "name": "Computing",
+        "observed_under": ["BSD-SWEDEV-INFOINSIG"],
+        "observed_by": ["a", "b", "c", "e"]
       }
     ],
 
     "BSD-BIZINNO-SERV": [
       {
         "name": "Business Administration",
+        "observed_under": ["BSD-BIZINNO-SERV"],
+        "observed_by": ["a", "b", "c", "e", "f"]
+      },
+      {
+        "name": "Management",
         "observed_under": ["BSD-BIZINNO-SERV"],
         "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
@@ -180,7 +201,7 @@
       {
         "name": "Entrepreneurship",
         "observed_under": ["BSD-BIZINNO-SERV"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Marketing",
@@ -195,17 +216,17 @@
       {
         "name": "Accounting",
         "observed_under": ["BSD-BIZINNO-SERV"],
-        "observed_by": ["a", "b", "c", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Economics",
         "observed_under": ["BSD-BIZINNO-SERV"],
-        "observed_by": ["a", "b", "c", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Operations Management",
         "observed_under": ["BSD-BIZINNO-SERV"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Service Management",
@@ -220,7 +241,7 @@
       {
         "name": "Business Analytics",
         "observed_under": ["BSD-BIZINNO-SERV"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Information Systems",
@@ -231,6 +252,11 @@
         "name": "Design Management",
         "observed_under": ["BSD-BIZINNO-SERV"],
         "observed_by": ["b", "c", "d", "e", "f"]
+      },
+      {
+        "name": "Organizational Studies",
+        "observed_under": ["BSD-BIZINNO-SERV"],
+        "observed_by": ["a", "b", "c", "d", "e"]
       }
     ],
 
@@ -258,42 +284,42 @@
       {
         "name": "Environmental Justice",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Sustainability Science",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Earth Science",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["a", "b", "c", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Atmospheric Science",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["a", "b", "c", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Ecology",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["a", "b", "c", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Conservation Science",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Environmental Policy",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Environmental Health",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Renewable Energy",
@@ -303,7 +329,17 @@
       {
         "name": "Geographic Information Science",
         "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
+      },
+      {
+        "name": "Sustainability Studies",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e"]
+      },
+      {
+        "name": "Environmental Social Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e"]
       }
     ],
 
@@ -341,7 +377,7 @@
       {
         "name": "Medical Engineering",
         "observed_under": ["BSD-BIOHEAL-MEDTECH"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Medical Biotechnology",
@@ -351,22 +387,27 @@
       {
         "name": "Bioinformatics",
         "observed_under": ["BSD-BIOHEAL-MEDTECH"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Computational Biology",
         "observed_under": ["BSD-BIOHEAL-MEDTECH"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Digital Health",
         "observed_under": ["BSD-BIOHEAL-MEDTECH"],
-        "observed_by": ["c", "d", "e", "f"]
+        "observed_by": ["b", "c", "d", "e", "f"]
       },
       {
         "name": "Health Informatics",
         "observed_under": ["BSD-BIOHEAL-MEDTECH"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
+      },
+      {
+        "name": "Biomedical Informatics",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Public Health",
@@ -376,12 +417,12 @@
       {
         "name": "Neuroscience",
         "observed_under": ["BSD-BIOHEAL-MEDTECH"],
-        "observed_by": ["a", "b", "c", "d", "e"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
-        "name": "Biomedical Informatics",
+        "name": "Medical Informatics",
         "observed_under": ["BSD-BIOHEAL-MEDTECH"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       }
     ],
 
@@ -409,7 +450,7 @@
       {
         "name": "Automation Engineering",
         "observed_under": ["BSD-ROBOTICS-MECENG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Electrical Engineering",
@@ -424,27 +465,27 @@
       {
         "name": "Embedded Systems",
         "observed_under": ["BSD-ROBOTICS-MECENG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Autonomous Systems",
         "observed_under": ["BSD-ROBOTICS-MECENG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Artificial Intelligence",
         "observed_under": ["BSD-ROBOTICS-MECENG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Machine Learning",
         "observed_under": ["BSD-ROBOTICS-MECENG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Computer Vision",
         "observed_under": ["BSD-ROBOTICS-MECENG"],
-        "observed_by": ["b", "c", "d", "e", "f"]
+        "observed_by": ["a", "b", "c", "d", "e", "f"]
       },
       {
         "name": "Intelligent Systems",

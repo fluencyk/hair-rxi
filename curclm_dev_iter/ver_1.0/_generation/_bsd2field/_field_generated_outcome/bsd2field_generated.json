@@ -1,0 +1,1627 @@
+{
+  "_provenance_generation_": {
+    "protocol_id": "BSD2FIELD-CANDIDATE-TO-ACADEMIC-PROVENANCE"
+  },
+
+  "provenance_result": {
+    "supported": [
+      {
+        "name": "Computer Science",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+      {
+        "name": "Artificial Intelligence",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Columbia University Department of Computer Science",
+            "source": "Computer Science Research Areas",
+            "url": "https://www.cs.columbia.edu/areas/"
+          }
+        ]
+      },
+      {
+        "name": "Machine Learning",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Columbia University Department of Computer Science",
+            "source": "Computer Science Research Areas",
+            "url": "https://www.cs.columbia.edu/areas/"
+          }
+        ]
+      },
+      {
+        "name": "Data Science",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_standard",
+            "organization": "ACM / IEEE Computer Society / AIS",
+            "source": "Computing Curricula 2020",
+            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Computer Engineering",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+      {
+        "name": "Information Technology",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+      {
+        "name": "Information Science",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+      {
+        "name": "Cybersecurity",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_standard",
+            "organization": "ACM / IEEE Computer Society / AIS",
+            "source": "Computing Curricula 2020",
+            "url": "https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Human-Computer Interaction",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Columbia University Department of Computer Science",
+            "source": "Computer Science Research Areas",
+            "url": "https://www.cs.columbia.edu/areas/"
+          }
+        ]
+      },
+      {
+        "name": "Computer Vision",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Columbia University Department of Computer Science",
+            "source": "Computer Science Research Areas",
+            "url": "https://www.cs.columbia.edu/areas/"
+          }
+        ]
+      },
+      {
+        "name": "Natural Language Processing",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Columbia University Department of Computer Science",
+            "source": "Computer Science Research Areas",
+            "url": "https://www.cs.columbia.edu/areas/"
+          }
+        ]
+      },
+      {
+        "name": "Robotics",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Carnegie Mellon University Robotics Institute",
+            "source": "Human-Robot Interaction",
+            "url": "https://www.ri.cmu.edu/research/human-robot-interaction/"
+          }
+        ]
+      },
+      {
+        "name": "Autonomous Systems",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Michigan",
+            "source": "Autonomous Systems & Control",
+            "url": "https://aero.engin.umich.edu/research/research-areas/autonomous-systems-control/"
+          }
+        ]
+      },
+      {
+        "name": "Computational Science",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Northwestern University",
+            "source": "Earth and Planetary Sciences Academic Catalog",
+            "url": "https://catalogs.northwestern.edu/undergraduate/arts-sciences/earth-planetary-sciences/"
+          }
+        ]
+      },
+      {
+        "name": "Computational Intelligence",
+        "observed_under": [
+          "BSD-COMP-AI"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "professional_body",
+            "organization": "IEEE",
+            "source": "Computational Intelligence",
+            "url": "https://technav.ieee.org/topic/computational-intelligence/"
+          }
+        ]
+      },
+      {
+        "name": "Intelligent Systems",
+        "observed_under": [
+          "BSD-COMP-AI",
+          "BSD-ROBOTICS-MECENG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Pittsburgh",
+            "source": "M.S. in Intelligent Systems",
+            "url": "https://www.sci.pitt.edu/academics/masters-degrees/intelligent-systems-ms"
+          }
+        ]
+      },
+      {
+        "name": "Software Engineering",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+      {
+        "name": "Information Systems",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG",
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+      {
+        "name": "Data Engineering",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Wisconsin–Madison",
+            "source": "MS Data Engineering",
+            "url": "https://www.cs.wisc.edu/grad/programs/msde/"
+          }
+        ]
+      },
+      {
+        "name": "Business Analytics",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG",
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Drexel University LeBow College of Business",
+            "source": "Decision Sciences and MIS Academic Disciplines",
+            "url": "https://www.lebow.drexel.edu/faculty-research/academic-departments/decision-sciences-mis"
+          }
+        ]
+      },
+      {
+        "name": "Information Management",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Knowledge Management",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Cloud Computing",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Maryland Global Campus",
+            "source": "MS Cloud Computing Systems",
+            "url": "https://www.umgc.edu/online-degrees/masters/cloud-computing-systems"
+          }
+        ]
+      },
+      {
+        "name": "Computing",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "e"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+
+      {
+        "name": "Business Administration",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Management Science",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Innovation Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Entrepreneurship",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Marketing",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Finance",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Accounting",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Economics",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University at Buffalo",
+            "source": "Business Administration Academic Programs",
+            "url": "https://www.buffalo.edu/admissions/academics/programs/business-administration.html"
+          }
+        ]
+      },
+      {
+        "name": "Operations Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Drexel University LeBow College of Business",
+            "source": "Decision Sciences and MIS Academic Disciplines",
+            "url": "https://www.lebow.drexel.edu/faculty-research/academic-departments/decision-sciences-mis"
+          }
+        ]
+      },
+      {
+        "name": "Service Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Lund University",
+            "source": "Master's Programme in Service Management",
+            "url": "https://www.ses.lu.se/en/node/30"
+          }
+        ]
+      },
+      {
+        "name": "Service Design",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Politecnico di Milano",
+            "source": "Specializing Master in Service Design",
+            "url": "https://www.polimi.it/en/education/specializing-masters-and-postgraduate-programmes/master-detail/2800"
+          }
+        ]
+      },
+      {
+        "name": "Design Management",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "scholarly_or_research_ecosystem",
+            "organization": "Wiley / Creativity and Innovation Management",
+            "source": "The Evolution of the Design Management Field",
+            "url": "https://onlinelibrary.wiley.com/doi/10.1111/caim.12025"
+          }
+        ]
+      },
+      {
+        "name": "Organizational Studies",
+        "observed_under": [
+          "BSD-BIZINNO-SERV"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "scholarly_or_research_ecosystem",
+            "organization": "Academy of Management",
+            "source": "Language and the Evolution of Academic Fields: The Case of Organization Studies",
+            "url": "https://journals.aom.org/doi/10.5465/amle.2020.0262"
+          }
+        ]
+      },
+
+      {
+        "name": "Environmental Science",
+        "observed_under": [
+          "BSD-ENVFAIR-CLIMSCI"
+        ],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Climate Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Northwestern University",
+            "source": "Earth and Planetary Sciences Academic Catalog",
+            "url": "https://catalogs.northwestern.edu/undergraduate/arts-sciences/earth-planetary-sciences/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Engineering",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Studies",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Justice",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "scholarly_or_research_ecosystem",
+            "organization": "Annual Review / PubMed Central",
+            "source": "Environmental Justice: Where It Has Been, and Where It Might Be Going",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10962396/"
+          }
+        ]
+      },
+      {
+        "name": "Sustainability Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Earth Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Northwestern University",
+            "source": "Earth and Planetary Sciences Academic Catalog",
+            "url": "https://catalogs.northwestern.edu/undergraduate/arts-sciences/earth-planetary-sciences/"
+          }
+        ]
+      },
+      {
+        "name": "Atmospheric Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Northwestern University",
+            "source": "Earth and Planetary Sciences Academic Catalog",
+            "url": "https://catalogs.northwestern.edu/undergraduate/arts-sciences/earth-planetary-sciences/"
+          }
+        ]
+      },
+      {
+        "name": "Ecology",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Conservation Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Policy",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Duke University",
+            "source": "Ph.D. in Environmental Policy",
+            "url": "https://gradschool.duke.edu/academics/programs-degrees/environmental-policy/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Health",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Renewable Energy",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Texas Tech University",
+            "source": "Master of Science in Renewable Energy",
+            "url": "https://www.depts.ttu.edu/renewableenergy/ms_renewable_energy.php"
+          }
+        ]
+      },
+      {
+        "name": "Geographic Information Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Sustainability Studies",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+      {
+        "name": "Environmental Social Science",
+        "observed_under": ["BSD-ENVFAIR-CLIMSCI"],
+        "observed_by": ["a", "b", "c", "d", "e"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Stanford University",
+            "source": "Environmental Social Sciences Graduate Program",
+            "url": "https://esos.stanford.edu/academics-admissions/graduate-program/"
+          }
+        ]
+      },
+
+      {
+        "name": "Biological Sciences",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "scholarly_or_research_ecosystem",
+            "organization": "Carnegie Mellon University",
+            "source": "What is Computational Biology?",
+            "url": "https://cbi.cmu.edu/about-us/what-is-computational-biology.html"
+          }
+        ]
+      },
+      {
+        "name": "Biomedical Engineering",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2025–2026 — Bioengineering/Biomedical Engineering",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/"
+          }
+        ]
+      },
+      {
+        "name": "Bioengineering",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2025–2026 — Bioengineering/Biomedical Engineering",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2025-2026/"
+          }
+        ]
+      },
+      {
+        "name": "Biotechnology",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Bologna",
+            "source": "Second Cycle Degree in Medical Biotechnology",
+            "url": "https://www.unibo.it/en/study/second-cycle-degree/programme/2026/6266"
+          }
+        ]
+      },
+      {
+        "name": "Health Sciences",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "professional_body",
+            "organization": "American Medical Informatics Association",
+            "source": "Informatics: Research and Practice",
+            "url": "https://amia.org/about-amia/why-informatics/informatics-research-and-practice"
+          }
+        ]
+      },
+      {
+        "name": "Medical Engineering",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "KTH Royal Institute of Technology",
+            "source": "MSc Medical Engineering",
+            "url": "https://www.kth.se/en/studies/master/medical-engineering"
+          }
+        ]
+      },
+      {
+        "name": "Medical Biotechnology",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Bologna",
+            "source": "Second Cycle Degree in Medical Biotechnology",
+            "url": "https://www.unibo.it/en/study/second-cycle-degree/programme/2026/6266"
+          }
+        ]
+      },
+      {
+        "name": "Bioinformatics",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Carnegie Mellon University",
+            "source": "What is Computational Biology?",
+            "url": "https://cbi.cmu.edu/about-us/what-is-computational-biology.html"
+          }
+        ]
+      },
+      {
+        "name": "Computational Biology",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Carnegie Mellon University",
+            "source": "What is Computational Biology?",
+            "url": "https://cbi.cmu.edu/about-us/what-is-computational-biology.html"
+          }
+        ]
+      },
+      {
+        "name": "Digital Health",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "National Institutes of Health",
+            "source": "Digital Health — Research at NIH",
+            "url": "https://research.nih.gov/research-at-nih/digital-health"
+          }
+        ]
+      },
+      {
+        "name": "Health Informatics",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Cincinnati College of Medicine",
+            "source": "About Health Informatics",
+            "url": "https://med.uc.edu/institutes/chi/about"
+          }
+        ]
+      },
+      {
+        "name": "Biomedical Informatics",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "professional_body",
+            "organization": "American Medical Informatics Association",
+            "source": "Informatics: Research and Practice",
+            "url": "https://amia.org/about-amia/why-informatics/informatics-research-and-practice"
+          }
+        ]
+      },
+      {
+        "name": "Public Health",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "scholarly_or_research_ecosystem",
+            "organization": "Carnegie Mellon University",
+            "source": "What is Computational Biology?",
+            "url": "https://cbi.cmu.edu/about-us/what-is-computational-biology.html"
+          }
+        ]
+      },
+      {
+        "name": "Neuroscience",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "scholarly_or_research_ecosystem",
+            "organization": "Carnegie Mellon University",
+            "source": "What is Computational Biology?",
+            "url": "https://cbi.cmu.edu/about-us/what-is-computational-biology.html"
+          }
+        ]
+      },
+      {
+        "name": "Medical Informatics",
+        "observed_under": ["BSD-BIOHEAL-MEDTECH"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of Cincinnati College of Medicine",
+            "source": "About Health Informatics",
+            "url": "https://med.uc.edu/institutes/chi/about"
+          }
+        ]
+      },
+
+      {
+        "name": "Mechanical Engineering",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Mechatronics",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Control Engineering",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Automation Engineering",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Electrical Engineering",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Embedded Systems",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of California, Riverside",
+            "source": "Embedded Systems — Center for Robotics and Intelligent Systems",
+            "url": "https://cris.ucr.edu/research/embedded-systems"
+          }
+        ]
+      },
+      {
+        "name": "Manufacturing Engineering",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Industrial Engineering",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Systems Engineering",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["a", "b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "accreditation_or_academic_standard",
+            "organization": "ABET",
+            "source": "Criteria for Accrediting Engineering Programs, 2026–2027",
+            "url": "https://www.abet.org/accreditation/accreditation-criteria/criteria-for-accrediting-engineering-programs-2026-2027/"
+          }
+        ]
+      },
+      {
+        "name": "Human-Robot Interaction",
+        "observed_under": ["BSD-ROBOTICS-MECENG"],
+        "observed_by": ["b", "c", "d", "e", "f"],
+        "qualification_status": "supported",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "Carnegie Mellon University Robotics Institute",
+            "source": "Human-Robot Interaction",
+            "url": "https://www.ri.cmu.edu/research/human-robot-interaction/"
+          }
+        ]
+      }
+    ],
+
+    "unsupported": [],
+
+    "unresolved": [
+      {
+        "name": "Software Development",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "e",
+          "f"
+        ],
+        "qualification_status": "unresolved",
+        "evidence": [
+          {
+            "category": "disciplinary_authority",
+            "organization": "Association for Computing Machinery (ACM)",
+            "source": "Curricular Guidance — The Sub-Disciplines of Computing",
+            "url": "https://ccecc.acm.org/guidance"
+          }
+        ]
+      },
+      {
+        "name": "DevOps",
+        "observed_under": [
+          "BSD-SWEDEV-INFOINSIG"
+        ],
+        "observed_by": [
+          "b",
+          "c",
+          "d",
+          "f"
+        ],
+        "qualification_status": "unresolved",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "University of West Georgia",
+            "source": "COMP 4420 DevOps",
+            "url": "https://www2.westga.edu/academics/cmcs/computing-and-math/computing/course_details.php?course=COMP-4420"
+          },
+          {
+            "category": "scholarly_or_research_ecosystem",
+            "organization": "Consortium for Computing Sciences in Colleges",
+            "source": "Shifting Traditional Undergraduate Software Engineering Instruction to a DevOps Focus",
+            "url": "https://ccsc.org/publications/journals/SE2020.pdf"
+          }
+        ]
+      },
+      {
+        "name": "Medical Science",
+        "observed_under": [
+          "BSD-BIOHEAL-MEDTECH"
+        ],
+        "observed_by": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "qualification_status": "unresolved",
+        "evidence": [
+          {
+            "category": "academic_institution",
+            "organization": "KTH Royal Institute of Technology",
+            "source": "MSc Medical Engineering",
+            "url": "https://www.kth.se/en/studies/master/medical-engineering"
+          }
+        ]
+      }
+    ]
+  },
+
+  "academic_based_fields_set": [
+    "Computer Science",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Data Science",
+    "Computer Engineering",
+    "Information Technology",
+    "Information Science",
+    "Cybersecurity",
+    "Human-Computer Interaction",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Robotics",
+    "Autonomous Systems",
+    "Computational Science",
+    "Computational Intelligence",
+    "Intelligent Systems",
+
+    "Software Engineering",
+    "Information Systems",
+    "Data Engineering",
+    "Business Analytics",
+    "Information Management",
+    "Knowledge Management",
+    "Cloud Computing",
+    "Computing",
+
+    "Business Administration",
+    "Management",
+    "Management Science",
+    "Innovation Management",
+    "Entrepreneurship",
+    "Marketing",
+    "Finance",
+    "Accounting",
+    "Economics",
+    "Operations Management",
+    "Service Management",
+    "Service Design",
+    "Design Management",
+    "Organizational Studies",
+
+    "Environmental Science",
+    "Climate Science",
+    "Environmental Engineering",
+    "Environmental Studies",
+    "Environmental Justice",
+    "Sustainability Science",
+    "Earth Science",
+    "Atmospheric Science",
+    "Ecology",
+    "Conservation Science",
+    "Environmental Policy",
+    "Environmental Health",
+    "Renewable Energy",
+    "Geographic Information Science",
+    "Sustainability Studies",
+    "Environmental Social Science",
+
+    "Biological Sciences",
+    "Biomedical Engineering",
+    "Bioengineering",
+    "Biotechnology",
+    "Health Sciences",
+    "Medical Engineering",
+    "Medical Biotechnology",
+    "Bioinformatics",
+    "Computational Biology",
+    "Digital Health",
+    "Health Informatics",
+    "Biomedical Informatics",
+    "Public Health",
+    "Neuroscience",
+    "Medical Informatics",
+
+    "Mechanical Engineering",
+    "Mechatronics",
+    "Control Engineering",
+    "Automation Engineering",
+    "Electrical Engineering",
+    "Embedded Systems",
+    "Manufacturing Engineering",
+    "Industrial Engineering",
+    "Systems Engineering",
+    "Human-Robot Interaction"
+  ]
+}

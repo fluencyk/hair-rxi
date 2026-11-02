@@ -1,0 +1,56 @@
+{
+  "_flow_": {
+    "id": "BSD2FIELD-CANDIDATE-TO-ACADEMIC",
+
+    "description": "Execution flow for transforming candidate Field state into provenance-qualified academic Field state through the declared Candidate-to-Academic provenance mechanism.",
+
+    "input": {
+      "required": [
+        "bsd2field_candidate.json",
+        "_bsd2field_cand2acad_prov_"
+      ]
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Load the complete candidate Field state from bsd2field_candidate.json without modifying candidate identities or observation traces."
+      },
+
+      {
+        "step": "qualify",
+        "instruction": "Execute candidate aggregation, external evidence retrieval, and Field qualification according to _bsd2field_cand2acad_prov_."
+      },
+
+      {
+        "step": "project",
+        "instruction": "Project only provenance-supported Field identities into academic_based_fields_set while preserving all qualification outcomes in provenance_result."
+      },
+
+      {
+        "step": "validate",
+        "instruction": "Validate the generated state according to the identity conservation, status exclusivity, and projection equivalence constraints declared by _bsd2field_cand2acad_prov_."
+      },
+
+      {
+        "step": "materialize",
+        "instruction": "Materialize the validated provenance-qualified Field state into bsd2field_generated.json without modifying bsd2field_candidate.json."
+      }
+    ],
+
+    "output": {
+      "target": "bsd2field_generated.json",
+      "mode": "structured_json",
+
+      "schema": {
+        "_provenance_generation_": {},
+        "provenance_result": {
+          "supported": [],
+          "unsupported": [],
+          "unresolved": []
+        },
+        "academic_based_fields_set": []
+      }
+    }
+  }
+}

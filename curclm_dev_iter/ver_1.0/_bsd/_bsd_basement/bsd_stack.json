@@ -1,12 +1,12 @@
 {
   "_bsd_stack_": {
-    "description": "Preserved Business Strategy Domain stack providing the authoritative stakeholder-defined boundaries for BSD-to-Field observation and generation.",
+    "description": "Preserved Business Strategy Domain stack providing the authoritative stakeholder-defined boundaries for downstream observation and generation.",
     "instruction": [
       "Treat the BSD stack as preserved upstream input.",
       "Do not rename, merge, split, reorder, reinterpret, or redefine any BSD.",
       "Do not infer academic validity or disciplinary structure directly from BSD names.",
       "Use BSDs as observation boundaries rather than as academic classification containers.",
-      "Allow the same candidate Field to be observed across multiple BSDs without resolving overlap, duplication, or ownership paradoxes at this stage."
+      "Allow downstream observations to associate the same knowledge domain with multiple BSDs without requiring exclusive BSD ownership."
     ],
     "stack": [
       {

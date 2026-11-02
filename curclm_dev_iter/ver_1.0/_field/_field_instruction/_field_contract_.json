@@ -1,58 +1,60 @@
 {
   "_field_contract_": {
-    "description": "Generative contract defining how potential Field candidates are broadly observed and expanded from preserved Business Strategy Domains before any later qualification, normalization, or provenance process.",
+    "description": "Generative contract defining the semantic admission boundaries and observation lenses for potential Field candidates derived from preserved Business Strategy Domains before later qualification and provenance evaluation.",
 
     "instruction": [
-      "Treat a candidate Field as a plausible knowledge, disciplinary, professional, engineering, scientific, technological, or interdisciplinary domain worth preserving for later evaluation.",
-      "Prioritize broad candidate coverage over premature precision during this stage.",
-      "Generate candidate Fields freely from each BSD without requiring prior academic validation, professional validation, canonical naming, or provenance.",
-      "Do not treat BSD naming or BSD membership as proof of Field identity.",
-      "Use BSDs as generative observation boundaries rather than as academic classification containers.",
-      "Observe candidate Fields independently through all declared observers.",
-      "Allow differences in terminology, granularity, disciplinary framing, and interdisciplinary interpretation across observers.",
-      "Allow established, emerging, interdisciplinary, convergent, and cross-domain Field candidates to enter the candidate set.",
-      "Do not reject a candidate merely because it overlaps with, depends on, or combines knowledge from other Fields.",
-      "Allow the same candidate Field to occur under multiple BSD observations without forcing exclusive BSD ownership.",
-      "Preserve potentially redundant, overlapping, synonymous, nested, or differently granular candidate expressions for later evaluation.",
-      "Do not normalize, merge, rank, validate, canonicalize, or resolve candidate Field identities at this stage.",
-      "Do not infer parent-child, hierarchical, nested, or other academic topology among candidate Fields at this stage."
+      "Treat a candidate Field as a plausible disciplinary, scientific, engineering, technological, professional, applied, or interdisciplinary knowledge domain worth preserving for later evaluation.",
+      "Prioritize broad semantic coverage and candidate recall over premature precision or exclusion.",
+      "Treat BSDs as generative observation boundaries rather than as academic classification containers, and do not treat BSD naming or membership as proof of Field identity.",
+      "Observe potential Field candidates independently through every declared observer while preserving differences in terminology, granularity, disciplinary framing, professional framing, and interdisciplinary interpretation.",
+      "Allow established, emerging, interdisciplinary, convergent, and cross-domain candidates to enter the candidate set when they represent plausible Field identities.",
+      "Allow the same candidate Field to be observed under multiple BSDs and through multiple observers without requiring exclusive ownership.",
+      "Preserve plausible redundancy, overlap, synonymy, nesting, granularity differences, and unresolved semantic relationships for later evaluation.",
+      "Do not normalize, merge, rank, qualify, validate, canonicalize, or otherwise resolve candidate Field identities at this stage.",
+      "Do not infer parent-child, hierarchical, nested, dependency, or other academic topology among candidate Fields at this stage."
     ],
+
+    "observer_constraint": {
+      "coverage": "Every declared observer must participate in candidate observation.",
+      "independence": "Treat each observer as an independent semantic observation lens rather than as an evidence source, authority, confidence signal, or qualification mechanism.",
+      "admission": "Observation through an observer may justify preserving a plausible candidate for later evaluation, but does not establish final Field validity."
+    },
 
     "observers": {
       "a": {
         "id": "disciplinary_classification",
-        "description": "Observe potential Field candidates through the lens of recognizable disciplinary and educational classification patterns.",
-        "focus": "Discipline-like identities, knowledge-domain boundaries, neighboring domains, and plausible disciplinary expressions."
+        "description": "Observe potential Field candidates through recognizable disciplinary and educational classification patterns.",
+        "focus": "Discipline-like identities, knowledge-domain boundaries, neighboring disciplines, and plausible disciplinary expressions."
       },
 
       "b": {
         "id": "academic_standards",
-        "description": "Observe potential Field candidates through the lens of academic programs, curricula, educational structures, and bodies of knowledge.",
-        "focus": "Potential curricular identities, educational domains, bodies of knowledge, and independently teachable areas."
+        "description": "Observe potential Field candidates through formal academic, curricular, accreditation, and body-of-knowledge structures.",
+        "focus": "Curriculum frameworks, educational standards, accreditation structures, bodies of knowledge, and formally structured academic knowledge domains."
       },
 
       "c": {
         "id": "disciplinary_bodies",
-        "description": "Observe potential Field candidates through the lens of scholarly, engineering, scientific, and professional communities.",
-        "focus": "Recognizable communities of practice, disciplinary terminology, professional domains, and recurring knowledge identities."
+        "description": "Observe potential Field candidates through scholarly, scientific, engineering, and professional communities.",
+        "focus": "Scholarly societies, professional associations, disciplinary communities, communities of practice, and recurring disciplinary terminology."
       },
 
       "d": {
         "id": "research_ecosystem",
-        "description": "Observe potential Field candidates through the lens of persistent or emerging research activity and scholarly ecosystems.",
-        "focus": "Research areas, recurring scholarly communities, publication ecosystems, conferences, journals, and emerging research domains."
+        "description": "Observe potential Field candidates through persistent or emerging research activity and scholarly ecosystems.",
+        "focus": "Recurring research areas, publication ecosystems, conferences, journals, scholarly communities, and emerging research domains."
       },
 
       "e": {
         "id": "institutional_programs",
-        "description": "Observe potential Field candidates through the lens of academic and research institutional structures.",
-        "focus": "Schools, departments, degree programs, majors, laboratories, research centers, and persistent institutional research areas."
+        "description": "Observe potential Field candidates through persistent academic and research institutional manifestations.",
+        "focus": "Schools, departments, degree programs, majors, laboratories, research centers, and other durable institutional structures."
       },
 
       "f": {
         "id": "professional_practice",
-        "description": "Observe potential Field candidates through the lens of professional, engineering, occupational, technological, and industrial practice.",
-        "focus": "Professional domains, engineering practices, technological domains, occupational structures, applied knowledge areas, and industrially recognizable Fields."
+        "description": "Observe potential Field candidates through professional, engineering, occupational, technological, and industrial practice.",
+        "focus": "Professional domains, engineering practices, technological domains, occupational structures, applied knowledge areas, and industrially recognizable domains."
       }
     },
 
