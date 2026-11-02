@@ -1,0 +1,304 @@
+{
+  "_stem_generation_": {
+    "flow_id": "FIELD2AGENDA-GENERATION",
+    "executed_process": [
+      "resolve",
+      "field2stem",
+      "reconcile_stems"
+    ],
+    "reasoning_radius": {
+      "from": "field",
+      "to": "stem",
+      "stop_after": "stem"
+    },
+    "field_selector": [
+      "Software Engineering"
+    ],
+    "status": "materialized"
+  },
+
+  "field_state": {
+    "selected_fields": [
+      "Software Engineering"
+    ],
+    "source": "academic_based_fields_set"
+  },
+
+  "stem_state": {
+    "fields": [
+      "Software Engineering"
+    ],
+
+    "stems": [
+      {
+        "id": "SE-STEM-01",
+        "name": "Software Requirements and Problem Definition",
+        "description": "Knowledge structure concerned with understanding software problems and stakeholder needs, defining system expectations, and establishing requirements that can guide subsequent engineering decisions.",
+        "knowledge_scope": [
+          "Problem framing",
+          "Stakeholder needs",
+          "Requirements elicitation",
+          "Functional requirements",
+          "Quality and non-functional requirements",
+          "Requirements analysis",
+          "Requirements specification",
+          "Requirements validation",
+          "Requirements evolution and traceability"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-02",
+        "name": "Software Architecture and System Structuring",
+        "description": "Knowledge structure concerned with organizing software-intensive systems at a high level and reasoning about components, interfaces, architectural decisions, system qualities, constraints, and engineering trade-offs.",
+        "knowledge_scope": [
+          "Architectural concerns",
+          "System decomposition",
+          "Components and interfaces",
+          "Architectural views",
+          "Architectural styles and patterns",
+          "Quality attributes",
+          "Architectural decisions",
+          "Architectural trade-offs",
+          "Architecture evaluation"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-03",
+        "name": "Software Design and Construction",
+        "description": "Knowledge structure concerned with transforming requirements and architectural structures into implementable software through abstraction, decomposition, detailed design, programming, integration, and disciplined construction practices.",
+        "knowledge_scope": [
+          "Design principles",
+          "Abstraction and modularity",
+          "Structural and behavioral design",
+          "Interface design",
+          "Design patterns",
+          "Programming and implementation",
+          "Defensive construction",
+          "Code organization",
+          "Software integration",
+          "Construction quality"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-04",
+        "name": "Software Verification, Validation, Testing, and Quality",
+        "description": "Knowledge structure concerned with establishing whether software satisfies its intended requirements and quality expectations through verification, validation, testing, review, analysis, measurement, and quality assurance.",
+        "knowledge_scope": [
+          "Verification and validation",
+          "Testing principles",
+          "Testing levels",
+          "Testing techniques",
+          "Test design",
+          "Static analysis",
+          "Dynamic analysis",
+          "Technical reviews",
+          "Software quality attributes",
+          "Quality assurance",
+          "Quality measurement"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-05",
+        "name": "Software Security, Reliability, and Dependability",
+        "description": "Knowledge structure concerned with engineering trustworthy software systems capable of operating under faults, failures, threats, misuse, uncertainty, and changing operational conditions.",
+        "knowledge_scope": [
+          "Software security principles",
+          "Threats and vulnerabilities",
+          "Secure requirements",
+          "Secure design and construction",
+          "Security verification",
+          "Reliability",
+          "Fault tolerance",
+          "Resilience",
+          "Dependability",
+          "Engineering risk"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-06",
+        "name": "Software Evolution and Lifecycle Engineering",
+        "description": "Knowledge structure concerned with software as a continuously changing engineering artifact across development, delivery, operation, maintenance, adaptation, modernization, and retirement.",
+        "knowledge_scope": [
+          "Software lifecycle",
+          "Software evolution",
+          "Software maintenance",
+          "Change impact",
+          "Program comprehension",
+          "Refactoring",
+          "Reengineering",
+          "Reverse engineering",
+          "Technical debt",
+          "Legacy systems",
+          "Lifecycle decision-making"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-07",
+        "name": "Configuration, Integration, Delivery, and Operations",
+        "description": "Knowledge structure concerned with maintaining software integrity across versions and environments while integrating, releasing, deploying, observing, and operating software systems reliably.",
+        "knowledge_scope": [
+          "Configuration identification",
+          "Version control",
+          "Change control",
+          "Build management",
+          "Software integration",
+          "Release engineering",
+          "Continuous integration",
+          "Continuous delivery and deployment",
+          "Deployment and rollback",
+          "Operational environments",
+          "Monitoring and observability",
+          "Operational feedback"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-08",
+        "name": "Software Engineering Processes, Models, and Methods",
+        "description": "Knowledge structure concerned with systematic ways of organizing, representing, performing, evaluating, and improving software engineering work across different development contexts.",
+        "knowledge_scope": [
+          "Software process models",
+          "Iterative and incremental development",
+          "Agile development",
+          "Engineering workflows",
+          "Software modeling",
+          "Model-based reasoning",
+          "Engineering methods",
+          "Prototyping",
+          "Process measurement",
+          "Process assessment",
+          "Process improvement",
+          "Context-sensitive method selection"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-09",
+        "name": "Software Engineering Management and Economics",
+        "description": "Knowledge structure concerned with planning, coordinating, estimating, measuring, and making software engineering decisions under constraints of resources, schedule, uncertainty, risk, cost, and value.",
+        "knowledge_scope": [
+          "Engineering planning",
+          "Estimation",
+          "Scheduling",
+          "Resource allocation",
+          "Risk management",
+          "Engineering measurement",
+          "Project coordination",
+          "Software economics",
+          "Cost and value",
+          "Engineering trade-offs",
+          "Decision-making under constraints"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-10",
+        "name": "Human, Collaborative, and Professional Software Engineering",
+        "description": "Knowledge structure concerned with software engineering as a human and professional activity involving collaboration, communication, ethical responsibility, stakeholder interaction, engineering judgment, and societal consequences.",
+        "knowledge_scope": [
+          "Engineering teams",
+          "Collaboration",
+          "Technical communication",
+          "Stakeholder communication",
+          "Professional responsibility",
+          "Engineering ethics",
+          "Professional standards",
+          "Engineering judgment",
+          "Human factors in software development",
+          "Societal impact of software",
+          "Continuous professional learning"
+        ]
+      },
+
+      {
+        "id": "SE-STEM-11",
+        "name": "Computational, Mathematical, and Engineering Foundations",
+        "description": "Foundational knowledge structure supporting software engineering reasoning by connecting computation, mathematical reasoning, systems thinking, measurement, and general engineering principles.",
+        "knowledge_scope": [
+          "Programming foundations",
+          "Algorithms and data structures",
+          "Computational abstraction",
+          "Computer systems foundations",
+          "Logic and discrete structures",
+          "Mathematical reasoning",
+          "Probability and statistics",
+          "Measurement",
+          "Engineering design",
+          "Systems thinking",
+          "Engineering constraints and trade-offs"
+        ]
+      }
+    ]
+  },
+
+  "reconciliation": {
+    "scope": "single_field_internal_reconciliation",
+    "operations": [
+      {
+        "decision": "integrate",
+        "subjects": [
+          "Software Design",
+          "Software Construction"
+        ],
+        "result": "Software Design and Construction",
+        "reason": "The two structures form a continuous transformation from detailed software design into implementation and integration while remaining separable at the knowledge-scope level."
+      },
+      {
+        "decision": "integrate",
+        "subjects": [
+          "Software Testing",
+          "Software Quality"
+        ],
+        "result": "Software Verification, Validation, Testing, and Quality",
+        "reason": "Testing is treated as part of a broader assurance structure rather than as an isolated implementation activity."
+      },
+      {
+        "decision": "integrate",
+        "subjects": [
+          "Software Configuration Management",
+          "Software Integration",
+          "Software Delivery",
+          "Software Operations"
+        ],
+        "result": "Configuration, Integration, Delivery, and Operations",
+        "reason": "These areas share a continuous concern with software integrity and controlled transition across versions, environments, releases, and operational states."
+      },
+      {
+        "decision": "preserve",
+        "subjects": [
+          "Software Security, Reliability, and Dependability"
+        ],
+        "reason": "Trustworthiness represents a cross-lifecycle engineering concern substantial enough to remain a distinct Stem rather than being absorbed into testing or quality."
+      }
+    ]
+  },
+
+  "validation": {
+    "selected_field_exists_in_academic_based_fields_set": true,
+    "field_identity_preserved": true,
+    "bsd_constraint_applied": false,
+    "curriculum_context_applied": false,
+    "weeks_length_setting_applied": false,
+    "syllabus_reasoning_executed": false,
+    "agenda_reasoning_executed": false,
+    "stem_granularity": "major_knowledge_structure",
+    "stem_to_course_mapping_performed": false,
+    "status": "pass"
+  },
+
+  "lineage": {
+    "source": {
+      "state": "academic_based_fields_set",
+      "field": "Software Engineering"
+    },
+    "transformation": "FIELD_TO_STEM",
+    "derived_state": "stem_state",
+    "next_permitted_transformation": "STEM_TO_SYLLABUS"
+  }
+}
