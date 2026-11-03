@@ -1,0 +1,44 @@
+_rxi_210_:
+  id: RXI-210
+  title: Fundamentals of Computing and Artificial Intelligence
+
+  binding:
+    bsd_index: 0
+    bsd_id: BSD-COMP-AI
+
+  academic_level: 2
+  learning_depth: 1
+  course_role: fundamental
+
+  course_intent: >
+    Establish a coherent academic foundation in Computing and Artificial
+    Intelligence through conceptual understanding, computational reasoning,
+    guided inquiry, and foundational technical practice.
+
+  depth_boundary: >
+    Prioritize foundational concepts, relationships, and transferable
+    reasoning over disciplinary completeness or advanced specialization.
+
+  syllabus_structure:
+    - course_identity
+    - learning_outcomes
+    - learning_progression
+    - modules:
+        - module_title
+        - module_intent
+        - source_stems
+        - core_concepts
+        - learning_activities
+        - learning_evidence
+    - assessment
+    - progression_readiness
+
+  constraints:
+    - Prefer foundational and dependency-bearing knowledge over specialized topics.
+    - Do not attempt exhaustive coverage of BSD-bound Fields or Stems.
+    - Do not reproduce an undergraduate curriculum at reduced scale.
+    - Do not reduce the course to programming, software tutorials, or AI tool demonstrations.
+    - Organize knowledge as a coherent learning progression rather than disconnected topics.
+    - Preserve module-to-Stem traceability.
+    - Align learning activities and evidence with learning outcomes.
+    - Leave weekly scheduling and teaching execution to Agenda.

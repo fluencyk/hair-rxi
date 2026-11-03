@@ -1,0 +1,62 @@
+_stem2syllabi_wgt_:
+  id: STEM2SYLLABI-WGT-COMP-AI
+
+  description: >
+    Semantic constraint mechanism for assigning BSD-conditioned
+    lecturability weights to canonical Stems during Stem-to-Syllabi
+    transformation for Computing and Artificial Intelligence.
+
+  binding:
+    bsd_index: 0
+    bsd_id: BSD-COMP-AI
+    bsd_name: Computing and Artificial Intelligence
+
+  weight:
+    range:
+      minimum: 0.0
+      maximum: 1.0
+
+    semantics: >
+      The weight represents the relative lecturability emphasis that
+      an existing Stem should exert during downstream Syllabus generation
+      under the bound BSD.
+
+    interpretation:
+      0.0: exclude
+      0.1-0.3: peripheral
+      0.4-0.6: supporting
+      0.7-0.9: substantial
+      1.0: essential
+
+    does_not_represent:
+      - academic validity
+      - truth probability
+      - confidence
+      - Field membership strength
+      - universal disciplinary importance
+      - literal percentage of instructional time
+
+  reasoning:
+    consider:
+      - semantic alignment between the Stem and the bound BSD
+      - foundational necessity within the bound BSD
+      - contribution to the BSD's major knowledge structures
+      - dependency value for understanding other relevant Stems
+      - downstream utility for coherent Syllabus generation
+
+    instruction: >
+      Evaluate each canonical Stem within its source Field and the semantic
+      scope of the bound BSD. Assign one weight by holistic judgment across
+      the declared considerations. Do not calculate the weight as an
+      arithmetic average or generate separate numerical scores for the
+      considerations.
+
+  constraints:
+    - Weight only Stems that already exist in the source Field-to-Stem state.
+    - Preserve canonical Field and Stem identities exactly.
+    - Do not create, rename, split, merge, or rewrite Fields or Stems.
+    - Do not infer academic validity or Field membership from the weight.
+    - Do not normalize weights to sum to 1.0.
+    - Do not force equal weighting across Fields or Stems.
+    - Allow different Fields to contain semantically overlapping Stems and weight them independently.
+    - Use 0.0 when a Stem should remain in the academic source state but should not influence Syllabus generation for the bound BSD.

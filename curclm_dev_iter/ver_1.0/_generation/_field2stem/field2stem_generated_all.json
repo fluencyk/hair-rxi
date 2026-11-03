@@ -1,0 +1,1195 @@
+{
+  "academic_based_fields_expanded_stems_set": [
+    {
+      "field": "Computer Science",
+      "stems": [
+        "Algorithms and Computational Problem Solving",
+        "Programming Languages and Abstractions",
+        "Computer Systems and Architecture",
+        "Operating Systems and Resource Management",
+        "Data Management and Information",
+        "Networks and Distributed Computing",
+        "Artificial Intelligence and Intelligent Computation",
+        "Software Engineering",
+        "Human-Computer Interaction",
+        "Security and Privacy",
+        "Mathematical and Theoretical Foundations",
+        "Computing, Society, and Professional Practice"
+      ]
+    },
+    {
+      "field": "Artificial Intelligence",
+      "stems": [
+        "Foundations of Intelligent Systems",
+        "Search and Problem Solving",
+        "Knowledge Representation and Reasoning",
+        "Reasoning under Uncertainty",
+        "Machine Learning",
+        "Planning and Decision Making",
+        "Agents and Multi-Agent Systems",
+        "Natural Language Intelligence",
+        "Perception and Computer Vision",
+        "Robotics and Embodied Intelligence",
+        "AI Evaluation, Safety, Ethics, and Societal Impact"
+      ]
+    },
+    {
+      "field": "Machine Learning",
+      "stems": [
+        "Mathematical and Statistical Foundations of Learning",
+        "Data Representation and Feature Engineering",
+        "Supervised Learning",
+        "Unsupervised and Representation Learning",
+        "Deep Learning",
+        "Probabilistic Machine Learning",
+        "Reinforcement and Sequential Learning",
+        "Learning Theory and Generalization",
+        "Model Evaluation and Validation",
+        "Machine Learning Systems and Lifecycle",
+        "Responsible and Trustworthy Machine Learning"
+      ]
+    },
+    {
+      "field": "Data Science",
+      "stems": [
+        "Statistical and Mathematical Foundations",
+        "Data Acquisition and Preparation",
+        "Data Management and Governance",
+        "Exploratory Data Analysis",
+        "Statistical Modeling and Inference",
+        "Machine Learning and Data Mining",
+        "Large-Scale Data Systems",
+        "Data Visualization and Communication",
+        "Experimental and Computational Methods",
+        "Data Ethics, Privacy, and Responsible Practice"
+      ]
+    },
+    {
+      "field": "Computer Engineering",
+      "stems": [
+        "Circuits and Electronics",
+        "Digital Logic and Digital Systems",
+        "Computer Architecture and Organization",
+        "Embedded and Cyber-Physical Systems",
+        "Microprocessors and Hardware-Software Integration",
+        "Signals and Systems",
+        "Computer Networks and Communication",
+        "Real-Time and Distributed Systems",
+        "Hardware and System Design",
+        "Engineering Mathematics and Physical Foundations"
+      ]
+    },
+    {
+      "field": "Information Technology",
+      "stems": [
+        "Computing and Information Foundations",
+        "Networking and Communications",
+        "System Administration and Infrastructure",
+        "Cybersecurity and Information Assurance",
+        "Data and Information Management",
+        "Web and Application Technologies",
+        "Cloud and Distributed Infrastructure",
+        "Systems Integration and Architecture",
+        "IT Operations and Service Management",
+        "IT Governance and Professional Practice"
+      ]
+    },
+    {
+      "field": "Information Science",
+      "stems": [
+        "Information Representation and Organization",
+        "Information Retrieval and Search",
+        "Information Behavior and Use",
+        "Data and Information Management",
+        "Human-Information Interaction",
+        "Information Systems and Infrastructures",
+        "Knowledge Organization",
+        "Information Analytics",
+        "Information Policy, Ethics, and Governance",
+        "Social and Organizational Dimensions of Information"
+      ]
+    },
+    {
+      "field": "Cybersecurity",
+      "stems": [
+        "Security Foundations and Adversarial Thinking",
+        "Data and Information Security",
+        "Software Security",
+        "System and Platform Security",
+        "Network and Communication Security",
+        "Cryptography and Applied Security Mechanisms",
+        "Identity and Access Management",
+        "Security Operations and Incident Response",
+        "Risk, Governance, and Security Management",
+        "Human, Legal, Ethical, and Societal Security"
+      ]
+    },
+    {
+      "field": "Human-Computer Interaction",
+      "stems": [
+        "Human Factors and Cognitive Foundations",
+        "User Research and Human-Centered Inquiry",
+        "Interaction Design",
+        "Interactive System Design",
+        "Prototyping and Design Iteration",
+        "Usability and User Experience Evaluation",
+        "Accessibility and Inclusive Interaction",
+        "Social and Collaborative Computing",
+        "Emerging Interaction Modalities",
+        "HCI Research Methods and Experimental Practice"
+      ]
+    },
+    {
+      "field": "Computer Vision",
+      "stems": [
+        "Image Formation and Visual Representation",
+        "Image Processing and Feature Representation",
+        "Geometry and Multi-View Vision",
+        "Visual Recognition and Classification",
+        "Object Detection and Segmentation",
+        "Motion, Tracking, and Video Understanding",
+        "Three-Dimensional Vision and Reconstruction",
+        "Deep Visual Representation Learning",
+        "Vision Systems and Multimodal Perception",
+        "Evaluation, Robustness, and Responsible Vision"
+      ]
+    },
+    {
+      "field": "Natural Language Processing",
+      "stems": [
+        "Linguistic and Computational Foundations",
+        "Text Representation and Language Modeling",
+        "Lexical and Syntactic Processing",
+        "Semantic Representation and Understanding",
+        "Information Extraction and Retrieval",
+        "Machine Translation and Multilingual Processing",
+        "Dialogue and Conversational Systems",
+        "Neural and Foundation Language Models",
+        "Language Generation",
+        "NLP Evaluation, Fairness, and Responsible Language Technology"
+      ]
+    },
+    {
+      "field": "Robotics",
+      "stems": [
+        "Robot Mechanics and Kinematics",
+        "Sensing and Perception",
+        "Localization and Mapping",
+        "Planning and Navigation",
+        "Dynamics and Control",
+        "Robot Learning and Adaptation",
+        "Robot Architectures and Autonomous Behavior",
+        "Manipulation and Physical Interaction",
+        "Multi-Robot and Cooperative Systems",
+        "Human-Robot Interaction and Robot Safety"
+      ]
+    },
+    {
+      "field": "Autonomous Systems",
+      "stems": [
+        "Autonomy and System Architecture",
+        "Sensing and Environmental Perception",
+        "State Estimation and World Modeling",
+        "Planning and Decision Making",
+        "Control and Dynamic Behavior",
+        "Learning and Adaptive Autonomy",
+        "Multi-Agent and Cooperative Autonomy",
+        "Verification, Validation, and Runtime Assurance",
+        "Safety, Robustness, and Resilience",
+        "Human Oversight and Responsible Autonomy"
+      ]
+    },
+    {
+      "field": "Computational Science",
+      "stems": [
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Scientific Computing",
+        "Simulation and Computational Experimentation",
+        "High-Performance Computing",
+        "Parallel and Distributed Scientific Computation",
+        "Scientific Data Analysis",
+        "Computational Modeling of Complex Systems",
+        "Verification, Validation, and Uncertainty Quantification",
+        "Scientific Visualization and Reproducibility"
+      ]
+    },
+    {
+      "field": "Computational Intelligence",
+      "stems": [
+        "Foundations of Computational Intelligence",
+        "Neural Computation",
+        "Evolutionary Computation",
+        "Fuzzy Systems",
+        "Swarm Intelligence",
+        "Learning and Adaptive Systems",
+        "Optimization and Search",
+        "Hybrid Intelligent Systems",
+        "Computational Intelligence for Decision Making",
+        "Evaluation and Robustness of Intelligent Methods"
+      ]
+    },
+    {
+      "field": "Intelligent Systems",
+      "stems": [
+        "Intelligent System Foundations",
+        "Knowledge and Representation",
+        "Reasoning and Inference",
+        "Learning and Adaptation",
+        "Perception and Environmental Understanding",
+        "Planning and Decision Making",
+        "Autonomous and Agent-Based Systems",
+        "Human-Intelligent System Interaction",
+        "Intelligent System Architecture and Integration",
+        "Evaluation, Safety, and Responsible Intelligence"
+      ]
+    },
+    {
+      "field": "Software Engineering",
+      "stems": [
+        "Software Requirements and Problem Definition",
+        "Software Architecture and System Structuring",
+        "Software Design and Construction",
+        "Software Verification, Validation, Testing, and Quality",
+        "Software Security, Reliability, and Dependability",
+        "Software Evolution and Lifecycle Engineering",
+        "Configuration, Integration, Delivery, and Operations",
+        "Software Engineering Processes, Models, and Methods",
+        "Software Engineering Management and Economics",
+        "Human, Collaborative, and Professional Software Engineering",
+        "Computational, Mathematical, and Engineering Foundations"
+      ]
+    },
+    {
+      "field": "Information Systems",
+      "stems": [
+        "Information Systems Foundations",
+        "Organizational Processes and Information",
+        "Systems Analysis and Design",
+        "Enterprise Architecture and Integration",
+        "Data and Information Management",
+        "Digital Platforms and Infrastructure",
+        "Information Systems Strategy",
+        "IS Project and Product Management",
+        "Digital Innovation and Transformation",
+        "Information Systems Governance, Ethics, and Security"
+      ]
+    },
+    {
+      "field": "Data Engineering",
+      "stems": [
+        "Data Modeling and Representation",
+        "Data Acquisition and Ingestion",
+        "Data Storage Systems",
+        "Data Integration and Transformation",
+        "Data Pipelines and Processing",
+        "Distributed and Large-Scale Data Systems",
+        "Data Architecture and Platforms",
+        "Data Quality and Observability",
+        "Data Governance, Security, and Privacy",
+        "Data Lifecycle and Engineering Operations"
+      ]
+    },
+    {
+      "field": "Business Analytics",
+      "stems": [
+        "Business and Decision Modeling",
+        "Data Management for Analytics",
+        "Descriptive and Diagnostic Analytics",
+        "Statistical Analysis and Inference",
+        "Predictive Analytics",
+        "Prescriptive Analytics and Optimization",
+        "Data Visualization and Business Communication",
+        "Experimentation and Causal Analysis",
+        "Analytics Strategy and Decision Support",
+        "Responsible Analytics and Governance"
+      ]
+    },
+    {
+      "field": "Information Management",
+      "stems": [
+        "Information Resources and Lifecycle",
+        "Information Organization and Architecture",
+        "Data and Records Management",
+        "Information Retrieval and Access",
+        "Enterprise Information Management",
+        "Information Quality",
+        "Information Governance",
+        "Information Security and Privacy",
+        "Information Strategy",
+        "Organizational Information Practices"
+      ]
+    },
+    {
+      "field": "Knowledge Management",
+      "stems": [
+        "Knowledge Creation and Representation",
+        "Knowledge Capture and Codification",
+        "Knowledge Organization",
+        "Knowledge Sharing and Transfer",
+        "Organizational Learning",
+        "Knowledge Networks and Communities",
+        "Knowledge Systems and Technologies",
+        "Knowledge Strategy and Governance",
+        "Intellectual Capital",
+        "Knowledge Measurement and Evaluation"
+      ]
+    },
+    {
+      "field": "Cloud Computing",
+      "stems": [
+        "Cloud Computing Foundations",
+        "Virtualization and Resource Abstraction",
+        "Cloud Architecture and Service Models",
+        "Distributed Computing Foundations",
+        "Cloud Storage and Data Services",
+        "Cloud Networking",
+        "Cloud-Native Systems and Orchestration",
+        "Cloud Security and Identity",
+        "Reliability, Scalability, and Resilience",
+        "Cloud Operations, Governance, and Economics"
+      ]
+    },
+    {
+      "field": "Computing",
+      "stems": [
+        "Computational Thinking and Problem Solving",
+        "Programming and Software",
+        "Algorithms and Data",
+        "Computer Systems",
+        "Networks and Distributed Computing",
+        "Information and Data Management",
+        "Intelligent Computing",
+        "Human-Centered Computing",
+        "Security and Trust",
+        "Mathematical Foundations of Computing",
+        "Computing Ethics and Professional Practice"
+      ]
+    },
+    {
+      "field": "Business Administration",
+      "stems": [
+        "Organizations and Management",
+        "Strategy and Competitive Analysis",
+        "Marketing and Markets",
+        "Accounting and Financial Reporting",
+        "Corporate Finance",
+        "Operations and Supply Chains",
+        "Human Resource Management",
+        "Business Analytics and Decision Making",
+        "Entrepreneurship and Innovation",
+        "Business Ethics, Governance, and Global Context"
+      ]
+    },
+    {
+      "field": "Management",
+      "stems": [
+        "Management and Organizational Foundations",
+        "Strategy and Strategic Decision Making",
+        "Organizational Behavior",
+        "Leadership and Motivation",
+        "Organizational Structure and Design",
+        "Operations and Resource Management",
+        "Change and Innovation",
+        "Performance and Control",
+        "Decision Making and Analytics",
+        "Ethics, Governance, and Stakeholder Management"
+      ]
+    },
+    {
+      "field": "Management Science",
+      "stems": [
+        "Decision Analysis",
+        "Optimization",
+        "Operations Research",
+        "Probability and Stochastic Models",
+        "Simulation",
+        "Forecasting",
+        "Systems Modeling",
+        "Resource Allocation and Scheduling",
+        "Risk and Uncertainty",
+        "Data-Driven Decision Science"
+      ]
+    },
+    {
+      "field": "Innovation Management",
+      "stems": [
+        "Innovation Theory and Dynamics",
+        "Innovation Strategy",
+        "Opportunity Identification",
+        "Technology and R&D Management",
+        "Product and Service Innovation",
+        "Innovation Processes and Portfolios",
+        "Open and Collaborative Innovation",
+        "Innovation Ecosystems",
+        "Innovation Adoption and Diffusion",
+        "Innovation Measurement and Governance"
+      ]
+    },
+    {
+      "field": "Entrepreneurship",
+      "stems": [
+        "Entrepreneurial Opportunity and Discovery",
+        "Entrepreneurial Cognition and Decision Making",
+        "Business Models and Value Creation",
+        "Market Discovery and Validation",
+        "Venture Formation",
+        "Entrepreneurial Finance",
+        "Innovation and Product Development",
+        "Venture Growth and Scaling",
+        "Entrepreneurial Ecosystems",
+        "Entrepreneurship Ethics and Social Impact"
+      ]
+    },
+    {
+      "field": "Marketing",
+      "stems": [
+        "Marketing Foundations and Value Creation",
+        "Consumer and Buyer Behavior",
+        "Market Research",
+        "Segmentation, Targeting, and Positioning",
+        "Product and Brand Management",
+        "Pricing",
+        "Marketing Communications",
+        "Channels and Distribution",
+        "Digital and Data-Driven Marketing",
+        "Marketing Strategy and Performance"
+      ]
+    },
+    {
+      "field": "Finance",
+      "stems": [
+        "Financial Markets and Institutions",
+        "Time Value of Money and Valuation",
+        "Corporate Finance",
+        "Investment Analysis",
+        "Portfolio Theory and Asset Pricing",
+        "Financial Risk Management",
+        "Capital Structure and Financing",
+        "Derivatives and Financial Instruments",
+        "International Finance",
+        "Behavioral, Ethical, and Regulatory Finance"
+      ]
+    },
+    {
+      "field": "Accounting",
+      "stems": [
+        "Financial Accounting",
+        "Managerial Accounting",
+        "Accounting Information Systems",
+        "Cost Measurement and Management",
+        "Financial Statement Analysis",
+        "Auditing and Assurance",
+        "Taxation",
+        "Accounting Standards and Regulation",
+        "Governance and Internal Control",
+        "Accounting Analytics and Professional Ethics"
+      ]
+    },
+    {
+      "field": "Economics",
+      "stems": [
+        "Microeconomic Theory",
+        "Macroeconomic Theory",
+        "Econometrics and Empirical Methods",
+        "Markets and Industrial Organization",
+        "Public Economics",
+        "International Economics",
+        "Labor and Development Economics",
+        "Monetary and Financial Economics",
+        "Behavioral and Experimental Economics",
+        "Economic Policy and Institutions"
+      ]
+    },
+    {
+      "field": "Operations Management",
+      "stems": [
+        "Operations Strategy",
+        "Process Analysis and Design",
+        "Capacity and Resource Planning",
+        "Inventory Management",
+        "Supply Chain Management",
+        "Quality Management",
+        "Scheduling and Production Planning",
+        "Service Operations",
+        "Operations Analytics and Optimization",
+        "Resilient and Sustainable Operations"
+      ]
+    },
+    {
+      "field": "Service Management",
+      "stems": [
+        "Service Systems and Value Creation",
+        "Service Strategy",
+        "Service Operations",
+        "Service Quality",
+        "Customer Experience and Relationships",
+        "Service Process Design",
+        "Service Innovation",
+        "Service Technology and Digitalization",
+        "Service Performance and Analytics",
+        "Service Governance and Improvement"
+      ]
+    },
+    {
+      "field": "Service Design",
+      "stems": [
+        "Service Systems and Ecosystems",
+        "Human-Centered Service Research",
+        "Service Experience Design",
+        "Service Journey and Process Modeling",
+        "Service Blueprinting",
+        "Co-Design and Participatory Design",
+        "Service Prototyping",
+        "Service Evaluation",
+        "Digital and Hybrid Services",
+        "Service Innovation and Transformation"
+      ]
+    },
+    {
+      "field": "Design Management",
+      "stems": [
+        "Design Strategy",
+        "Design Organizations and Leadership",
+        "Design Processes and Methods",
+        "Design Research",
+        "Design Innovation",
+        "Brand and Experience Management",
+        "Design Operations",
+        "Design Economics and Value",
+        "Design Governance",
+        "Design Culture and Organizational Change"
+      ]
+    },
+    {
+      "field": "Organizational Studies",
+      "stems": [
+        "Organization Theory",
+        "Organizational Structure and Design",
+        "Organizational Behavior",
+        "Organizational Culture",
+        "Power, Politics, and Institutions",
+        "Organizational Change",
+        "Organizational Learning and Knowledge",
+        "Networks and Interorganizational Relations",
+        "Technology and Organizations",
+        "Critical and Institutional Perspectives on Organizations"
+      ]
+    },
+    {
+      "field": "Environmental Science",
+      "stems": [
+        "Earth and Environmental Systems",
+        "Ecology and Ecosystems",
+        "Atmosphere and Climate",
+        "Hydrology and Water Systems",
+        "Soil and Biogeochemical Systems",
+        "Environmental Chemistry",
+        "Biodiversity and Conservation",
+        "Pollution and Environmental Change",
+        "Environmental Measurement and Modeling",
+        "Human-Environment Interactions and Sustainability"
+      ]
+    },
+    {
+      "field": "Climate Science",
+      "stems": [
+        "Climate System Foundations",
+        "Atmospheric Dynamics",
+        "Ocean-Climate Interactions",
+        "Earth Energy Balance and Radiative Processes",
+        "Carbon Cycle and Biogeochemistry",
+        "Climate Variability and Change",
+        "Paleoclimate and Climate History",
+        "Climate Modeling and Prediction",
+        "Climate Observations and Data Analysis",
+        "Climate Impacts, Attribution, and Uncertainty"
+      ]
+    },
+    {
+      "field": "Environmental Engineering",
+      "stems": [
+        "Environmental Chemistry and Microbiology",
+        "Mass and Energy Transport",
+        "Water and Wastewater Engineering",
+        "Air Pollution Engineering",
+        "Solid and Hazardous Waste Management",
+        "Environmental Hydrology",
+        "Environmental Systems Modeling",
+        "Pollution Prevention and Remediation",
+        "Environmental Risk and Impact Assessment",
+        "Sustainable Environmental Engineering"
+      ]
+    },
+    {
+      "field": "Environmental Studies",
+      "stems": [
+        "Environmental Systems and Ecology",
+        "Human-Environment Relationships",
+        "Environmental History and Thought",
+        "Environmental Policy and Governance",
+        "Environmental Economics",
+        "Environmental Justice",
+        "Sustainability",
+        "Environmental Communication and Culture",
+        "Environmental Research Methods",
+        "Socio-Ecological Change"
+      ]
+    },
+    {
+      "field": "Environmental Justice",
+      "stems": [
+        "Environmental Inequality",
+        "Distribution of Environmental Benefits and Burdens",
+        "Procedural and Participatory Justice",
+        "Recognition and Social Difference",
+        "Environmental Racism and Marginalization",
+        "Health and Environmental Disparities",
+        "Climate Justice",
+        "Indigenous and Community Environmental Justice",
+        "Environmental Governance and Law",
+        "Justice-Oriented Environmental Research and Action"
+      ]
+    },
+    {
+      "field": "Sustainability Science",
+      "stems": [
+        "Coupled Human-Natural Systems",
+        "Socio-Ecological Systems",
+        "Sustainability Transitions",
+        "Resource and Material Systems",
+        "Climate and Environmental Change",
+        "Resilience and Adaptation",
+        "Sustainability Assessment and Indicators",
+        "Systems Modeling and Scenario Analysis",
+        "Governance and Collective Action",
+        "Transformative Sustainability Solutions"
+      ]
+    },
+    {
+      "field": "Earth Science",
+      "stems": [
+        "Earth Materials and Geochemistry",
+        "Geophysics and Earth Structure",
+        "Plate Tectonics and Geodynamics",
+        "Geomorphology and Surface Processes",
+        "Hydrology and the Water Cycle",
+        "Atmosphere and Climate",
+        "Oceans and Marine Systems",
+        "Earth History and Paleoenvironments",
+        "Earth System Interactions",
+        "Earth Observation and Geospatial Analysis"
+      ]
+    },
+    {
+      "field": "Atmospheric Science",
+      "stems": [
+        "Atmospheric Composition and Structure",
+        "Atmospheric Thermodynamics",
+        "Atmospheric Dynamics",
+        "Radiative Transfer",
+        "Clouds and Precipitation",
+        "Weather Systems",
+        "Atmospheric Chemistry",
+        "Boundary-Layer and Surface Processes",
+        "Climate Dynamics",
+        "Atmospheric Observation and Modeling"
+      ]
+    },
+    {
+      "field": "Ecology",
+      "stems": [
+        "Organism-Environment Interactions",
+        "Population Ecology",
+        "Community Ecology",
+        "Ecosystem Ecology",
+        "Landscape and Spatial Ecology",
+        "Behavioral and Evolutionary Ecology",
+        "Biodiversity",
+        "Biogeochemical and Energy Flows",
+        "Global Change Ecology",
+        "Ecological Modeling and Field Methods"
+      ]
+    },
+    {
+      "field": "Conservation Science",
+      "stems": [
+        "Biodiversity and Conservation Biology",
+        "Population Viability",
+        "Habitat and Landscape Conservation",
+        "Threats to Biodiversity",
+        "Protected Areas and Spatial Planning",
+        "Restoration Ecology",
+        "Wildlife and Species Management",
+        "Conservation Genetics",
+        "Human Dimensions of Conservation",
+        "Conservation Planning, Monitoring, and Evaluation"
+      ]
+    },
+    {
+      "field": "Environmental Policy",
+      "stems": [
+        "Environmental Policy Foundations",
+        "Environmental Institutions and Governance",
+        "Environmental Law and Regulation",
+        "Policy Analysis and Evaluation",
+        "Environmental Economics and Policy Instruments",
+        "Science-Policy Relationships",
+        "Risk and Precaution",
+        "Public Participation and Stakeholders",
+        "International Environmental Governance",
+        "Climate and Sustainability Policy"
+      ]
+    },
+    {
+      "field": "Environmental Health",
+      "stems": [
+        "Environmental Determinants of Health",
+        "Exposure Science",
+        "Environmental Toxicology",
+        "Environmental Epidemiology",
+        "Air, Water, and Soil Health",
+        "Occupational and Built Environments",
+        "Environmental Risk Assessment",
+        "Climate and Health",
+        "Environmental Health Disparities",
+        "Environmental Health Policy and Prevention"
+      ]
+    },
+    {
+      "field": "Renewable Energy",
+      "stems": [
+        "Energy Systems and Thermodynamic Foundations",
+        "Solar Energy",
+        "Wind Energy",
+        "Hydropower and Marine Energy",
+        "Bioenergy",
+        "Geothermal Energy",
+        "Energy Storage",
+        "Power Conversion and Grid Integration",
+        "Renewable Energy Systems Modeling",
+        "Energy Economics, Policy, and Sustainability"
+      ]
+    },
+    {
+      "field": "Geographic Information Science",
+      "stems": [
+        "Spatial Data Models and Representation",
+        "Geospatial Data Acquisition",
+        "Coordinate Systems and Geodesy",
+        "Spatial Databases",
+        "Spatial Analysis",
+        "Cartography and Geovisualization",
+        "Remote Sensing",
+        "Spatial Statistics",
+        "Geocomputation and Spatial Modeling",
+        "GIS Ethics, Uncertainty, and Applications"
+      ]
+    },
+    {
+      "field": "Sustainability Studies",
+      "stems": [
+        "Sustainability Concepts and Frameworks",
+        "Environmental Sustainability",
+        "Social Sustainability and Equity",
+        "Economic Sustainability",
+        "Sustainable Development",
+        "Consumption and Production Systems",
+        "Sustainability Governance",
+        "Sustainability Assessment",
+        "Community and Organizational Sustainability",
+        "Sustainability Transitions and Futures"
+      ]
+    },
+    {
+      "field": "Environmental Social Science",
+      "stems": [
+        "Society-Environment Relations",
+        "Political Ecology",
+        "Environmental Sociology",
+        "Environmental Economics",
+        "Environmental Psychology and Behavior",
+        "Environmental Governance",
+        "Environmental Justice",
+        "Institutions and Collective Action",
+        "Social Dimensions of Climate Change",
+        "Qualitative and Quantitative Environmental Research"
+      ]
+    },
+    {
+      "field": "Biological Sciences",
+      "stems": [
+        "Molecular and Cellular Biology",
+        "Genetics and Genomics",
+        "Biochemistry and Metabolism",
+        "Organismal Biology",
+        "Physiology",
+        "Developmental Biology",
+        "Evolution",
+        "Ecology",
+        "Microbiology and Immunobiology",
+        "Biological Systems, Methods, and Quantitative Analysis"
+      ]
+    },
+    {
+      "field": "Biomedical Engineering",
+      "stems": [
+        "Engineering Mathematics and Biological Foundations",
+        "Biomechanics",
+        "Biomaterials",
+        "Bioinstrumentation and Biosensors",
+        "Biomedical Signals and Systems",
+        "Medical Imaging",
+        "Tissue and Cellular Engineering",
+        "Biomedical Devices and Design",
+        "Computational Biomedical Engineering",
+        "Clinical Translation, Safety, and Regulation"
+      ]
+    },
+    {
+      "field": "Bioengineering",
+      "stems": [
+        "Engineering Foundations for Biological Systems",
+        "Molecular and Cellular Engineering",
+        "Biomaterials",
+        "Biomechanics and Mechanobiology",
+        "Biological Systems Modeling",
+        "Synthetic and Systems Biology",
+        "Bioprocess Engineering",
+        "Tissue and Regenerative Engineering",
+        "Bioinstrumentation and Measurement",
+        "Bioengineering Design and Translation"
+      ]
+    },
+    {
+      "field": "Biotechnology",
+      "stems": [
+        "Molecular Biology and Genetics",
+        "Cell Biology and Microbiology",
+        "Genetic Engineering",
+        "Genomics and Omics Technologies",
+        "Bioprocessing and Fermentation",
+        "Protein and Enzyme Biotechnology",
+        "Cell and Tissue Biotechnology",
+        "Biotechnology Analytics",
+        "Industrial and Environmental Biotechnology",
+        "Biotechnology Regulation, Ethics, and Translation"
+      ]
+    },
+    {
+      "field": "Health Sciences",
+      "stems": [
+        "Human Biology and Physiology",
+        "Health and Disease",
+        "Epidemiology",
+        "Biostatistics",
+        "Population and Public Health",
+        "Health Behavior",
+        "Healthcare Systems",
+        "Health Research Methods",
+        "Prevention and Health Promotion",
+        "Health Ethics, Equity, and Policy"
+      ]
+    },
+    {
+      "field": "Medical Engineering",
+      "stems": [
+        "Engineering Foundations for Medicine",
+        "Human Anatomy and Physiology for Engineers",
+        "Medical Instrumentation",
+        "Medical Devices",
+        "Biomedical Signals",
+        "Medical Imaging",
+        "Biomechanics and Rehabilitation Engineering",
+        "Clinical Systems Engineering",
+        "Medical Device Safety and Human Factors",
+        "Clinical Translation and Regulation"
+      ]
+    },
+    {
+      "field": "Medical Biotechnology",
+      "stems": [
+        "Molecular Medicine",
+        "Medical Genetics and Genomics",
+        "Recombinant DNA and Genetic Engineering",
+        "Cell and Gene Technologies",
+        "Biopharmaceuticals",
+        "Molecular Diagnostics",
+        "Immunotechnology",
+        "Regenerative and Tissue Technologies",
+        "Translational Biotechnology",
+        "Medical Biotechnology Safety, Ethics, and Regulation"
+      ]
+    },
+    {
+      "field": "Bioinformatics",
+      "stems": [
+        "Molecular Biology and Genomic Foundations",
+        "Biological Data Representation",
+        "Sequence Analysis",
+        "Genomics and Transcriptomics",
+        "Proteomics and Structural Bioinformatics",
+        "Biological Databases",
+        "Algorithms for Biological Data",
+        "Statistical and Machine Learning Methods",
+        "Systems and Network Biology",
+        "Reproducible Computational Biology"
+      ]
+    },
+    {
+      "field": "Computational Biology",
+      "stems": [
+        "Mathematical Biology",
+        "Biological Data and Computation",
+        "Genomic and Sequence Modeling",
+        "Molecular and Structural Modeling",
+        "Systems Biology",
+        "Evolutionary and Population Modeling",
+        "Computational Neuroscience",
+        "Statistical and Machine Learning Methods",
+        "Simulation of Biological Systems",
+        "Computational Experimentation and Reproducibility"
+      ]
+    },
+    {
+      "field": "Digital Health",
+      "stems": [
+        "Digital Health Systems and Ecosystems",
+        "Health Data and Digital Biomarkers",
+        "Mobile and Wearable Health",
+        "Telehealth and Remote Care",
+        "Digital Therapeutics and Interventions",
+        "AI and Analytics in Health",
+        "Human-Centered Digital Health",
+        "Clinical Integration and Evaluation",
+        "Health Data Privacy and Security",
+        "Digital Health Ethics, Regulation, and Equity"
+      ]
+    },
+    {
+      "field": "Health Informatics",
+      "stems": [
+        "Health Information Foundations",
+        "Electronic Health Records",
+        "Health Data Standards and Interoperability",
+        "Clinical Information Systems",
+        "Health Data Management",
+        "Clinical Decision Support",
+        "Health Analytics",
+        "Human Factors and Workflow",
+        "Health Information Privacy and Security",
+        "Health Informatics Evaluation and Governance"
+      ]
+    },
+    {
+      "field": "Biomedical Informatics",
+      "stems": [
+        "Biomedical Data and Information Foundations",
+        "Bioinformatics and Molecular Informatics",
+        "Clinical Informatics",
+        "Imaging Informatics",
+        "Biomedical Knowledge Representation",
+        "Biomedical Data Integration and Interoperability",
+        "Biomedical Analytics and Machine Learning",
+        "Clinical and Translational Informatics",
+        "Biomedical Information Retrieval",
+        "Ethics, Privacy, and Reproducibility"
+      ]
+    },
+    {
+      "field": "Public Health",
+      "stems": [
+        "Population Health Foundations",
+        "Epidemiology",
+        "Biostatistics",
+        "Environmental and Occupational Health",
+        "Social and Behavioral Determinants of Health",
+        "Health Policy and Management",
+        "Health Promotion and Disease Prevention",
+        "Global Health",
+        "Public Health Surveillance and Informatics",
+        "Health Equity and Community Health"
+      ]
+    },
+    {
+      "field": "Neuroscience",
+      "stems": [
+        "Cellular and Molecular Neuroscience",
+        "Neuroanatomy and Neural Systems",
+        "Neurophysiology",
+        "Sensory Systems",
+        "Motor Systems",
+        "Learning, Memory, and Plasticity",
+        "Cognitive and Behavioral Neuroscience",
+        "Developmental Neuroscience",
+        "Computational and Systems Neuroscience",
+        "Neurotechnology and Neuroscience Methods"
+      ]
+    },
+    {
+      "field": "Medical Informatics",
+      "stems": [
+        "Medical Information and Clinical Data",
+        "Electronic Medical Records",
+        "Clinical Terminologies and Standards",
+        "Clinical Information Systems",
+        "Medical Decision Support",
+        "Medical Data Analytics",
+        "Medical Imaging and Diagnostic Informatics",
+        "Clinical Workflow and Human Factors",
+        "Medical Information Security and Privacy",
+        "Clinical Informatics Evaluation and Governance"
+      ]
+    },
+    {
+      "field": "Mechanical Engineering",
+      "stems": [
+        "Engineering Mechanics",
+        "Dynamics and Vibrations",
+        "Thermodynamics",
+        "Fluid Mechanics",
+        "Heat and Mass Transfer",
+        "Materials and Solid Mechanics",
+        "Mechanical Design",
+        "Manufacturing and Production",
+        "Control and Mechatronic Systems",
+        "Computational and Experimental Mechanical Engineering"
+      ]
+    },
+    {
+      "field": "Mechatronics",
+      "stems": [
+        "Mechanical System Foundations",
+        "Electrical and Electronic Systems",
+        "Sensors and Instrumentation",
+        "Actuators and Drive Systems",
+        "Embedded Computing",
+        "Dynamic Systems and Modeling",
+        "Feedback and Control",
+        "System Integration",
+        "Robotics and Automation",
+        "Mechatronic System Design and Validation"
+      ]
+    },
+    {
+      "field": "Control Engineering",
+      "stems": [
+        "Dynamic System Modeling",
+        "Feedback Control Foundations",
+        "Stability and System Analysis",
+        "Classical Control",
+        "State-Space and Modern Control",
+        "Digital and Discrete-Time Control",
+        "Optimal and Robust Control",
+        "Nonlinear and Adaptive Control",
+        "Estimation and System Identification",
+        "Control System Implementation and Validation"
+      ]
+    },
+    {
+      "field": "Automation Engineering",
+      "stems": [
+        "Automation Systems Foundations",
+        "Sensors and Measurement",
+        "Actuation and Drives",
+        "Industrial Control Systems",
+        "Programmable and Embedded Control",
+        "Process Control",
+        "Industrial Communication and Networking",
+        "Robotics and Automated Systems",
+        "Supervisory Control and System Integration",
+        "Automation Safety, Reliability, and Optimization"
+      ]
+    },
+    {
+      "field": "Electrical Engineering",
+      "stems": [
+        "Circuit Theory",
+        "Electronics",
+        "Signals and Systems",
+        "Electromagnetics",
+        "Digital Systems",
+        "Communication Systems",
+        "Control Systems",
+        "Power and Energy Systems",
+        "Microelectronics and Semiconductor Devices",
+        "Electrical Measurement, Modeling, and Design"
+      ]
+    },
+    {
+      "field": "Embedded Systems",
+      "stems": [
+        "Embedded Computing Foundations",
+        "Microcontrollers and Processor Architecture",
+        "Embedded Software",
+        "Sensors, Actuators, and Interfaces",
+        "Real-Time Systems",
+        "Embedded Communication",
+        "Hardware-Software Co-Design",
+        "Resource-Constrained System Design",
+        "Embedded Security and Dependability",
+        "Embedded System Integration and Verification"
+      ]
+    },
+    {
+      "field": "Manufacturing Engineering",
+      "stems": [
+        "Manufacturing Processes",
+        "Materials and Manufacturing",
+        "Production Systems",
+        "Manufacturing Systems Design",
+        "Computer-Aided Manufacturing",
+        "Automation and Robotics",
+        "Quality Engineering",
+        "Metrology and Inspection",
+        "Advanced and Additive Manufacturing",
+        "Sustainable and Digital Manufacturing"
+      ]
+    },
+    {
+      "field": "Industrial Engineering",
+      "stems": [
+        "Operations Research and Optimization",
+        "Probability and Engineering Statistics",
+        "Production and Operations Systems",
+        "Supply Chain and Logistics",
+        "Quality and Reliability Engineering",
+        "Human Factors and Ergonomics",
+        "Systems Simulation",
+        "Engineering Economics and Decision Analysis",
+        "Facilities and Process Design",
+        "Systems Improvement and Performance Analytics"
+      ]
+    },
+    {
+      "field": "Systems Engineering",
+      "stems": [
+        "Systems Thinking and Systems Foundations",
+        "Stakeholder Needs and Requirements Engineering",
+        "System Architecture and Design",
+        "System Modeling and Analysis",
+        "Decision Analysis and Trade Studies",
+        "System Integration",
+        "Verification and Validation",
+        "System Lifecycle Engineering",
+        "Risk, Reliability, Safety, and Resilience",
+        "Technical Management and Systems Engineering Practice"
+      ]
+    },
+    {
+      "field": "Human-Robot Interaction",
+      "stems": [
+        "Human and Robot Factors",
+        "Interaction Models and Communication",
+        "Human-Robot Interface Design",
+        "Shared Autonomy and Human-Robot Collaboration",
+        "Robot Perception of Humans",
+        "Human Perception and Understanding of Robots",
+        "Trust, Transparency, and Explainability",
+        "HRI Evaluation and Research Methods",
+        "Safety, Ethics, and Social Implications",
+        "Multi-Human and Multi-Robot Interaction"
+      ]
+    }
+  ]
+}

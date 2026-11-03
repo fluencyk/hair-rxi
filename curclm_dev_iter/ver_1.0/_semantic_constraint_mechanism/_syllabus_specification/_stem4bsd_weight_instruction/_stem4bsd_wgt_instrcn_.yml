@@ -1,0 +1,55 @@
+_stem4bsd_wgt_instrcn_:
+  id: STEM-WGT-CONSUMPTION-INSTRUCTION
+
+  description: >
+    Semantic instruction for interpreting and consuming BSD-conditioned
+    Stem weights during Syllabus formation. The instruction governs how
+    existing weights influence curriculum reasoning without treating them
+    as deterministic allocation values.
+
+  semantics: >
+    A Stem weight represents relative lecturability emphasis under the
+    bound BSD. It is a reasoning control signal for Syllabus formation,
+    not a direct prescription of instructional time, module count,
+    sequence position, or academic importance.
+
+  interpretation:
+    0.0: exclude
+    0.1-0.3: peripheral
+    0.4-0.6: supporting
+    0.7-0.9: substantial
+    1.0: essential
+
+  influence:
+    - stem selection and omission pressure
+    - relative instructional depth
+    - relative breadth of treatment
+    - integration with other Stems
+    - sequencing priority when dependency relationships are relevant
+
+  reasoning:
+    instruction: >
+      Interpret each Stem weight relationally within its source Field,
+      the complete BSD-conditioned weighted Stem state, the learner
+      constraints, and the bound course contract. Use weights to guide
+      curriculum emphasis while preserving coherent knowledge progression
+      and course identity.
+
+    guidance:
+      - Prefer higher-weight Stems when curriculum scope requires selection.
+      - Allow multiple related Stems to be integrated into a shared curriculum structure.
+      - Allow a lower-weight Stem when it provides necessary conceptual or dependency support.
+      - Allow omission of a higher-weight Stem when inclusion would violate course scope, learner capability, coherence, or declared learning depth.
+      - Use differences in weight to influence relative depth and breadth rather than mechanically allocating curriculum space.
+      - Resolve final inclusion and treatment through holistic curriculum reasoning rather than weight alone.
+
+  constraints:
+    - Do not recalculate or modify source Stem weights.
+    - Do not create, rename, split, merge, or rewrite canonical Stems.
+    - Do not interpret weights as percentages of instructional time.
+    - Do not map weights directly to numbers of weeks, modules, lessons, or slides.
+    - Do not require every high-weight Stem to become an independent curriculum module.
+    - Do not automatically omit a Stem solely because its weight is lower than another Stem.
+    - Do not normalize weights across Fields or across the complete weighted Stem state.
+    - Do not infer academic validity, disciplinary importance, or learner capability from weight.
+    - Preserve traceability from every selected curriculum structure to its canonical source Stem or Stems.

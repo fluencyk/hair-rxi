@@ -1,0 +1,761 @@
+{
+  "bsd": {
+    "index": 0,
+    "id": "BSD-COMP-AI",
+    "name": "Computing and Artificial Intelligence"
+  },
+
+  "fields": [
+    {
+      "field": "Computer Science",
+      "stems": [
+        {
+          "stem": "Algorithms and Computational Problem Solving",
+          "weight": 1.0
+        },
+        {
+          "stem": "Programming Languages and Abstractions",
+          "weight": 0.9
+        },
+        {
+          "stem": "Computer Systems and Architecture",
+          "weight": 0.8
+        },
+        {
+          "stem": "Operating Systems and Resource Management",
+          "weight": 0.7
+        },
+        {
+          "stem": "Data Management and Information",
+          "weight": 0.7
+        },
+        {
+          "stem": "Networks and Distributed Computing",
+          "weight": 0.7
+        },
+        {
+          "stem": "Artificial Intelligence and Intelligent Computation",
+          "weight": 1.0
+        },
+        {
+          "stem": "Software Engineering",
+          "weight": 0.6
+        },
+        {
+          "stem": "Human-Computer Interaction",
+          "weight": 0.6
+        },
+        {
+          "stem": "Security and Privacy",
+          "weight": 0.7
+        },
+        {
+          "stem": "Mathematical and Theoretical Foundations",
+          "weight": 1.0
+        },
+        {
+          "stem": "Computing, Society, and Professional Practice",
+          "weight": 0.6
+        }
+      ]
+    },
+
+    {
+      "field": "Artificial Intelligence",
+      "stems": [
+        {
+          "stem": "Foundations of Intelligent Systems",
+          "weight": 1.0
+        },
+        {
+          "stem": "Search and Problem Solving",
+          "weight": 0.9
+        },
+        {
+          "stem": "Knowledge Representation and Reasoning",
+          "weight": 0.9
+        },
+        {
+          "stem": "Reasoning under Uncertainty",
+          "weight": 0.9
+        },
+        {
+          "stem": "Machine Learning",
+          "weight": 1.0
+        },
+        {
+          "stem": "Planning and Decision Making",
+          "weight": 0.9
+        },
+        {
+          "stem": "Agents and Multi-Agent Systems",
+          "weight": 0.8
+        },
+        {
+          "stem": "Natural Language Intelligence",
+          "weight": 0.8
+        },
+        {
+          "stem": "Perception and Computer Vision",
+          "weight": 0.8
+        },
+        {
+          "stem": "Robotics and Embodied Intelligence",
+          "weight": 0.7
+        },
+        {
+          "stem": "AI Evaluation, Safety, Ethics, and Societal Impact",
+          "weight": 0.9
+        }
+      ]
+    },
+
+    {
+      "field": "Machine Learning",
+      "stems": [
+        {
+          "stem": "Mathematical and Statistical Foundations of Learning",
+          "weight": 1.0
+        },
+        {
+          "stem": "Data Representation and Feature Engineering",
+          "weight": 0.8
+        },
+        {
+          "stem": "Supervised Learning",
+          "weight": 1.0
+        },
+        {
+          "stem": "Unsupervised and Representation Learning",
+          "weight": 0.9
+        },
+        {
+          "stem": "Deep Learning",
+          "weight": 1.0
+        },
+        {
+          "stem": "Probabilistic Machine Learning",
+          "weight": 0.9
+        },
+        {
+          "stem": "Reinforcement and Sequential Learning",
+          "weight": 0.8
+        },
+        {
+          "stem": "Learning Theory and Generalization",
+          "weight": 0.9
+        },
+        {
+          "stem": "Model Evaluation and Validation",
+          "weight": 1.0
+        },
+        {
+          "stem": "Machine Learning Systems and Lifecycle",
+          "weight": 0.7
+        },
+        {
+          "stem": "Responsible and Trustworthy Machine Learning",
+          "weight": 0.9
+        }
+      ]
+    },
+
+    {
+      "field": "Data Science",
+      "stems": [
+        {
+          "stem": "Statistical and Mathematical Foundations",
+          "weight": 1.0
+        },
+        {
+          "stem": "Data Acquisition and Preparation",
+          "weight": 0.7
+        },
+        {
+          "stem": "Data Management and Governance",
+          "weight": 0.6
+        },
+        {
+          "stem": "Exploratory Data Analysis",
+          "weight": 0.8
+        },
+        {
+          "stem": "Statistical Modeling and Inference",
+          "weight": 1.0
+        },
+        {
+          "stem": "Machine Learning and Data Mining",
+          "weight": 1.0
+        },
+        {
+          "stem": "Large-Scale Data Systems",
+          "weight": 0.7
+        },
+        {
+          "stem": "Data Visualization and Communication",
+          "weight": 0.6
+        },
+        {
+          "stem": "Experimental and Computational Methods",
+          "weight": 0.8
+        },
+        {
+          "stem": "Data Ethics, Privacy, and Responsible Practice",
+          "weight": 0.8
+        }
+      ]
+    },
+
+    {
+      "field": "Computer Engineering",
+      "stems": [
+        {
+          "stem": "Circuits and Electronics",
+          "weight": 0.5
+        },
+        {
+          "stem": "Digital Logic and Digital Systems",
+          "weight": 0.8
+        },
+        {
+          "stem": "Computer Architecture and Organization",
+          "weight": 0.9
+        },
+        {
+          "stem": "Embedded and Cyber-Physical Systems",
+          "weight": 0.8
+        },
+        {
+          "stem": "Microprocessors and Hardware-Software Integration",
+          "weight": 0.8
+        },
+        {
+          "stem": "Signals and Systems",
+          "weight": 0.5
+        },
+        {
+          "stem": "Computer Networks and Communication",
+          "weight": 0.6
+        },
+        {
+          "stem": "Real-Time and Distributed Systems",
+          "weight": 0.7
+        },
+        {
+          "stem": "Hardware and System Design",
+          "weight": 0.7
+        },
+        {
+          "stem": "Engineering Mathematics and Physical Foundations",
+          "weight": 0.6
+        }
+      ]
+    },
+
+    {
+      "field": "Information Technology",
+      "stems": [
+        {
+          "stem": "Computing and Information Foundations",
+          "weight": 0.7
+        },
+        {
+          "stem": "Networking and Communications",
+          "weight": 0.6
+        },
+        {
+          "stem": "System Administration and Infrastructure",
+          "weight": 0.4
+        },
+        {
+          "stem": "Cybersecurity and Information Assurance",
+          "weight": 0.7
+        },
+        {
+          "stem": "Data and Information Management",
+          "weight": 0.6
+        },
+        {
+          "stem": "Web and Application Technologies",
+          "weight": 0.4
+        },
+        {
+          "stem": "Cloud and Distributed Infrastructure",
+          "weight": 0.6
+        },
+        {
+          "stem": "Systems Integration and Architecture",
+          "weight": 0.6
+        },
+        {
+          "stem": "IT Operations and Service Management",
+          "weight": 0.3
+        },
+        {
+          "stem": "IT Governance and Professional Practice",
+          "weight": 0.3
+        }
+      ]
+    },
+
+    {
+      "field": "Information Science",
+      "stems": [
+        {
+          "stem": "Information Representation and Organization",
+          "weight": 0.8
+        },
+        {
+          "stem": "Information Retrieval and Search",
+          "weight": 0.9
+        },
+        {
+          "stem": "Information Behavior and Use",
+          "weight": 0.5
+        },
+        {
+          "stem": "Data and Information Management",
+          "weight": 0.7
+        },
+        {
+          "stem": "Human-Information Interaction",
+          "weight": 0.6
+        },
+        {
+          "stem": "Information Systems and Infrastructures",
+          "weight": 0.5
+        },
+        {
+          "stem": "Knowledge Organization",
+          "weight": 0.6
+        },
+        {
+          "stem": "Information Analytics",
+          "weight": 0.8
+        },
+        {
+          "stem": "Information Policy, Ethics, and Governance",
+          "weight": 0.5
+        },
+        {
+          "stem": "Social and Organizational Dimensions of Information",
+          "weight": 0.4
+        }
+      ]
+    },
+
+    {
+      "field": "Cybersecurity",
+      "stems": [
+        {
+          "stem": "Security Foundations and Adversarial Thinking",
+          "weight": 0.9
+        },
+        {
+          "stem": "Data and Information Security",
+          "weight": 0.8
+        },
+        {
+          "stem": "Software Security",
+          "weight": 0.7
+        },
+        {
+          "stem": "System and Platform Security",
+          "weight": 0.8
+        },
+        {
+          "stem": "Network and Communication Security",
+          "weight": 0.8
+        },
+        {
+          "stem": "Cryptography and Applied Security Mechanisms",
+          "weight": 0.9
+        },
+        {
+          "stem": "Identity and Access Management",
+          "weight": 0.6
+        },
+        {
+          "stem": "Security Operations and Incident Response",
+          "weight": 0.5
+        },
+        {
+          "stem": "Risk, Governance, and Security Management",
+          "weight": 0.5
+        },
+        {
+          "stem": "Human, Legal, Ethical, and Societal Security",
+          "weight": 0.5
+        }
+      ]
+    },
+
+    {
+      "field": "Human-Computer Interaction",
+      "stems": [
+        {
+          "stem": "Human Factors and Cognitive Foundations",
+          "weight": 0.8
+        },
+        {
+          "stem": "User Research and Human-Centered Inquiry",
+          "weight": 0.6
+        },
+        {
+          "stem": "Interaction Design",
+          "weight": 0.7
+        },
+        {
+          "stem": "Interactive System Design",
+          "weight": 0.8
+        },
+        {
+          "stem": "Prototyping and Design Iteration",
+          "weight": 0.5
+        },
+        {
+          "stem": "Usability and User Experience Evaluation",
+          "weight": 0.6
+        },
+        {
+          "stem": "Accessibility and Inclusive Interaction",
+          "weight": 0.5
+        },
+        {
+          "stem": "Social and Collaborative Computing",
+          "weight": 0.6
+        },
+        {
+          "stem": "Emerging Interaction Modalities",
+          "weight": 0.7
+        },
+        {
+          "stem": "HCI Research Methods and Experimental Practice",
+          "weight": 0.7
+        }
+      ]
+    },
+
+    {
+      "field": "Computer Vision",
+      "stems": [
+        {
+          "stem": "Image Formation and Visual Representation",
+          "weight": 0.8
+        },
+        {
+          "stem": "Image Processing and Feature Representation",
+          "weight": 0.8
+        },
+        {
+          "stem": "Geometry and Multi-View Vision",
+          "weight": 0.7
+        },
+        {
+          "stem": "Visual Recognition and Classification",
+          "weight": 1.0
+        },
+        {
+          "stem": "Object Detection and Segmentation",
+          "weight": 1.0
+        },
+        {
+          "stem": "Motion, Tracking, and Video Understanding",
+          "weight": 0.8
+        },
+        {
+          "stem": "Three-Dimensional Vision and Reconstruction",
+          "weight": 0.7
+        },
+        {
+          "stem": "Deep Visual Representation Learning",
+          "weight": 1.0
+        },
+        {
+          "stem": "Vision Systems and Multimodal Perception",
+          "weight": 0.9
+        },
+        {
+          "stem": "Evaluation, Robustness, and Responsible Vision",
+          "weight": 0.8
+        }
+      ]
+    },
+
+    {
+      "field": "Natural Language Processing",
+      "stems": [
+        {
+          "stem": "Linguistic and Computational Foundations",
+          "weight": 0.8
+        },
+        {
+          "stem": "Text Representation and Language Modeling",
+          "weight": 1.0
+        },
+        {
+          "stem": "Lexical and Syntactic Processing",
+          "weight": 0.7
+        },
+        {
+          "stem": "Semantic Representation and Understanding",
+          "weight": 0.9
+        },
+        {
+          "stem": "Information Extraction and Retrieval",
+          "weight": 0.8
+        },
+        {
+          "stem": "Machine Translation and Multilingual Processing",
+          "weight": 0.6
+        },
+        {
+          "stem": "Dialogue and Conversational Systems",
+          "weight": 0.8
+        },
+        {
+          "stem": "Neural and Foundation Language Models",
+          "weight": 1.0
+        },
+        {
+          "stem": "Language Generation",
+          "weight": 0.9
+        },
+        {
+          "stem": "NLP Evaluation, Fairness, and Responsible Language Technology",
+          "weight": 0.8
+        }
+      ]
+    },
+
+    {
+      "field": "Robotics",
+      "stems": [
+        {
+          "stem": "Robot Mechanics and Kinematics",
+          "weight": 0.6
+        },
+        {
+          "stem": "Sensing and Perception",
+          "weight": 0.9
+        },
+        {
+          "stem": "Localization and Mapping",
+          "weight": 0.8
+        },
+        {
+          "stem": "Planning and Navigation",
+          "weight": 0.9
+        },
+        {
+          "stem": "Dynamics and Control",
+          "weight": 0.7
+        },
+        {
+          "stem": "Robot Learning and Adaptation",
+          "weight": 1.0
+        },
+        {
+          "stem": "Robot Architectures and Autonomous Behavior",
+          "weight": 0.9
+        },
+        {
+          "stem": "Manipulation and Physical Interaction",
+          "weight": 0.6
+        },
+        {
+          "stem": "Multi-Robot and Cooperative Systems",
+          "weight": 0.8
+        },
+        {
+          "stem": "Human-Robot Interaction and Robot Safety",
+          "weight": 0.7
+        }
+      ]
+    },
+
+    {
+      "field": "Autonomous Systems",
+      "stems": [
+        {
+          "stem": "Autonomy and System Architecture",
+          "weight": 0.9
+        },
+        {
+          "stem": "Sensing and Environmental Perception",
+          "weight": 0.9
+        },
+        {
+          "stem": "State Estimation and World Modeling",
+          "weight": 0.9
+        },
+        {
+          "stem": "Planning and Decision Making",
+          "weight": 1.0
+        },
+        {
+          "stem": "Control and Dynamic Behavior",
+          "weight": 0.8
+        },
+        {
+          "stem": "Learning and Adaptive Autonomy",
+          "weight": 1.0
+        },
+        {
+          "stem": "Multi-Agent and Cooperative Autonomy",
+          "weight": 0.8
+        },
+        {
+          "stem": "Verification, Validation, and Runtime Assurance",
+          "weight": 0.8
+        },
+        {
+          "stem": "Safety, Robustness, and Resilience",
+          "weight": 0.9
+        },
+        {
+          "stem": "Human Oversight and Responsible Autonomy",
+          "weight": 0.8
+        }
+      ]
+    },
+
+    {
+      "field": "Computational Science",
+      "stems": [
+        {
+          "stem": "Mathematical Modeling",
+          "weight": 0.9
+        },
+        {
+          "stem": "Numerical Methods",
+          "weight": 0.9
+        },
+        {
+          "stem": "Scientific Computing",
+          "weight": 1.0
+        },
+        {
+          "stem": "Simulation and Computational Experimentation",
+          "weight": 0.9
+        },
+        {
+          "stem": "High-Performance Computing",
+          "weight": 0.8
+        },
+        {
+          "stem": "Parallel and Distributed Scientific Computation",
+          "weight": 0.8
+        },
+        {
+          "stem": "Scientific Data Analysis",
+          "weight": 0.8
+        },
+        {
+          "stem": "Computational Modeling of Complex Systems",
+          "weight": 0.9
+        },
+        {
+          "stem": "Verification, Validation, and Uncertainty Quantification",
+          "weight": 0.8
+        },
+        {
+          "stem": "Scientific Visualization and Reproducibility",
+          "weight": 0.6
+        }
+      ]
+    },
+
+    {
+      "field": "Computational Intelligence",
+      "stems": [
+        {
+          "stem": "Foundations of Computational Intelligence",
+          "weight": 0.9
+        },
+        {
+          "stem": "Neural Computation",
+          "weight": 1.0
+        },
+        {
+          "stem": "Evolutionary Computation",
+          "weight": 0.8
+        },
+        {
+          "stem": "Fuzzy Systems",
+          "weight": 0.7
+        },
+        {
+          "stem": "Swarm Intelligence",
+          "weight": 0.7
+        },
+        {
+          "stem": "Learning and Adaptive Systems",
+          "weight": 1.0
+        },
+        {
+          "stem": "Optimization and Search",
+          "weight": 0.9
+        },
+        {
+          "stem": "Hybrid Intelligent Systems",
+          "weight": 0.8
+        },
+        {
+          "stem": "Computational Intelligence for Decision Making",
+          "weight": 0.8
+        },
+        {
+          "stem": "Evaluation and Robustness of Intelligent Methods",
+          "weight": 0.8
+        }
+      ]
+    },
+
+    {
+      "field": "Intelligent Systems",
+      "stems": [
+        {
+          "stem": "Intelligent System Foundations",
+          "weight": 1.0
+        },
+        {
+          "stem": "Knowledge and Representation",
+          "weight": 0.9
+        },
+        {
+          "stem": "Reasoning and Inference",
+          "weight": 0.9
+        },
+        {
+          "stem": "Learning and Adaptation",
+          "weight": 1.0
+        },
+        {
+          "stem": "Perception and Environmental Understanding",
+          "weight": 0.9
+        },
+        {
+          "stem": "Planning and Decision Making",
+          "weight": 0.9
+        },
+        {
+          "stem": "Autonomous and Agent-Based Systems",
+          "weight": 0.9
+        },
+        {
+          "stem": "Human-Intelligent System Interaction",
+          "weight": 0.7
+        },
+        {
+          "stem": "Intelligent System Architecture and Integration",
+          "weight": 0.9
+        },
+        {
+          "stem": "Evaluation, Safety, and Responsible Intelligence",
+          "weight": 0.9
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "_flow_": {
+    "id": "STEM2SYLLABI4BSD-COMP-AI",
+
+    "input": {
+      "required": [
+        "field2stem_generated_all.json",
+        "_bmf_comp_ai_.json",
+        "_stem2syllabi_wgt_.yml"
+      ]
+    },
+
+    "binding": {
+      "bsd_index": 0,
+      "bsd_id": "BSD-COMP-AI"
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Resolve BSD-bound Fields from _bmf_comp_ai_ and retrieve their canonical Stems from field2stem_generated_all.json."
+      },
+      {
+        "step": "weight",
+        "instruction": "Assign each resolved Stem a BSD-conditioned lecturability weight according to _stem2syllabi_wgt_."
+      },
+      {
+        "step": "validate",
+        "instruction": "Preserve source Field and Stem identities and validate all generated weights against _stem2syllabi_wgt_."
+      },
+      {
+        "step": "materialize",
+        "instruction": "Materialize the weighted Stem state without modifying its source states."
+      }
+    ],
+
+    "output": {
+      "target": "stem2syllabi4bsd_weighted_0.json",
+      "schema": {
+        "fields": [
+          {
+            "field": "",
+            "stems": [
+              {
+                "stem": "",
+                "weight": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

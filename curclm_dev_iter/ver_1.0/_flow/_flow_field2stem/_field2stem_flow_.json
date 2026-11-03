@@ -1,0 +1,57 @@
+{
+  "_flow_": {
+    "id": "FIELD2STEM-GENERATION",
+
+    "description": "Execution flow for naturally decomposing qualified academic Fields into major academic knowledge Stems and materializing the complete Field-to-Stem academic knowledge state.",
+
+    "input": {
+      "required": [
+        "academic_based_fields_set"
+      ],
+      "optional": [
+        "rag"
+      ]
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Load academic_based_fields_set and preserve every qualified academic Field identity without introducing BSD, curriculum, learner, duration, or instructional context."
+      },
+
+      {
+        "step": "decompose",
+        "instruction": "Decompose each academic Field independently into its major academic knowledge Stems. Treat Stems as substantial knowledge structures rather than isolated topics, tools, techniques, products, activities, or instructional units."
+      },
+
+      {
+        "step": "reconcile",
+        "instruction": "Resolve unnecessary overlap within each Field's generated Stems while preserving meaningful disciplinary distinctions and knowledge structures. Do not perform cross-Field reconciliation."
+      },
+
+      {
+        "step": "validate",
+        "instruction": "Validate complete Field coverage, Field identity preservation, Field-to-Stem lineage, coherent Stem granularity, and independence from BSD or curriculum semantics."
+      },
+
+      {
+        "step": "materialize",
+        "instruction": "Materialize the complete academic_based_fields_expanded_stems_set as structured JSON."
+      }
+    ],
+
+    "output": {
+      "target": "field2stem_generated_all.json",
+      "mode": "structured_json",
+
+      "schema": {
+        "academic_based_fields_expanded_stems_set": [
+          {
+            "field": "",
+            "stems": []
+          }
+        ]
+      }
+    }
+  }
+}

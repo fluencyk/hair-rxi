@@ -1,0 +1,58 @@
+_student_learning_capability_:
+  id: RXI-PREUNIVERSITY-LEARNING-CAPABILITY
+
+  description: >
+    Semantic constraint defining the reasonable learning capability
+    boundary for international-school students undertaking guided
+    pre-university academic study within RXI curricula.
+
+  learner_position:
+    educational_stage: pre-university
+    learning_context: international secondary-school education
+
+  capability:
+    conceptual_reasoning:
+      boundary: >
+        Learners can engage with disciplinary concepts, abstractions,
+        relationships, and simplified theoretical models when appropriate
+        scaffolding and concrete examples are provided.
+
+    mathematical_reasoning:
+      boundary: >
+        Learners can apply secondary-school mathematics and introductory
+        quantitative reasoning, while advanced university-level mathematical
+        formalism should be introduced only when necessary and appropriately
+        scaffolded.
+
+    computational_reasoning:
+      boundary: >
+        Learners can develop computational thinking, follow algorithmic
+        reasoning, and use programming or computational tools for guided
+        exploration without assuming advanced software-development proficiency.
+
+    research_reasoning:
+      boundary: >
+        Learners can formulate bounded questions, examine evidence,
+        conduct guided investigations, interpret results, and communicate
+        findings without assuming independent university-level research maturity.
+
+    engineering_and_design:
+      boundary: >
+        Learners can investigate problems through modeling, prototyping,
+        experimentation, iteration, and system-level reasoning when technical
+        complexity is appropriately constrained.
+
+    learning_autonomy:
+      boundary: >
+        Learners can undertake progressively independent academic and project
+        work, but complex disciplinary decisions, research design, and technical
+        execution may require structured guidance and instructor scaffolding.
+
+  constraints:
+    - Do not assume undergraduate-level disciplinary completeness.
+    - Do not simplify disciplinary knowledge into disconnected popular-science content.
+    - Do not require advanced mathematics solely because it exists in the source academic Field.
+    - Do not require professional software or engineering proficiency as a prerequisite.
+    - Preserve authentic academic concepts when they can be made accessible through appropriate scaffolding.
+    - Prefer reducing breadth, depth, and technical complexity over replacing academic substance with superficial content.
+    - Allow challenging material when prerequisite concepts can be introduced coherently within the learning progression.

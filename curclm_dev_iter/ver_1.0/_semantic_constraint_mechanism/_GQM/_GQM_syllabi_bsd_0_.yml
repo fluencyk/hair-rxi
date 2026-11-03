@@ -1,0 +1,173 @@
+_GQM_syllabi_bsd_0_:
+  id: GQM-SYLLABI-BSD-COMP-AI
+
+  description: >
+    Quality and reasoning gate for evaluating generated Syllabi under
+    BSD-COMP-AI before final materialization.
+
+  binding:
+    bsd_index: 0
+    bsd_id: BSD-COMP-AI
+    bsd_name: Computing and Artificial Intelligence
+
+  goal: >
+    Determine whether a generated Syllabus forms a coherent, academically
+    grounded, learner-appropriate course under the bound BSD while preserving
+    traceability to its weighted Stem sources and declared course contract.
+
+  questions:
+
+    academic_coherence:
+      question: >
+        Does the Syllabus constitute a coherent academic course rather than
+        a collection of individually relevant but disconnected topics?
+      examine:
+        - conceptual relationships among modules
+        - dependency structure
+        - overall disciplinary narrative
+
+    bsd_alignment:
+      question: >
+        Does the Syllabus meaningfully represent the Computing and Artificial
+        Intelligence BSD without attempting exhaustive coverage?
+      examine:
+        - selected Fields and Stems
+        - weighted Stem emphasis
+        - balance between computing foundations and artificial intelligence
+
+    course_identity:
+      question: >
+        Does the Syllabus preserve the identity, role, academic level,
+        learning depth, and intent declared by the bound RXI course?
+      examine:
+        - course_role
+        - academic_level
+        - learning_depth
+        - course_intent
+        - depth_boundary
+
+    learner_fit:
+      question: >
+        Is the Syllabus intellectually challenging but reasonably learnable
+        within the declared student profile and learning capability boundary?
+      examine:
+        - prerequisite assumptions
+        - abstraction level
+        - mathematical demands
+        - computational demands
+        - required learning autonomy
+
+    learning_progression:
+      question: >
+        Does the Syllabus establish a meaningful progression from foundations
+        toward more integrated reasoning and practice?
+      examine:
+        - sequencing
+        - prerequisite relationships
+        - conceptual progression
+        - increasing integration of knowledge
+
+    stem_selection:
+      question: >
+        Are included and omitted Stems defensible given their BSD-conditioned
+        weights, dependency value, course identity, and learner constraints?
+      examine:
+        - selected_stems
+        - omitted_stems
+        - high-weight omissions
+        - low-weight inclusions
+
+    depth_and_breadth:
+      question: >
+        Does the Syllabus achieve appropriate depth without excessive breadth,
+        fragmentation, or premature specialization?
+      examine:
+        - module scope
+        - knowledge density
+        - unnecessary specialization
+        - superficial topic coverage
+
+    theory_practice_balance:
+      question: >
+        Do practical activities reinforce academic concepts and reasoning
+        rather than replace them with tool usage or procedural instruction?
+      examine:
+        - relationship between concepts and activities
+        - computational practice
+        - experimentation
+        - project-oriented learning
+
+    academic_authenticity:
+      question: >
+        Has academic substance been preserved while adapting the curriculum
+        to pre-university learners?
+      examine:
+        - disciplinary concepts
+        - theoretical grounding
+        - use of scaffolding
+        - avoidance of superficial popularization
+
+    progression_readiness:
+      question: >
+        Does the Syllabus establish sufficient foundations for subsequent
+        deeper research and project-based study within the same BSD?
+      examine:
+        - transferable foundations
+        - research awareness
+        - computational reasoning
+        - readiness for higher learning depth
+
+  evidence:
+    required:
+      - BSD-conditioned weighted Stem state
+      - student profile
+      - student learning capability constraint
+      - RXI course contract
+      - generated candidate Syllabus
+
+    optional:
+      - external academic references
+      - disciplinary curriculum references
+      - research literature
+      - instructor review
+
+  judgment:
+    allowed:
+      - satisfied
+      - revise
+      - unresolved
+
+    instruction: >
+      Judge each question holistically using the declared evidence.
+      Do not calculate numerical scores, weighted averages, or aggregate
+      quality metrics. Record concise reasoning for any question judged
+      revise or unresolved.
+
+  decision:
+    allowed:
+      - accept
+      - revise
+      - defer
+      - reject
+
+    rules:
+      - Accept only when the Syllabus is coherent, traceable, learner-appropriate, and consistent with the bound course contract.
+      - Revise when identified deficiencies can be corrected without changing the upstream academic source states.
+      - Defer when required evidence or unresolved curriculum decisions prevent defensible judgment.
+      - Reject when the generated Syllabus fundamentally violates BSD alignment, course identity, academic grounding, or learner capability boundaries.
+
+  lineage:
+    requirement: >
+      Every major Syllabus module must be traceable to one or more canonical
+      Stems from the BSD-conditioned weighted Stem state.
+
+  output:
+    preserve:
+      - question_judgments
+      - selected_stems
+      - omitted_stems
+      - stem_to_module_mapping
+      - major_curriculum_decisions
+      - revision_requirements
+      - unresolved_issues
+      - final_decision

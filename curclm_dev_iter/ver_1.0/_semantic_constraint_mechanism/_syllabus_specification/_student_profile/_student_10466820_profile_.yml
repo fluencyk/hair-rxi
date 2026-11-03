@@ -1,0 +1,31 @@
+student_id: "10466820"
+
+academic_orientation:
+  - Computing
+  - Artificial Intelligence
+  - Computer Science
+
+prior_exposure:
+  - Introductory programming through small Python-based exercises
+  - Basic secondary-school mathematics and statistics
+  - General awareness of artificial intelligence and machine learning
+  - Limited experience with independent technical projects
+
+learning_interests:
+  - Artificial intelligence
+  - Machine learning
+  - Computational problem solving
+  - Intelligent applications
+  - Data-driven systems
+
+research_interests:
+  - How intelligent systems learn from data
+  - How AI systems make decisions
+  - Human interaction with intelligent systems
+  - Reliability and responsible use of artificial intelligence
+
+project_preferences:
+  - Small computational experiments
+  - Prototype-based exploration
+  - Data-driven investigation
+  - Guided research projects with observable outcomes

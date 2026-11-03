@@ -1,0 +1,42 @@
+{
+  "_flow_": {
+    "id": "SYLLABUS2AGENDA",
+
+    "input": {
+      "required": [
+        "rxi_210_syllabus.json"
+      ]
+    },
+
+    "parameter": {
+      "week_num": {
+        "type": "integer",
+        "range": [5, 8],
+        "default": 8
+      }
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Resolve the canonical Syllabus structure, learning progression, modules, learning activities, and learning evidence."
+      },
+      {
+        "step": "schedule",
+        "instruction": "Distribute the Syllabus into the requested number of teaching weeks while preserving conceptual progression, prerequisite relationships, and course coherence."
+      },
+      {
+        "step": "validate",
+        "instruction": "Validate complete Syllabus coverage, temporal coherence, and traceability from every week to its source Syllabus module or modules."
+      },
+      {
+        "step": "materialize",
+        "instruction": "Materialize the weekly teaching Agenda without modifying the source Syllabus."
+      }
+    ],
+
+    "output": {
+      "target": "rxi_210_weekly_agenda.json"
+    }
+  }
+}

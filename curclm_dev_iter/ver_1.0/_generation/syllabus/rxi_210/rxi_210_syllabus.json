@@ -1,0 +1,344 @@
+{
+  "syllabus": {
+    "course_identity": {
+      "course_id": "RXI-210",
+      "title": "Fundamentals of Computing and Artificial Intelligence",
+      "bsd_id": "BSD-COMP-AI",
+      "academic_level": 2,
+      "learning_depth": 1,
+      "course_role": "fundamental"
+    },
+
+    "course_description": "A pre-university academic course introducing foundational structures of computing and artificial intelligence. Students develop computational reasoning, examine how intelligent systems represent information, reason, learn from data, and make decisions, and investigate how such systems should be evaluated and used responsibly through guided conceptual and computational practice.",
+
+    "learning_outcomes": [
+      "Explain how computational problems can be represented and approached through algorithms, abstractions, and structured reasoning.",
+      "Explain foundational ideas through which intelligent systems represent information, reason, and make decisions.",
+      "Describe how machine learning systems learn patterns from data and distinguish learning from rule-based computation.",
+      "Conduct guided computational investigations and interpret observable system behavior using appropriate evidence.",
+      "Analyze basic relationships among data, models, predictions, evaluation, and intelligent-system behavior.",
+      "Evaluate selected limitations, reliability concerns, human implications, and responsible-use considerations of artificial intelligence."
+    ],
+
+    "learning_progression": [
+      "Computational problems and abstractions",
+      "Information representation and intelligent reasoning",
+      "Learning from data",
+      "Perception, language, and intelligent-system integration",
+      "Decision making and adaptive behavior",
+      "Evaluation, human interaction, and guided inquiry"
+    ],
+
+    "modules": [
+      {
+        "module_title": "Computational Problems, Algorithms, and Abstractions",
+        "module_intent": "Establish the computational reasoning foundation required for later study of artificial intelligence.",
+        "source_stems": [
+          {
+            "field": "Computer Science",
+            "stem": "Algorithms and Computational Problem Solving",
+            "weight": 1.0
+          },
+          {
+            "field": "Computer Science",
+            "stem": "Programming Languages and Abstractions",
+            "weight": 0.9
+          },
+          {
+            "field": "Computer Science",
+            "stem": "Mathematical and Theoretical Foundations",
+            "weight": 1.0
+          }
+        ],
+        "core_concepts": [
+          "computational problems",
+          "algorithms",
+          "abstraction",
+          "inputs, processes, and outputs",
+          "computational reasoning"
+        ],
+        "learning_activities": [
+          "Trace and compare simple algorithms.",
+          "Express a bounded problem through structured computational steps.",
+          "Use small Python-based experiments to connect abstract reasoning with observable computation."
+        ],
+        "learning_evidence": [
+          "Algorithm reasoning exercise",
+          "Short computational explanation",
+          "Annotated Python-based experiment"
+        ]
+      },
+
+      {
+        "module_title": "Representing Knowledge and Reasoning Intelligently",
+        "module_intent": "Introduce artificial intelligence as the construction of systems that represent information and perform structured reasoning under different conditions.",
+        "source_stems": [
+          {
+            "field": "Artificial Intelligence",
+            "stem": "Foundations of Intelligent Systems",
+            "weight": 1.0
+          },
+          {
+            "field": "Artificial Intelligence",
+            "stem": "Search and Problem Solving",
+            "weight": 0.9
+          },
+          {
+            "field": "Artificial Intelligence",
+            "stem": "Knowledge Representation and Reasoning",
+            "weight": 0.9
+          },
+          {
+            "field": "Artificial Intelligence",
+            "stem": "Reasoning under Uncertainty",
+            "weight": 0.9
+          }
+        ],
+        "core_concepts": [
+          "intelligent systems",
+          "state and search",
+          "knowledge representation",
+          "inference",
+          "uncertainty"
+        ],
+        "learning_activities": [
+          "Model a small search or decision problem.",
+          "Compare alternative representations of the same information.",
+          "Reason through a simple decision where available information is incomplete."
+        ],
+        "learning_evidence": [
+          "Problem representation artifact",
+          "Reasoning explanation",
+          "Guided decision analysis"
+        ]
+      },
+
+      {
+        "module_title": "Learning from Data",
+        "module_intent": "Develop a foundational understanding of how computational systems learn patterns from data and how learned behavior can be evaluated.",
+        "source_stems": [
+          {
+            "field": "Artificial Intelligence",
+            "stem": "Machine Learning",
+            "weight": 1.0
+          },
+          {
+            "field": "Machine Learning",
+            "stem": "Mathematical and Statistical Foundations of Learning",
+            "weight": 1.0
+          },
+          {
+            "field": "Machine Learning",
+            "stem": "Supervised Learning",
+            "weight": 1.0
+          },
+          {
+            "field": "Machine Learning",
+            "stem": "Model Evaluation and Validation",
+            "weight": 1.0
+          },
+          {
+            "field": "Data Science",
+            "stem": "Exploratory Data Analysis",
+            "weight": 0.8
+          }
+        ],
+        "core_concepts": [
+          "data and features",
+          "training examples",
+          "models",
+          "prediction",
+          "generalization",
+          "evaluation"
+        ],
+        "learning_activities": [
+          "Inspect and describe a small dataset.",
+          "Run a guided learning experiment using a simple model.",
+          "Compare predictions with observed outcomes.",
+          "Investigate how changes in data can affect model behavior."
+        ],
+        "learning_evidence": [
+          "Data observation record",
+          "Guided machine-learning experiment",
+          "Model evaluation explanation"
+        ]
+      },
+
+      {
+        "module_title": "How Intelligent Systems Perceive and Communicate",
+        "module_intent": "Connect foundational learning concepts to systems that process visual and language information without turning specialized AI domains into separate survey courses.",
+        "source_stems": [
+          {
+            "field": "Computer Vision",
+            "stem": "Visual Recognition and Classification",
+            "weight": 1.0
+          },
+          {
+            "field": "Natural Language Processing",
+            "stem": "Text Representation and Language Modeling",
+            "weight": 1.0
+          },
+          {
+            "field": "Intelligent Systems",
+            "stem": "Perception and Environmental Understanding",
+            "weight": 0.9
+          },
+          {
+            "field": "Intelligent Systems",
+            "stem": "Intelligent System Architecture and Integration",
+            "weight": 0.9
+          }
+        ],
+        "core_concepts": [
+          "representation",
+          "classification",
+          "language representation",
+          "perception",
+          "multimodal information",
+          "system integration"
+        ],
+        "learning_activities": [
+          "Compare how text and images can be represented computationally.",
+          "Observe the behavior of simple recognition or language systems.",
+          "Trace information through a simplified intelligent-system architecture."
+        ],
+        "learning_evidence": [
+          "Representation comparison",
+          "System-behavior observation",
+          "Simplified intelligent-system model"
+        ]
+      },
+
+      {
+        "module_title": "Decision Making, Adaptation, and Autonomous Behavior",
+        "module_intent": "Show how representation, reasoning, and learning combine to support decisions and adaptive behavior in intelligent systems.",
+        "source_stems": [
+          {
+            "field": "Artificial Intelligence",
+            "stem": "Planning and Decision Making",
+            "weight": 0.9
+          },
+          {
+            "field": "Intelligent Systems",
+            "stem": "Learning and Adaptation",
+            "weight": 1.0
+          },
+          {
+            "field": "Intelligent Systems",
+            "stem": "Autonomous and Agent-Based Systems",
+            "weight": 0.9
+          },
+          {
+            "field": "Autonomous Systems",
+            "stem": "Planning and Decision Making",
+            "weight": 1.0
+          }
+        ],
+        "core_concepts": [
+          "goals",
+          "planning",
+          "decision making",
+          "adaptation",
+          "agents",
+          "autonomous behavior"
+        ],
+        "learning_activities": [
+          "Analyze a bounded decision-making scenario.",
+          "Compare fixed rules with adaptive behavior.",
+          "Model a simple agent interacting with an environment."
+        ],
+        "learning_evidence": [
+          "Decision-model artifact",
+          "Rule-versus-learning comparison",
+          "Agent-system explanation"
+        ]
+      },
+
+      {
+        "module_title": "Evaluating Intelligent Systems and Conducting Guided Inquiry",
+        "module_intent": "Integrate the course through evidence-based evaluation of intelligent-system behavior, limitations, human implications, and responsible use.",
+        "source_stems": [
+          {
+            "field": "Artificial Intelligence",
+            "stem": "AI Evaluation, Safety, Ethics, and Societal Impact",
+            "weight": 0.9
+          },
+          {
+            "field": "Machine Learning",
+            "stem": "Responsible and Trustworthy Machine Learning",
+            "weight": 0.9
+          },
+          {
+            "field": "Intelligent Systems",
+            "stem": "Evaluation, Safety, and Responsible Intelligence",
+            "weight": 0.9
+          },
+          {
+            "field": "Human-Computer Interaction",
+            "stem": "Human Factors and Cognitive Foundations",
+            "weight": 0.8
+          },
+          {
+            "field": "Computational Science",
+            "stem": "Simulation and Computational Experimentation",
+            "weight": 0.9
+          }
+        ],
+        "core_concepts": [
+          "evaluation",
+          "evidence",
+          "reliability",
+          "limitations",
+          "human oversight",
+          "responsible intelligence",
+          "computational experimentation"
+        ],
+        "learning_activities": [
+          "Formulate a bounded question about an intelligent system.",
+          "Design and conduct a guided computational investigation.",
+          "Collect and interpret observable evidence.",
+          "Discuss limitations and responsible-use implications.",
+          "Communicate findings through a concise academic artifact."
+        ],
+        "learning_evidence": [
+          "Guided research question",
+          "Computational investigation record",
+          "Evidence-based analysis",
+          "Final research communication"
+        ]
+      }
+    ],
+
+    "assessment": {
+      "approach": "Evidence-based and developmental assessment through conceptual reasoning, guided computational investigation, and academic communication rather than high-stakes examination.",
+      "major_evidence": [
+        {
+          "component": "Concept and Reasoning Portfolio",
+          "evidence": "Selected explanations, models, comparisons, and reasoning artifacts demonstrating progression across foundational concepts."
+        },
+        {
+          "component": "Computational Investigations",
+          "evidence": "Small guided experiments in which the student observes, analyzes, and explains computational or intelligent-system behavior."
+        },
+        {
+          "component": "Guided Final Inquiry",
+          "evidence": "A bounded investigation connecting a research question, computational evidence, interpretation, limitations, and responsible-use considerations."
+        }
+      ],
+      "alignment": [
+        "Concept and Reasoning Portfolio supports foundational conceptual and computational reasoning outcomes.",
+        "Computational Investigations support experimentation, model-behavior analysis, and evidence interpretation outcomes.",
+        "Guided Final Inquiry integrates intelligent-system understanding, evaluation, research reasoning, and academic communication."
+      ]
+    },
+
+    "progression_readiness": {
+      "upon_completion": [
+        "Engage with deeper study of machine learning, intelligent systems, or computational methods.",
+        "Undertake more independent computational experiments with appropriate scaffolding.",
+        "Formulate bounded research or project questions involving computing and artificial intelligence.",
+        "Progress toward RXI research- and project-based study at greater learning depth."
+      ]
+    }
+  }
+}
