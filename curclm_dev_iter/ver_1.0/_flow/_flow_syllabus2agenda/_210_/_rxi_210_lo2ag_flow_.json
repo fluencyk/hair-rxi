@@ -1,0 +1,42 @@
+{
+  "_flow_": {
+    "id": "RXI-210-LO2AG",
+
+    "input": {
+      "required": [
+        "rxi_210_objective.json"
+      ]
+    },
+
+    "parameter": {
+      "week_num": {
+        "type": "integer",
+        "range": [5, 8],
+        "default": 8
+      }
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Resolve the learning objectives and their dependency and progression relationships."
+      },
+      {
+        "step": "allocate",
+        "instruction": "Allocate learning objectives across the requested number of teaching weeks while preserving learning progression and instructional coherence."
+      },
+      {
+        "step": "validate",
+        "instruction": "Validate complete objective coverage, temporal coherence, and traceability from each weekly assignment to its source learning objective."
+      },
+      {
+        "step": "materialize",
+        "instruction": "Materialize the weekly Agenda without modifying the source Objective State."
+      }
+    ],
+
+    "output": {
+      "target": "rxi_210_agenda.json"
+    }
+  }
+}

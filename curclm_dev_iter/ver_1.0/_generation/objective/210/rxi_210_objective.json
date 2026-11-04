@@ -1,0 +1,219 @@
+{
+  "objective_state": {
+    "course_id": "RXI-210",
+    "title": "Fundamentals of Computing and Artificial Intelligence",
+
+    "objectives": [
+      {
+        "source_module": "Computational Problems, Algorithms, and Abstractions",
+
+        "learning_objectives": [
+          {
+            "id": "LO-01",
+            "learning_objective": "Explain how computational problems can be represented through algorithms, abstractions, and structured computational reasoning.",
+
+            "expected_outcome": "The student can represent a bounded computational problem, explain an algorithmic approach, and distinguish the problem representation from its implementation.",
+
+            "learning_evidence": [
+              "Structured representation of a bounded computational problem",
+              "Explanation or trace of a simple algorithm",
+              "Short computational artifact connecting abstraction with observable execution"
+            ],
+
+            "assignment": "Construct and explain a small computational solution using structured reasoning and a guided Python-based experiment.",
+
+            "assessment_criteria": [
+              "The problem is represented coherently.",
+              "The algorithmic reasoning is understandable and logically ordered.",
+              "The explanation connects computational abstraction with observable behavior."
+            ]
+          }
+        ]
+      },
+
+      {
+        "source_module": "Representing Knowledge and Reasoning Intelligently",
+
+        "learning_objectives": [
+          {
+            "id": "LO-02",
+            "learning_objective": "Explain how intelligent systems represent information and use search, inference, and uncertainty-aware reasoning to approach bounded problems.",
+
+            "expected_outcome": "The student can construct a simplified representation of an intelligent reasoning problem and explain how alternative representations or reasoning conditions affect possible decisions.",
+
+            "learning_evidence": [
+              "Problem or state representation",
+              "Explanation of a simple search or reasoning process",
+              "Analysis of a decision involving incomplete or uncertain information"
+            ],
+
+            "assignment": "Model and analyze a bounded intelligent decision problem using an appropriate representation and reasoning approach.",
+
+            "assessment_criteria": [
+              "The representation captures the relevant elements of the problem.",
+              "The reasoning process is logically explained.",
+              "Uncertainty or incomplete information is recognized where relevant."
+            ]
+          }
+        ]
+      },
+
+      {
+        "source_module": "Learning from Data",
+
+        "learning_objectives": [
+          {
+            "id": "LO-03",
+            "learning_objective": "Explain how machine-learning systems use data to construct models and produce predictions.",
+
+            "expected_outcome": "The student can distinguish learning from fixed-rule computation and explain the basic relationships among data, features, models, and predictions.",
+
+            "learning_evidence": [
+              "Conceptual model of a basic machine-learning process",
+              "Explanation distinguishing learned behavior from fixed-rule computation",
+              "Interpretation of model predictions in relation to input data"
+            ],
+
+            "assignment": "Explain and represent the learning process of a simple supervised machine-learning system.",
+
+            "assessment_criteria": [
+              "The relationships among data, model, and prediction are represented correctly.",
+              "Learning is meaningfully distinguished from fixed-rule computation.",
+              "The explanation remains appropriate to the foundational course depth."
+            ]
+          },
+
+          {
+            "id": "LO-04",
+            "learning_objective": "Conduct a guided computational investigation and evaluate how data and model behavior relate to observed outcomes.",
+
+            "expected_outcome": "The student can inspect a small dataset, run a guided learning experiment, compare predictions with observations, and make a bounded evidence-based interpretation.",
+
+            "learning_evidence": [
+              "Data observation record",
+              "Guided machine-learning experiment",
+              "Comparison between predictions and observed outcomes",
+              "Evidence-based interpretation of model behavior"
+            ],
+
+            "assignment": "Conduct a guided machine-learning experiment and report how observed data and model behavior influence the resulting predictions.",
+
+            "assessment_criteria": [
+              "Relevant observations are recorded accurately.",
+              "The experiment follows a coherent procedure.",
+              "Predictions are compared with observable evidence.",
+              "Conclusions remain supported by the available evidence."
+            ]
+          }
+        ]
+      },
+
+      {
+        "source_module": "How Intelligent Systems Perceive and Communicate",
+
+        "learning_objectives": [
+          {
+            "id": "LO-05",
+            "learning_objective": "Explain how intelligent systems represent and process visual and language information as part of larger computational systems.",
+
+            "expected_outcome": "The student can compare simplified representations of visual and language information and trace how information moves through an intelligent-system architecture.",
+
+            "learning_evidence": [
+              "Comparison of visual and language representations",
+              "Observation of recognition or language-system behavior",
+              "Simplified model of information flow through an intelligent system"
+            ],
+
+            "assignment": "Compare two forms of computational perception or communication and explain their roles within a simplified intelligent-system architecture.",
+
+            "assessment_criteria": [
+              "The comparison identifies meaningful similarities and differences.",
+              "The representations are explained at an appropriate conceptual level.",
+              "The relationship between individual capabilities and the larger system is clear."
+            ]
+          }
+        ]
+      },
+
+      {
+        "source_module": "Decision Making, Adaptation, and Autonomous Behavior",
+
+        "learning_objectives": [
+          {
+            "id": "LO-06",
+            "learning_objective": "Explain how intelligent systems combine goals, planning, learning, and adaptation to support decision making and autonomous behavior.",
+
+            "expected_outcome": "The student can analyze a bounded decision scenario, distinguish fixed from adaptive behavior, and explain a simplified agent-environment interaction.",
+
+            "learning_evidence": [
+              "Decision-model artifact",
+              "Comparison between fixed-rule and adaptive behavior",
+              "Explanation or model of an agent interacting with an environment"
+            ],
+
+            "assignment": "Analyze and model a simple intelligent agent making decisions within a bounded environment.",
+
+            "assessment_criteria": [
+              "Goals and relevant decision conditions are identified.",
+              "Fixed and adaptive behavior are meaningfully distinguished.",
+              "The agent-environment relationship is represented coherently."
+            ]
+          }
+        ]
+      },
+
+      {
+        "source_module": "Evaluating Intelligent Systems and Conducting Guided Inquiry",
+
+        "learning_objectives": [
+          {
+            "id": "LO-07",
+            "learning_objective": "Evaluate intelligent-system behavior using observable evidence while identifying relevant limitations, reliability concerns, human implications, and responsible-use considerations.",
+
+            "expected_outcome": "The student can examine evidence about an intelligent system, identify meaningful limitations or reliability concerns, and formulate a reasoned evaluation that considers human and responsible-use implications.",
+
+            "learning_evidence": [
+              "Evidence-based system evaluation",
+              "Identification of limitations or reliability concerns",
+              "Reasoned analysis of human or responsible-use implications"
+            ],
+
+            "assignment": "Evaluate a bounded intelligent-system case using observable evidence and communicate its capabilities, limitations, and responsible-use considerations.",
+
+            "assessment_criteria": [
+              "Claims about system behavior are supported by observable evidence.",
+              "Relevant limitations or reliability concerns are identified.",
+              "Human or responsible-use implications are connected to the analyzed system.",
+              "The evaluation distinguishes evidence from unsupported assumptions."
+            ]
+          },
+
+          {
+            "id": "LO-08",
+            "learning_objective": "Conduct and communicate a guided computational inquiry connecting a bounded research question with evidence, interpretation, and limitations.",
+
+            "expected_outcome": "The student can formulate a bounded question, conduct a guided computational investigation, interpret resulting evidence, acknowledge limitations, and communicate findings coherently.",
+
+            "learning_evidence": [
+              "Bounded research question",
+              "Computational investigation record",
+              "Evidence-based analysis",
+              "Statement of limitations",
+              "Concise academic communication of findings"
+            ],
+
+            "assignment": "Complete a guided final inquiry that connects a research question, computational investigation, evidence, interpretation, limitations, and communicated findings.",
+
+            "assessment_criteria": [
+              "The research question is bounded and investigable.",
+              "The investigation is coherently connected to the question.",
+              "Interpretations are supported by collected evidence.",
+              "Relevant limitations are acknowledged.",
+              "Findings are communicated clearly and academically."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

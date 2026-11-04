@@ -1,0 +1,1068 @@
+{
+  "course_ref": "RXI-210",
+  "week": 1,
+
+  "slides": [
+    {
+      "index": 1,
+      "title": "Computational Problems, Algorithms, and Abstractions",
+      "purpose": "week_framing",
+      "items": [
+        {
+          "type": "question",
+          "content": "How can a real-world problem become something a computer can solve?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Open the week by framing computation as a transformation from an informal problem into an explicit computational form.",
+            "explanation": "Do not answer immediately. Let students suggest what information a computer would need before introducing formal representation.",
+            "emphasis": "Computers require problems to be represented explicitly.",
+            "learner_check": "Ask for one everyday problem that could potentially be represented computationally.",
+            "caution": "Do not begin with programming syntax."
+          }
+        },
+        {
+          "type": "concept",
+          "content": "Computational problem solving begins by representing a problem precisely enough that a sequence of computational steps can operate on it.",
+          "provenance": {
+            "status": "verified",
+            "description": "MIT 6.006 treats algorithms as computational procedures for solving problems and introduces mathematical modeling of computational problems.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT OpenCourseWare — 6.006 Introduction to Algorithms"
+            },
+            "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Establish problem representation as preceding algorithm execution.",
+            "explanation": "Contrast a vague request such as 'find the busiest classroom' with a computationally explicit version containing measurable inputs and a required output.",
+            "emphasis": "The machine cannot operate directly on an informal intention; it operates on a representation.",
+            "learner_check": "Ask what information would need to be specified before a computer could solve the classroom problem.",
+            "caution": "Do not imply that every real-world problem has one obvious computational representation."
+          }
+        },
+        {
+          "type": "learning_path",
+          "content": [
+            "Problem",
+            "Representation",
+            "Algorithm",
+            "Implementation",
+            "Execution",
+            "Observable Result"
+          ],
+          "provenance": {
+            "status": "verified",
+            "description": "The instructional chain is consistent with MIT's distinction among computational problems, algorithms, programs, and execution models.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT 6.006 — Models of Computation"
+            },
+            "url": "https://www.ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/mit6_006f11_lec02/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Give students the conceptual map that organizes the entire week.",
+            "explanation": "Walk left-to-right once, but tell students the chain will be unpacked step by step rather than memorized.",
+            "emphasis": "Algorithm and implementation are separate stages.",
+            "learner_check": "Ask which stage they think Python belongs to.",
+            "caution": "Present this as an instructional model, not a universal software-development lifecycle."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithmic Problem Formulation"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 2,
+      "title": "What Is a Computational Problem?",
+      "purpose": "problem_formulation",
+      "items": [
+        {
+          "type": "concept",
+          "content": "A computational problem describes a required transformation from available information to a desired result under defined conditions or constraints.",
+          "provenance": {
+            "status": "verified",
+            "description": "MIT 6.006 formalizes a problem in terms of problem inputs and correct outputs, providing authoritative support for input-output problem formulation.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT 6.006 — Introduction to Algorithms"
+            },
+            "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Move students from an informal problem description to input-output reasoning.",
+            "explanation": "Use the classroom electricity problem and identify what comes into the computation and what must come out.",
+            "emphasis": "A computational problem specifies required behavior without yet specifying Python code.",
+            "learner_check": "Ask students to identify the input and output of finding the lowest classroom reading.",
+            "caution": "Avoid prematurely introducing formal mathematical notation."
+          }
+        },
+        {
+          "type": "example",
+          "content": {
+            "situation": "A school has electricity-use readings from several classrooms.",
+            "problem": "Identify the classroom with the highest electricity use.",
+            "input": "A collection of classroom electricity readings.",
+            "output": "The classroom associated with the largest reading.",
+            "constraint": "Every available classroom reading must be considered."
+          },
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Make input-output-constraint structure concrete.",
+            "explanation": "Read the situation first, then reveal problem, input, output, and constraint separately.",
+            "emphasis": "The real-world situation contains more information than the computational representation needs.",
+            "learner_check": "Ask students what additional information about the classroom is irrelevant.",
+            "caution": "Keep the example focused on representation rather than electricity-domain details."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithmic Problem Formulation", "Inputs, outputs, and constraints"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 3,
+      "title": "From Reality to Representation",
+      "purpose": "introduce_abstraction",
+      "items": [
+        {
+          "type": "scenario",
+          "content": "The real classroom contains students, furniture, lighting, temperature, schedules, electricity meters, and many other details.",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Expose the excess information present in a real situation.",
+            "explanation": "Invite students to imagine the classroom before deciding which attributes belong in the computational model.",
+            "emphasis": "Reality is richer than the representation required by one problem.",
+            "learner_check": "Ask students to name five classroom attributes.",
+            "caution": "Do not label attributes relevant or irrelevant until the problem goal is restated."
+          }
+        },
+        {
+          "type": "question",
+          "content": "Which information is actually necessary if our problem is only to identify the classroom with the highest electricity use?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Make students perform abstraction rather than merely hear its definition.",
+            "explanation": "Let students remove variables one by one and require a reason for each removal.",
+            "emphasis": "Relevance is relative to the problem.",
+            "learner_check": "Ask whether wall color changes the answer and why.",
+            "caution": "Do not reward arbitrary simplification."
+          }
+        },
+        {
+          "type": "concept",
+          "content": "Abstraction preserves information relevant to a computational problem while leaving irrelevant detail outside the representation.",
+          "provenance": {
+            "status": "verified",
+            "description": "Computational-thinking guidance describes abstraction as identifying important information while ignoring unnecessary detail; ACM CS2023 also identifies abstraction as an essential computing foundation.",
+            "authority": {
+              "organization": "BCS Computing at School / ACM",
+              "source": "Computational Thinking guidance and ACM CS2023 Computer Science Foundations"
+            },
+            "url": "https://csed.acm.org/computer-science-foundations/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Establish abstraction as purposeful information selection.",
+            "explanation": "Start with the full classroom and progressively remove attributes that cannot affect the requested result.",
+            "emphasis": "Abstraction is not merely making something simpler; it preserves what matters for the current purpose.",
+            "learner_check": "Give a new scenario and ask students which details should remain.",
+            "caution": "Avoid teaching abstraction as indiscriminate deletion."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithmic Problem Formulation", "Abstraction of problem states"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 4,
+      "title": "Input → Process → Output",
+      "purpose": "establish_computational_model",
+      "items": [
+        {
+          "type": "model",
+          "content": {
+            "input": [["Room A", 12], ["Room B", 7], ["Room C", 19], ["Room D", 15]],
+            "process": "Compare the electricity-use values.",
+            "output": ["Room C", 19]
+          },
+          "provenance": {
+            "status": "verified",
+            "description": "The input-output representation is consistent with foundational algorithmic problem formulation used in MIT 6.006.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT 6.006 Introduction to Algorithms"
+            },
+            "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Make computational transformation visually concrete.",
+            "explanation": "Treat the three regions as a pipeline and ask what information changes between input and output.",
+            "emphasis": "The process must eventually become sufficiently explicit to execute.",
+            "learner_check": "Change one input value and ask students to predict the output.",
+            "caution": "Do not imply that all computation literally has one linear input-process-output architecture."
+          }
+        },
+        {
+          "type": "concept",
+          "content": "Input, process, and output provide a simple structural representation of a computational transformation.",
+          "provenance": {
+            "status": "verified",
+            "description": "NIST describes a computer as accepting data and manipulating it according to a program or sequence of processing instructions.",
+            "authority": {
+              "organization": "National Institute of Standards and Technology",
+              "source": "NIST CSRC Glossary — Computer"
+            },
+            "url": "https://csrc.nist.gov/glossary/term/computer"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Give learners a minimal structural vocabulary for computation.",
+            "explanation": "Keep this model deliberately simple and immediately connect it to the classroom example.",
+            "emphasis": "Input and output describe the problem boundary; process describes the transformation.",
+            "learner_check": "Ask students to identify all three parts in a calculator example.",
+            "caution": "Call it a simple model, not a complete theory of computation."
+          }
+        },
+        {
+          "type": "question",
+          "content": "The process currently says 'compare the values'. Is that precise enough for a computer?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Create the need for an algorithm.",
+            "explanation": "Use the ambiguity of 'compare' to make students demand more explicit steps.",
+            "emphasis": "Humanly understandable intention is not necessarily executable procedure.",
+            "learner_check": "Ask a student to give the first exact comparison operation.",
+            "caution": "Do not supply the algorithm before students recognize the ambiguity."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithmic Problem Formulation", "Inputs, outputs, and constraints"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 5,
+      "title": "An Algorithm Makes the Process Explicit",
+      "purpose": "introduce_algorithmic_reasoning",
+      "items": [
+        {
+          "type": "concept",
+          "content": "An algorithm expresses an ordered procedure for transforming a problem state toward a required result.",
+          "provenance": {
+            "status": "verified",
+            "description": "NIST defines an algorithm as a clearly specified process or set of rules producing a prescribed result; MIT describes it as a computational procedure for solving a problem.",
+            "authority": {
+              "organization": "NIST / Massachusetts Institute of Technology",
+              "source": "NIST CSRC Algorithm Glossary; MIT 6.006 Models of Computation"
+            },
+            "url": "https://csrc.nist.gov/glossary/term/algorithm"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Establish the algorithm as an explicit computational procedure rather than code.",
+            "explanation": "Return to 'compare the values' and progressively replace that vague instruction with explicit steps.",
+            "emphasis": "Algorithm describes procedure; programming language expresses an implementation.",
+            "learner_check": "Ask whether a cooking recipe is automatically a computational algorithm and discuss what additional precision may be required.",
+            "caution": "Do not equate algorithm with Python."
+          }
+        },
+        {
+          "type": "procedure",
+          "content": [
+            "Take the first reading as the current maximum.",
+            "Inspect the next reading.",
+            "If it is larger than the current maximum, replace the current maximum.",
+            "Repeat until all readings have been inspected.",
+            "Return the classroom associated with the current maximum."
+          ],
+          "provenance": {
+            "status": "verified",
+            "description": "This is a standard linear maximum-selection procedure consistent with the general definition of an algorithm as an explicit sequence of computational steps.",
+            "authority": {
+              "organization": "National Institute of Standards and Technology",
+              "source": "NIST Dictionary of Algorithms and Data Structures — Algorithm"
+            },
+            "url": "https://xlinux.nist.gov/dads/HTML/algorithm.html"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Expose state, iteration, comparison, and termination in a concrete algorithm.",
+            "explanation": "Act out the procedure manually using four cards containing the electricity readings.",
+            "emphasis": "Only the current candidate and next value are required at each step.",
+            "learner_check": "Pause after each comparison and ask for the current maximum.",
+            "caution": "Keep implementation syntax out of this slide."
+          }
+        },
+        {
+          "type": "question",
+          "content": "What must remain known while this procedure is running?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Prepare the learner to recognize computational state.",
+            "explanation": "Prompt students to distinguish persistent state from already-consumed information.",
+            "emphasis": "The current maximum is state carried across iterations.",
+            "learner_check": "Ask what would happen if the current maximum were forgotten after every comparison.",
+            "caution": "Do not introduce formal state-machine terminology yet."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithm Design Strategies"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 6,
+      "title": "Trace the Algorithm",
+      "purpose": "make_execution_observable",
+      "items": [
+        {
+          "type": "trace",
+          "content": {
+            "input": [12, 7, 19, 15],
+            "execution": [
+              {"observed": 12, "current_max": 12},
+              {"observed": 7, "current_max": 12},
+              {"observed": 19, "current_max": 19},
+              {"observed": 15, "current_max": 19}
+            ],
+            "output": 19
+          },
+          "provenance": {
+            "status": "verified",
+            "description": "Algorithm tracing is consistent with established introductory algorithm pedagogy emphasizing worked examples and explicit algorithm behavior.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT 6.006 Introduction to Algorithms — Syllabus and algorithm write-up guidance"
+            },
+            "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2008/pages/syllabus/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Make an abstract procedure observable as a sequence of changing states.",
+            "explanation": "Reveal one row at a time. Require a prediction of current_max before showing the next state.",
+            "emphasis": "Execution turns a static algorithm into a sequence of observable state transitions.",
+            "learner_check": "Replace 19 with 9 and ask students to retrace the state sequence.",
+            "caution": "Do not let students merely read the completed table."
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "The algorithm does not need to remember every previous comparison. It only needs the current state required by the procedure.",
+          "provenance": {
+            "status": "verified",
+            "description": "The statement follows directly from the presented linear maximum procedure and its maintained current-maximum state.",
+            "authority": {
+              "organization": "RXI instructional derivation",
+              "source": "Verified consequence of the displayed algorithm trace"
+            },
+            "url": null
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Connect tracing to the concept of minimal computational state.",
+            "explanation": "Ask students what information would be necessary to continue if execution paused midway.",
+            "emphasis": "State means information required for continued computation.",
+            "learner_check": "Ask students to name the single stored value needed after observing 12, 7, and 19.",
+            "caution": "Do not generalize this minimal-state property to all algorithms."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Core Algorithmic Structures", "Iteration and recursion"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 7,
+      "title": "Problem ≠ Algorithm ≠ Program",
+      "purpose": "separate_representation_from_implementation",
+      "items": [
+        {
+          "type": "comparison",
+          "content": {
+            "problem": "Find the largest electricity-use value.",
+            "representation": "Represent classroom readings as identifiable numerical values.",
+            "algorithm": "Inspect values while maintaining the largest value observed so far.",
+            "implementation": "Express that algorithm using a programming language such as Python."
+          },
+          "provenance": {
+            "status": "verified",
+            "description": "MIT 6.006 explicitly distinguishes algorithm from program and describes an algorithm as a mathematical abstraction of a computer program and a computational procedure solving a problem.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT 6.006 — Lecture 2: Models of Computation"
+            },
+            "url": "https://www.ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/mit6_006f11_lec02/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Establish the central conceptual separation required by LO-01.",
+            "explanation": "Keep the same problem fixed while changing only its representation, algorithm, or implementation.",
+            "emphasis": "These layers are related but not interchangeable.",
+            "learner_check": "Ask which layer changes if Python is replaced by JavaScript but the computational procedure remains identical.",
+            "caution": "Do not present representation and algorithm as completely independent; algorithms operate over representations."
+          }
+        },
+        {
+          "type": "concept",
+          "content": "The computational idea is not identical to the code used to implement it.",
+          "provenance": {
+            "status": "verified",
+            "description": "MIT 6.006 explicitly distinguishes algorithms and programs; ACM curriculum guidance separately identifies algorithms and their implementation in programming languages.",
+            "authority": {
+              "organization": "MIT / ACM",
+              "source": "MIT 6.006 Models of Computation; ACM Software Development Fundamentals"
+            },
+            "url": "https://csed.acm.org/knowledge-areas-software-development-fundamentals-sdf-cs2013-version/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Prevent programming syntax from becoming the learner's mental model of computation.",
+            "explanation": "Show the same maximum algorithm first in natural language and then in Python.",
+            "emphasis": "The algorithm survives a change of programming language.",
+            "learner_check": "Ask whether changing a variable name changes the algorithm.",
+            "caution": "Do not imply implementation choices never affect algorithmic behavior or performance."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithmic Problem Formulation"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Programming Language Abstractions"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 8,
+      "title": "One Problem, Different Algorithms",
+      "purpose": "compare_algorithmic_approaches",
+      "items": [
+        {
+          "type": "comparison",
+          "content": {
+            "approach_a": "Inspect each value once while maintaining the current maximum.",
+            "approach_b": "Sort all values and then select the largest value."
+          },
+          "provenance": {
+            "status": "verified",
+            "description": "ACM curriculum guidance explicitly expects learners to understand that a problem may be solved by multiple algorithms with different properties.",
+            "authority": {
+              "organization": "Association for Computing Machinery",
+              "source": "ACM Software Development Fundamentals"
+            },
+            "url": "https://csed.acm.org/knowledge-areas-software-development-fundamentals-sdf-cs2013-version/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Break the misconception that one problem implies one algorithm.",
+            "explanation": "Run both approaches conceptually on the same four values.",
+            "emphasis": "Correct solutions can differ in procedure and computational cost.",
+            "learner_check": "Ask students which approach performs unnecessary work if only the maximum is required.",
+            "caution": "Do not introduce Big-O notation yet unless students request it."
+          }
+        },
+        {
+          "type": "question",
+          "content": "If both approaches return the correct result, what else might matter when comparing them?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Elicit efficiency before naming it.",
+            "explanation": "Let students suggest time, memory, simplicity, or implementation effort.",
+            "emphasis": "Correctness is necessary but not the only algorithmic property.",
+            "learner_check": "Ask whether an extremely slow but correct solution is always acceptable.",
+            "caution": "Do not reduce algorithm selection solely to speed."
+          }
+        },
+        {
+          "type": "concept",
+          "content": "Correctness and computational cost are different properties of an algorithm.",
+          "provenance": {
+            "status": "verified",
+            "description": "MIT 6.006 and NIST algorithm literature separately discuss correctness and efficiency/time-space cost as properties used to analyze algorithms.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology / NIST",
+              "source": "MIT 6.006 Introduction to Algorithms; NIST Mathematics and Engineering in Computer Science"
+            },
+            "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Introduce algorithm analysis without prematurely teaching formal complexity theory.",
+            "explanation": "Use two questions: 'Does it return the right answer?' and 'What resources does it require?'",
+            "emphasis": "Correctness and efficiency answer different evaluation questions.",
+            "learner_check": "Give one correct but wasteful strategy and ask students to classify its correctness and efficiency separately.",
+            "caution": "Do not equate computational cost only with elapsed wall-clock time."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithm Analysis", "Correctness reasoning"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithm Analysis", "Time complexity"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 9,
+      "title": "Does the Algorithm Always Work?",
+      "purpose": "introduce_correctness_reasoning",
+      "items": [
+        {
+          "type": "test_cases",
+          "content": [
+            {"input": [12, 7, 19, 15], "expected": 19},
+            {"input": [4, 4, 4, 4], "expected": 4},
+            {"input": [-8, -2, -11, -5], "expected": -2},
+            {"input": [100], "expected": 100}
+          ],
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Use deliberately different cases to expose hidden assumptions.",
+            "explanation": "Have students predict each result before execution and explain why the case differs from the previous one.",
+            "emphasis": "Different input structures probe different assumptions.",
+            "learner_check": "Ask students to invent one additional useful test case.",
+            "caution": "Do not imply that passing these examples proves correctness."
+          }
+        },
+        {
+          "type": "question",
+          "content": "Why should we test structurally different inputs rather than only one convenient example?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Develop the intuition that examples provide evidence but do not constitute general proof.",
+            "explanation": "Contrast a positive-number example with the all-negative case.",
+            "emphasis": "Convenient examples may fail to expose incorrect assumptions.",
+            "learner_check": "Ask what bug might remain hidden if only positive numbers were tested.",
+            "caution": "Keep formal verification outside this week's required depth."
+          }
+        },
+        {
+          "type": "concept",
+          "content": "Correctness reasoning asks whether an algorithm satisfies the required problem behavior across valid inputs, not merely whether one execution happens to work.",
+          "provenance": {
+            "status": "verified",
+            "description": "MIT 6.006 defines an algorithm as solving a problem when it returns a correct output for every problem input; its coursework also explicitly requires correctness reasoning.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT 6.006 Introduction to Algorithms"
+            },
+            "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2008/pages/syllabus/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Distinguish observed success from general algorithm correctness.",
+            "explanation": "Say: one successful run tells us what happened once; correctness asks what should happen for the whole valid input domain.",
+            "emphasis": "Testing and correctness reasoning provide different strengths of evidence.",
+            "learner_check": "Ask whether four successful test cases prove the algorithm correct.",
+            "caution": "Do not demand formal proof from pre-university learners."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithm Analysis", "Correctness reasoning"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Mathematical and Theoretical Foundations",
+          "path": ["Formal Reasoning", "Correctness"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 10,
+      "title": "From Algorithm to Python",
+      "purpose": "bridge_reasoning_to_implementation",
+      "items": [
+        {
+          "type": "pseudocode",
+          "content": [
+            "current_max ← first value",
+            "FOR each remaining value",
+            "    IF value > current_max",
+            "        current_max ← value",
+            "RETURN current_max"
+          ],
+          "provenance": {
+            "status": "verified",
+            "description": "ACM curriculum guidance explicitly connects algorithms, implementation strategies, pseudocode-level problem solving, and programming-language implementation.",
+            "authority": {
+              "organization": "Association for Computing Machinery",
+              "source": "ACM Software Development Fundamentals"
+            },
+            "url": "https://csed.acm.org/knowledge-areas-software-development-fundamentals-sdf-cs2013-version/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Provide a bridge between language-independent procedure and executable syntax.",
+            "explanation": "Read the pseudocode first without showing Python, then map each operation to the implementation.",
+            "emphasis": "Pseudocode expresses procedural structure without committing to Python syntax.",
+            "learner_check": "Ask students to identify iteration, condition, state update, and return.",
+            "caution": "Do not treat this pseudocode notation as a standardized programming language."
+          }
+        },
+        {
+          "type": "code",
+          "content": {
+            "language": "python",
+            "code": "values = [12, 7, 19, 15]\ncurrent_max = values[0]\n\nfor value in values[1:]:\n    if value > current_max:\n        current_max = value\n\nprint(current_max)"
+          },
+          "provenance": {
+            "status": "verified",
+            "description": "The implementation uses standard Python sequence iteration, assignment, and if control flow documented by the Python language tutorial.",
+            "authority": {
+              "organization": "Python Software Foundation",
+              "source": "Python Documentation — More Control Flow Tools"
+            },
+            "url": "https://docs.python.org/3/tutorial/controlflow.html"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Map algorithmic roles onto concrete Python mechanisms.",
+            "explanation": "Highlight the code in semantic groups: data, state initialization, iteration, decision, state update, observation.",
+            "emphasis": "Every important line should be connected back to an algorithmic role.",
+            "learner_check": "Ask what would break if current_max were reset inside the loop.",
+            "caution": "Do not turn the lesson into a Python syntax tutorial."
+          }
+        },
+        {
+          "type": "question",
+          "content": "Which parts of the Python program express the algorithm's state, repetition, and decision?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Force semantic reading of code.",
+            "explanation": "Ask students to annotate lines with STATE, REPEAT, DECIDE, UPDATE.",
+            "emphasis": "Code constructs implement computational roles.",
+            "learner_check": "Have students point to the exact state update.",
+            "caution": "Avoid assessing memorization of Python vocabulary."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Programming Language Abstractions", "Variables and binding"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Control and Evaluation", "Control flow"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 11,
+      "title": "The Code Is Not the Computational Idea",
+      "purpose": "reinforce_abstraction_boundary",
+      "items": [
+        {
+          "type": "comparison",
+          "content": {
+            "computational_reasoning": [
+              "Maintain a current candidate.",
+              "Inspect remaining values.",
+              "Replace the candidate when a better value is observed.",
+              "Return the final candidate."
+            ],
+            "python_mechanisms": [
+              "variable",
+              "list",
+              "for loop",
+              "if statement"
+            ]
+          },
+          "provenance": {
+            "status": "verified",
+            "description": "MIT distinguishes algorithms from programs, while ACM CS guidance separately identifies algorithms and programming-language constructs.",
+            "authority": {
+              "organization": "MIT / ACM",
+              "source": "MIT 6.006 Models of Computation; ACM CS2023"
+            },
+            "url": "https://csed.acm.org/computer-science-foundations/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Consolidate the abstraction boundary between computational reasoning and language mechanisms.",
+            "explanation": "Read the left column without mentioning Python, then map each idea to the right column.",
+            "emphasis": "Implementation mechanisms realize an algorithm; they are not the algorithm itself.",
+            "learner_check": "Ask for a different programming construct that could implement repetition.",
+            "caution": "Do not imply all languages provide identical constructs."
+          }
+        },
+        {
+          "type": "question",
+          "content": "Could the same algorithm be implemented in JavaScript, Java, C++, or another language?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Test whether students have separated algorithm from language.",
+            "explanation": "Ask for a yes/no answer first, then require justification.",
+            "emphasis": "Algorithm identity can survive implementation-language changes.",
+            "learner_check": "Ask what must remain unchanged across implementations.",
+            "caution": "Do not drift into language comparison."
+          }
+        },
+        {
+          "type": "concept",
+          "content": "Programming languages provide mechanisms for expressing computation; they do not define the computational problem itself.",
+          "provenance": {
+            "status": "verified",
+            "description": "MIT's algorithms material separates computational problems and algorithms from programs and programming languages.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT 6.006 — Models of Computation"
+            },
+            "url": "https://www.ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/mit6_006f11_lec02/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Finish the conceptual separation required by LO-01.",
+            "explanation": "Return to the original electricity problem and point out that it existed before Python was selected.",
+            "emphasis": "Problem definition, algorithm design, and implementation are distinct reasoning layers.",
+            "learner_check": "Ask which layer changes when Python is replaced but input, output, and procedure remain fixed.",
+            "caution": "Avoid suggesting programming languages are semantically irrelevant to implementation."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Programming Language Abstractions"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Programming Paradigms"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 12,
+      "title": "Run a Small Computational Experiment",
+      "purpose": "produce_observable_learning_evidence",
+      "items": [
+        {
+          "type": "experiment",
+          "content": {
+            "task": "Run the maximum-value algorithm using several different input collections.",
+            "procedure": [
+              "Predict the expected output before execution.",
+              "Run the Python implementation.",
+              "Record the observed output.",
+              "Compare prediction and observation.",
+              "Explain whether the observed behavior is consistent with the algorithm."
+            ],
+            "suggested_inputs": [
+              [12, 7, 19, 15],
+              [4, 4, 4, 4],
+              [-8, -2, -11, -5],
+              [100]
+            ]
+          },
+          "provenance": {
+            "status": "verified",
+            "description": "ACM introductory computing guidance includes implementing, testing, and debugging algorithms and programs as foundational learning outcomes.",
+            "authority": {
+              "organization": "Association for Computing Machinery",
+              "source": "ACM Software Development Fundamentals"
+            },
+            "url": "https://csed.acm.org/knowledge-areas-software-development-fundamentals-sdf-cs2013-version/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Turn conceptual reasoning into observable computational evidence.",
+            "explanation": "Require prediction before execution so students cannot substitute running code for reasoning.",
+            "emphasis": "Observation becomes evidence when compared against an explicit expectation.",
+            "learner_check": "Ask students to explain one prediction-observation match in words.",
+            "caution": "Do not let successful execution become synonymous with proof of correctness."
+          }
+        },
+        {
+          "type": "evidence",
+          "content": [
+            "Input",
+            "Predicted result",
+            "Observed result",
+            "Explanation"
+          ],
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Structure the student's observation record.",
+            "explanation": "Treat these four fields as a miniature evidence table.",
+            "emphasis": "Explanation connects observation back to reasoning.",
+            "learner_check": "Inspect whether the student can explain a mismatch rather than merely record it.",
+            "caution": "Do not grade only whether prediction equals observation."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithm Analysis", "Correctness reasoning"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Control and Evaluation", "Control flow"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 13,
+      "title": "Construct Your Own Computational Solution",
+      "purpose": "objective_evidence",
+      "items": [
+        {
+          "type": "assignment",
+          "content": {
+            "task": "Choose a small bounded problem and construct a computational solution using structured reasoning and a guided Python-based experiment.",
+            "required_elements": [
+              "Define the problem.",
+              "Identify inputs, outputs, and relevant constraints.",
+              "Explain what information is abstracted from the original situation.",
+              "Describe or trace an algorithm.",
+              "Implement a small computational artifact.",
+              "Run the artifact and record observable behavior.",
+              "Explain how the implementation expresses the underlying computational reasoning."
+            ]
+          },
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Require students to reconstruct the entire Week 01 reasoning chain independently.",
+            "explanation": "Present the seven required elements as checkpoints, not seven unrelated tasks.",
+            "emphasis": "The artifact must preserve traceability from problem to representation to algorithm to implementation to evidence.",
+            "learner_check": "Before work begins, ask the student to state their problem, input, and output in one minute.",
+            "caution": "Keep the selected problem bounded enough that programming complexity does not overwhelm computational reasoning."
+          }
+        },
+        {
+          "type": "learning_evidence",
+          "content": [
+            "Structured representation of a bounded computational problem",
+            "Explanation or trace of a simple algorithm",
+            "Short computational artifact connecting abstraction with observable execution"
+          ],
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Make the expected evidence explicit before students begin.",
+            "explanation": "Explain that the three artifacts correspond to representation, reasoning, and implementation/execution.",
+            "emphasis": "The assessment target is not code alone.",
+            "learner_check": "Ask the student which artifact demonstrates each part of LO-01.",
+            "caution": "Do not let a technically polished program compensate for missing reasoning."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithmic Problem Formulation"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Programming Language Abstractions"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    },
+
+    {
+      "index": 14,
+      "title": "Week 01 — Computational Reasoning Chain",
+      "purpose": "synthesis_and_transition",
+      "items": [
+        {
+          "type": "knowledge_chain",
+          "content": [
+            "Real-world situation",
+            "Bounded problem",
+            "Abstraction",
+            "Computational representation",
+            "Algorithm",
+            "Implementation",
+            "Execution",
+            "Observable evidence"
+          ],
+          "provenance": {
+            "status": "verified",
+            "description": "This is an RXI instructional synthesis of the Week 01 material, consistent with established distinctions among computational problem formulation, abstraction, algorithms, implementation, execution, and evaluation.",
+            "authority": {
+              "organization": "RXI synthesis grounded in MIT / ACM",
+              "source": "MIT 6.006 and ACM Computer Science curricular foundations"
+            },
+            "url": "https://csed.acm.org/computer-science-foundations/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Compress the week's separate concepts into one reusable computational reasoning model.",
+            "explanation": "Reconstruct the chain with students rather than displaying all nodes immediately.",
+            "emphasis": "Each stage answers a different question about the same computational activity.",
+            "learner_check": "Remove two nodes and ask students to restore them and justify their positions.",
+            "caution": "Describe the chain as a Week 01 reasoning scaffold, not a universal mandatory process."
+          }
+        },
+        {
+          "type": "reflection",
+          "content": "Which stages describe the problem, which describe computational reasoning, and which describe implementation?",
+          "provenance": {
+            "status": "not_required"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Check whether the central distinctions of LO-01 have stabilized.",
+            "explanation": "Have students group the stages and defend their grouping.",
+            "emphasis": "The quality of the explanation matters more than exact terminology.",
+            "learner_check": "Ask specifically where algorithm belongs and why.",
+            "caution": "Allow defensible boundary discussion rather than enforcing arbitrary categories."
+          }
+        },
+        {
+          "type": "transition",
+          "content": "Once problems can be represented computationally, we can ask how intelligent systems represent states, search possible solutions, and reason about what to do next.",
+          "provenance": {
+            "status": "verified",
+            "description": "The transition is consistent with foundational AI treatment of problem-space representation and search, and serves as the conceptual bridge into Week 02.",
+            "authority": {
+              "organization": "Massachusetts Institute of Technology",
+              "source": "MIT OpenCourseWare — algorithmic problem solving and computation"
+            },
+            "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+          },
+          "lecturing_readiness": {
+            "status": "ready",
+            "teaching_intent": "Bridge computational reasoning into the next week's study of representation, search, and intelligent reasoning.",
+            "explanation": "Use the Week 01 question 'how do we represent a problem?' and extend it to 'how might an intelligent system represent possible states and choose what to do?'",
+            "emphasis": "Week 02 extends the representation-and-reasoning foundation rather than starting an unrelated AI topic.",
+            "learner_check": "Ask what additional capability a system would need if the correct sequence of steps were not already known.",
+            "caution": "Do not begin teaching search algorithms here; create conceptual anticipation only."
+          }
+        }
+      ],
+      "ccs_refs": [
+        {
+          "field": "Computer Science",
+          "stem": "Algorithms and Computational Problem Solving",
+          "path": ["Algorithmic Problem Formulation"]
+        },
+        {
+          "field": "Computer Science",
+          "stem": "Programming Languages and Abstractions",
+          "path": ["Programming Language Abstractions"]
+        }
+      ],
+      "objective_refs": ["LO-01"]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "_flow_": {
+    "id": "RXI-210-SY2LO",
+
+    "input": {
+      "required": [
+        "rxi_210_syllabus.json",
+        "_rxi_210_sy2lo_instrcn_.yml"
+      ]
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Resolve each Syllabus module and its learning scope."
+      },
+      {
+        "step": "derive",
+        "instruction": "Derive one or more learning objectives and their aligned instructional expectations according to the SY2LO instruction."
+      },
+      {
+        "step": "validate",
+        "instruction": "Validate alignment and traceability between each learning objective and its source Syllabus module."
+      },
+      {
+        "step": "materialize",
+        "instruction": "Materialize the derived learning-objective state without modifying the source Syllabus."
+      }
+    ],
+
+    "output": {
+      "target": "rxi_210_objective.json"
+    }
+  }
+}

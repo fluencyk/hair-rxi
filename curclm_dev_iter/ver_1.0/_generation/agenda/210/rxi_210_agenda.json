@@ -1,0 +1,157 @@
+{
+  "agenda": {
+    "course_ref": "RXI-210",
+    "objective_state_ref": "rxi_210_objective.json",
+    "week_num": 8,
+
+    "weeks": [
+      {
+        "week": 1,
+        "title": "Computational Problems, Algorithms, and Abstractions",
+
+        "objective_refs": [
+          {
+            "id": "LO-01",
+            "role": "primary"
+          }
+        ],
+
+        "progression_role": "Establish the computational reasoning foundation required by subsequent study of intelligent systems."
+      },
+
+      {
+        "week": 2,
+        "title": "Representation, Search, and Intelligent Reasoning",
+
+        "objective_refs": [
+          {
+            "id": "LO-02",
+            "role": "primary"
+          },
+          {
+            "id": "LO-01",
+            "role": "supporting"
+          }
+        ],
+
+        "progression_role": "Extend computational problem representation into foundational artificial-intelligence reasoning."
+      },
+
+      {
+        "week": 3,
+        "title": "Learning from Data",
+
+        "objective_refs": [
+          {
+            "id": "LO-03",
+            "role": "primary"
+          },
+          {
+            "id": "LO-04",
+            "role": "introduced"
+          }
+        ],
+
+        "progression_role": "Transition from explicitly structured computation and reasoning toward systems that construct models from data."
+      },
+
+      {
+        "week": 4,
+        "title": "Computational Investigation of Learning Systems",
+
+        "objective_refs": [
+          {
+            "id": "LO-04",
+            "role": "primary"
+          },
+          {
+            "id": "LO-03",
+            "role": "supporting"
+          }
+        ],
+
+        "progression_role": "Develop evidence-based understanding of machine-learning behavior through guided computational investigation."
+      },
+
+      {
+        "week": 5,
+        "title": "Perception, Language, and Intelligent-System Integration",
+
+        "objective_refs": [
+          {
+            "id": "LO-05",
+            "role": "primary"
+          },
+          {
+            "id": "LO-03",
+            "role": "supporting"
+          }
+        ],
+
+        "progression_role": "Apply foundational representation and learning concepts to systems that process visual and language information."
+      },
+
+      {
+        "week": 6,
+        "title": "Decision Making, Adaptation, and Autonomous Behavior",
+
+        "objective_refs": [
+          {
+            "id": "LO-06",
+            "role": "primary"
+          },
+          {
+            "id": "LO-02",
+            "role": "supporting"
+          },
+          {
+            "id": "LO-03",
+            "role": "supporting"
+          }
+        ],
+
+        "progression_role": "Integrate reasoning and learning into goal-directed decision making, adaptation, and agent behavior."
+      },
+
+      {
+        "week": 7,
+        "title": "Evaluating Intelligent Systems",
+
+        "objective_refs": [
+          {
+            "id": "LO-07",
+            "role": "primary"
+          },
+          {
+            "id": "LO-08",
+            "role": "introduced"
+          },
+          {
+            "id": "LO-04",
+            "role": "supporting"
+          }
+        ],
+
+        "progression_role": "Shift from constructing and observing intelligent behavior toward evidence-based evaluation of reliability, limitations, human implications, and responsible use."
+      },
+
+      {
+        "week": 8,
+        "title": "Guided Computational Inquiry and Synthesis",
+
+        "objective_refs": [
+          {
+            "id": "LO-08",
+            "role": "primary"
+          },
+          {
+            "id": "LO-07",
+            "role": "supporting"
+          }
+        ],
+
+        "progression_role": "Integrate computational reasoning, intelligent-system understanding, investigation, evaluation, and academic communication through a bounded guided inquiry."
+      }
+    ]
+  }
+}

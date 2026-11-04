@@ -1,0 +1,34 @@
+_rxi_210_sy2lo_instrcn_:
+  id: RXI-210-SY2LO-INSTRUCTION
+
+  description: >
+    Semantic instruction for deriving explicit learning objectives from
+    RXI-210 Syllabus modules for downstream instructional planning.
+
+  objective:
+    semantics: >
+      A learning objective represents a specific and observable learning
+      achievement derived from the semantic scope of its source Syllabus module.
+
+    derive:
+      - learning_objective
+      - expected_outcome
+      - learning_evidence
+      - assignment
+      - assessment_criteria
+
+  reasoning:
+    instruction: >
+      Derive one or more coherent learning objectives from each source module.
+      Preserve the module's intent, core concepts, learning activities,
+      learning evidence, and source-Stem lineage when formulating objectives
+      and their associated outcomes and assessment expectations.
+
+  constraints:
+    - Do not introduce learning objectives outside the semantic scope of the source Syllabus.
+    - Do not require a one-to-one relationship between modules and learning objectives.
+    - Express learning objectives as observable learner achievements.
+    - Keep expected outcomes and learning evidence aligned with their learning objective.
+    - Keep assignments and assessment criteria aligned with the evidence they are intended to produce.
+    - Preserve traceability from every learning objective to its source module.
+    - Do not perform weekly scheduling or Slide-level instructional design.

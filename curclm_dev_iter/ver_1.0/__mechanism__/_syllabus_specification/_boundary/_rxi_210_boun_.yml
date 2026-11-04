@@ -1,5 +1,6 @@
-_rxi_210_:
-  id: RXI-210
+_rxi_210_boundary_:
+  id: RXI-210-BOUNDARY
+  course_id: RXI-210
   title: Fundamentals of Computing and Artificial Intelligence
 
   binding:
@@ -19,26 +20,9 @@ _rxi_210_:
     Prioritize foundational concepts, relationships, and transferable
     reasoning over disciplinary completeness or advanced specialization.
 
-  syllabus_structure:
-    - course_identity
-    - learning_outcomes
-    - learning_progression
-    - modules:
-        - module_title
-        - module_intent
-        - source_stems
-        - core_concepts
-        - learning_activities
-        - learning_evidence
-    - assessment
-    - progression_readiness
-
   constraints:
     - Prefer foundational and dependency-bearing knowledge over specialized topics.
     - Do not attempt exhaustive coverage of BSD-bound Fields or Stems.
     - Do not reproduce an undergraduate curriculum at reduced scale.
     - Do not reduce the course to programming, software tutorials, or AI tool demonstrations.
-    - Organize knowledge as a coherent learning progression rather than disconnected topics.
-    - Preserve module-to-Stem traceability.
-    - Align learning activities and evidence with learning outcomes.
-    - Leave weekly scheduling and teaching execution to Agenda.
+    - Preserve authentic academic substance at an appropriate foundational depth.

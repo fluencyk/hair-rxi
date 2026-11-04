@@ -1,0 +1,72 @@
+{
+  "_flow_": {
+    "id": "STEM2CCS",
+
+    "input": {
+      "required": [
+        "stem2syllabi4bsd_weighted_{bsd_index}.json"
+      ]
+    },
+
+    "expansion": {
+      "structure": "recursive_tree",
+
+      "instruction": "Treat each Stem in the source state as an independent root knowledge domain. Decompose it into academically meaningful subordinate knowledge points. Recursively expand every knowledge point while meaningful internal knowledge structure remains, and close the branch when further decomposition is no longer academically meaningful.",
+
+      "node": {
+        "knowledge_point": "<knowledge_point>",
+        "sub_knowledge_points": []
+      }
+    },
+
+    "process": [
+      {
+        "step": "resolve",
+        "instruction": "Resolve each source Field and Stem exactly as materialized in the required source state."
+      },
+      {
+        "step": "expand",
+        "instruction": "Recursively expand each Stem into meaningful subordinate knowledge points."
+      },
+      {
+        "step": "close",
+        "instruction": "Close each branch when further decomposition becomes trivial, redundant, merely terminological, or no longer represents a meaningful knowledge unit."
+      },
+      {
+        "step": "materialize",
+        "instruction": "Materialize the resulting cognition-space trees while preserving source Field and Stem identity."
+      }
+    ],
+
+    "constraints": [
+      "Use only Stems materialized in the required source state as roots.",
+      "Do not use Stem weight to determine expansion breadth, depth, or termination.",
+      "Do not introduce learner, teaching, Agenda, Week, Slide, or assessment constraints.",
+      "Do not force equal expansion breadth or depth.",
+      "Preserve parent-child semantic containment."
+    ],
+
+    "output": {
+      "target": "ccs_bsd_{bsd_index}.json",
+
+      "structure": {
+        "fields": [
+          {
+            "field": "<canonical_field>",
+            "stems": [
+              {
+                "stem": "<canonical_stem>",
+                "sub_knowledge_points": [
+                  {
+                    "knowledge_point": "<knowledge_point>",
+                    "sub_knowledge_points": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
