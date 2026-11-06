@@ -1,0 +1,33 @@
+id: WKBCH-INTERACONTROL
+name: Workbench Interaction Control
+purpose: >
+  Define minimal browser interaction behavior for the Alpha-1
+  self-contained HTML Workbench without changing curriculum semantics.
+principles:
+  - Interaction controls presentation and navigation only.
+  - Interaction must not mutate canonical instructional content or associations.
+  - Semantic item_id values remain stable interaction anchors.
+controls:
+  scrolling:
+    page: vertical
+    slide_panel: independent_when_overflow
+    review_panel: independent_when_overflow
+  item_focus:
+    enabled: true
+    trigger: click
+    target: slide_panel.items
+    behavior:
+      - mark_clicked_item_as_active
+      - highlight_review_resources_targeting_active_item
+      - scroll_first_matching_review_resource_into_view
+  resource_focus:
+    enabled: true
+    trigger: click
+    target:
+      - provenance_block.sources
+      - artifacts_block.artifacts
+    behavior:
+      - highlight_target_items
+  page_index_navigation:
+    enabled: false
+    reason: single_slide_dry_run

@@ -1,0 +1,38 @@
+id: IN-WKBCH-EXPL-ITEM-ASSO
+name: In-Workbench Explainability-Item Association
+purpose: >
+  Guide the LLM in establishing semantically meaningful associations
+  between explainability resources in the Workbench Review Panel
+  and instructional Items in the Workbench Slide Panel.
+boundary:
+  scope: current_workbench_page
+  source:
+    - provenance_block.sources
+    - artifacts_block.artifacts
+  target:
+    - slide_panel.items
+association:
+  target_reference: item_id
+  multiple_targets: allowed
+  support_role: >
+    Briefly state why the provenance source or artifact supports
+    the referenced Item.
+  rules:
+    - Every association must target an existing item_id within the current Slide Panel Item tree.
+    - A Sub-item is an Item and must be referenced through its own item_id.
+    - Associate resources through specific semantic support, not merely topical similarity.
+    - One resource may support multiple Items.
+    - Do not create an association when its semantic support cannot be reasonably established.
+provenance:
+  association_path: review_panel.provenance_block.sources[].targets[]
+  target_fields: [item_id, support_role]
+  url_policy:
+    - Use an authoritative URL when one is available.
+    - If no valid URL is available, set url to null.
+    - Never fabricate or infer a URL.
+artifact:
+  association_path: review_panel.artifacts_block.artifacts[].targets[]
+  target_fields: [item_id, support_role]
+  external_link_policy:
+    - Use a valid external link when the artifact is externally accessible.
+    - Do not fabricate an external link.

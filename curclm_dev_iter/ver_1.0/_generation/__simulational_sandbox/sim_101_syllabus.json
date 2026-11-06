@@ -1,0 +1,12 @@
+{
+  "course_ref": "SIM-101",
+  "course_title": "Introduction to Computational Reasoning",
+  "modules": [
+    {
+      "module_id": "M-01",
+      "title": "Computational Problems and Algorithms",
+      "description": "Introduce computational problem representation and explicit algorithmic procedures.",
+      "stems": ["Algorithms", "Problem Representation", "Computational Abstraction"]
+    }
+  ]
+}

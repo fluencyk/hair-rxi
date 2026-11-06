@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SIM-101 · Week 01 Workbench</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f4f4f1; color: #171717; }
+  body { padding: 24px; }
+  .workbench-page { max-width: 1500px; margin: 0 auto; min-height: calc(100vh - 48px); background: #fff; border: 1px solid #d9d9d4; border-radius: 18px; overflow: hidden; box-shadow: 0 14px 45px rgba(0,0,0,.07); }
+  .page-header { min-height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px 28px; border-bottom: 1px solid #e6e6e1; }
+  .main-title { margin: 0; font-size: 18px; font-weight: 650; letter-spacing: -.02em; }
+  .page-index { min-width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid #d8d8d2; border-radius: 999px; font-size: 13px; font-weight: 700; }
+  .workbench { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(340px, .85fr); min-height: 690px; }
+  .slide-panel, .review-panel { padding: 32px; overflow: auto; max-height: calc(100vh - 158px); }
+  .slide-panel { position: relative; border-right: 1px solid #e6e6e1; padding-bottom: 90px; }
+  .slide-title { margin: 0 0 28px; max-width: 850px; font-size: clamp(30px, 4vw, 54px); line-height: 1.04; letter-spacing: -.045em; }
+  .items { display: grid; gap: 16px; max-width: 900px; }
+  .item { border: 1px solid #e2e2dc; border-radius: 14px; padding: 18px 18px 16px; cursor: pointer; transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease; }
+  .item:hover { transform: translateY(-1px); border-color: #aaa; }
+  .item.active { border-color: #222; box-shadow: 0 0 0 2px rgba(0,0,0,.08); }
+  .item-id { font-size: 11px; font-weight: 800; letter-spacing: .08em; opacity: .45; text-transform: uppercase; margin-bottom: 8px; }
+  .content { font-size: 18px; line-height: 1.48; font-weight: 600; }
+  .explainability { margin-top: 10px; font-size: 14px; line-height: 1.55; color: #60605b; }
+  .sub-items { margin: 14px 0 0 20px; display: grid; gap: 10px; }
+  .rxi-logo { position: absolute; left: 32px; bottom: 28px; font-size: 14px; font-weight: 850; letter-spacing: -.02em; }
+  .review-panel { background: #fafaf8; display: grid; align-content: start; gap: 22px; }
+  .review-block { border-top: 1px solid #dcdcd6; padding-top: 18px; }
+  .review-block:first-child { border-top: 0; padding-top: 0; }
+  .block-title { margin: 0 0 14px; font-size: 13px; text-transform: uppercase; letter-spacing: .1em; }
+  .resource { padding: 13px 14px; margin: 0 0 10px; border: 1px solid #e0e0da; border-radius: 11px; background: #fff; cursor: pointer; transition: border-color .14s ease, box-shadow .14s ease; }
+  .resource.active { border-color: #222; box-shadow: 0 0 0 2px rgba(0,0,0,.07); }
+  .resource-name { font-weight: 750; margin-bottom: 5px; }
+  .authority, .resource-desc, .target-role, .guide-row { font-size: 13px; line-height: 1.5; color: #555550; }
+  .authority { font-weight: 650; color: #2d2d2a; }
+  .resource a { display: inline-block; margin-top: 8px; font-size: 12px; color: inherit; }
+  .targets { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .target-chip { font-size: 10px; font-weight: 750; padding: 4px 7px; border-radius: 999px; border: 1px solid #d7d7d1; }
+  .guide { display: grid; gap: 10px; }
+  .guide-row strong { display: block; margin-bottom: 2px; color: #1d1d1b; font-size: 12px; }
+  @media (max-width: 900px) {
+    body { padding: 0; }
+    .workbench-page { border-radius: 0; border-left: 0; border-right: 0; }
+    .workbench { grid-template-columns: 1fr; }
+    .slide-panel, .review-panel { max-height: none; }
+    .slide-panel { border-right: 0; border-bottom: 1px solid #e6e6e1; }
+  }
+</style>
+</head>
+<body>
+<div class="workbench-page">
+  <header class="page-header">
+    <h1 class="main-title">SIM-101 · Week 01 · Computational Problems and Algorithms</h1>
+    <div class="page-index" aria-label="slide index">01</div>
+  </header>
+
+  <main class="workbench">
+    <section class="slide-panel">
+      <h2 class="slide-title">An Algorithm Makes the Process Explicit</h2>
+      <div class="items">
+        <article class="item" data-item-id="I-001" tabindex="0">
+          <div class="item-id">I-001</div>
+          <div class="content">An algorithm expresses an ordered procedure for transforming a problem state toward a required result.</div>
+          <div class="explainability">The computational idea is the explicit procedure itself—not the syntax of a particular programming language.</div>
+        </article>
+
+        <article class="item" data-item-id="I-002" tabindex="0">
+          <div class="item-id">I-002</div>
+          <div class="content">Inspect each value and maintain the largest value observed so far.</div>
+          <div class="explainability">Only the state required to determine the final maximum needs to be maintained.</div>
+          <div class="sub-items">
+            <article class="item" data-item-id="I-003" tabindex="0">
+              <div class="item-id">I-003</div>
+              <div class="content">Replace the current maximum whenever a larger value is observed.</div>
+              <div class="explainability">This conditional update is the decision step inside the procedure.</div>
+            </article>
+          </div>
+        </article>
+      </div>
+      <div class="rxi-logo">RXI-Lab</div>
+    </section>
+
+    <aside class="review-panel">
+      <section class="review-block provenance-block">
+        <h3 class="block-title">Provenance</h3>
+        <article class="resource" data-targets="I-001 I-002" tabindex="0">
+          <div class="resource-name">NIST Algorithm Definition</div>
+          <div class="authority">National Institute of Standards and Technology</div>
+          <div class="resource-desc">Authoritative grounding for the concept of an algorithm as a computational procedure.</div>
+          <a href="https://csrc.nist.gov/glossary/term/algorithm" target="_blank" rel="noopener noreferrer">Open source ↗</a>
+          <div class="targets"><span class="target-chip">I-001</span><span class="target-chip">I-002</span></div>
+          <div class="target-role">Supports the definition and procedural interpretation used in the slide.</div>
+        </article>
+      </section>
+
+      <section class="review-block lecturing-guide-block">
+        <h3 class="block-title">Lecturing Guide</h3>
+        <div class="guide">
+          <div class="guide-row"><strong>Teaching Intent</strong>Help learners distinguish an algorithmic procedure from its later implementation in code.</div>
+          <div class="guide-row"><strong>Explanation</strong>Walk through the procedure as a sequence of state changes before introducing programming syntax.</div>
+          <div class="guide-row"><strong>Emphasis</strong>Explicit procedure, maintained state, and conditional updating.</div>
+          <div class="guide-row"><strong>Learner Check</strong>Ask what information must remain known after each inspected value.</div>
+          <div class="guide-row"><strong>Caution</strong>Do not collapse the algorithm directly into Python syntax.</div>
+        </div>
+      </section>
+
+      <section class="review-block artifacts-block">
+        <h3 class="block-title">Artifacts</h3>
+        <article class="resource" data-targets="I-002 I-003" tabindex="0">
+          <div class="resource-name">Maximum-Value Algorithm Trace</div>
+          <div class="resource-desc">Conceptual executable-artifact placeholder for tracing changes to the maintained maximum.</div>
+          <div class="targets"><span class="target-chip">I-002</span><span class="target-chip">I-003</span></div>
+          <div class="target-role">Supports procedural tracing and conditional state-update explanation.</div>
+        </article>
+      </section>
+    </aside>
+  </main>
+</div>
+
+<script>
+  const items = [...document.querySelectorAll('.item[data-item-id]')];
+  const resources = [...document.querySelectorAll('.resource[data-targets]')];
+
+  function clearFocus() {
+    items.forEach(el => el.classList.remove('active'));
+    resources.forEach(el => el.classList.remove('active'));
+  }
+
+  function focusItem(item) {
+    clearFocus();
+    item.classList.add('active');
+    const id = item.dataset.itemId;
+    const matches = resources.filter(r => r.dataset.targets.split(/\s+/).includes(id));
+    matches.forEach(r => r.classList.add('active'));
+    if (matches[0]) matches[0].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function focusResource(resource) {
+    clearFocus();
+    resource.classList.add('active');
+    const targets = resource.dataset.targets.split(/\s+/);
+    items.filter(i => targets.includes(i.dataset.itemId)).forEach(i => i.classList.add('active'));
+  }
+
+  items.forEach(item => {
+    item.addEventListener('click', e => { e.stopPropagation(); focusItem(item); });
+    item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') focusItem(item); });
+  });
+
+  resources.forEach(resource => {
+    resource.addEventListener('click', e => {
+      if (e.target.closest('a')) return;
+      focusResource(resource);
+    });
+    resource.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') focusResource(resource); });
+  });
+</script>
+</body>
+</html>

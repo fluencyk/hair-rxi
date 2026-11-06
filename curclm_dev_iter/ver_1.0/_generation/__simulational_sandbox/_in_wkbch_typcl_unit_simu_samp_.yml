@@ -1,0 +1,62 @@
+id: IN-WKBCH-TYPCL-UNIT-SIMU-SAMP
+name: In-Workbench Typical Unit Simulation Sample
+purpose: >
+  Provide a compact reference example showing how the canonical
+  Workbench structure and association rules may be materialized
+  into a populated Workbench unit.
+precedence:
+  - This sample demonstrates the structural contract but does not define or override it.
+  - If this sample conflicts with _in_wkbch_struct_instrcn_.yml, the structure instruction takes precedence.
+  - If this sample conflicts with _in_wkbch_expl_item_asso_.yml, the association instruction takes precedence.
+sample:
+  workbench_page:
+    page_header:
+      main_title: "Computational Problems and Algorithms"
+      page_index: 5
+    workbench:
+      slide_panel:
+        slide_title: "An Algorithm Makes the Process Explicit"
+        items:
+          - item_id: "I-001"
+            content: "An algorithm expresses an ordered procedure for transforming a problem state toward a required result."
+            explainability: "The emphasis is on an explicit computational procedure, rather than on a particular programming-language implementation."
+            sub_items: []
+          - item_id: "I-002"
+            content: "Inspect each value and maintain the largest value observed so far."
+            explainability: "The procedure keeps only the state required to determine the final maximum."
+            sub_items:
+              - item_id: "I-003"
+                content: "Replace the current maximum whenever a larger value is observed."
+                explainability: "This update rule expresses the decision step within the procedure."
+                sub_items: []
+        rxi_lab_logo: "RXI-Lab"
+      review_panel:
+        provenance_block:
+          title: "Provenance"
+          sources:
+            - provenance_name: "NIST Algorithm Definition"
+              authority: "National Institute of Standards and Technology"
+              short_description: "Provides authoritative grounding for the concept of an algorithm as a computational procedure."
+              url: "https://csrc.nist.gov/glossary/term/algorithm"
+              targets:
+                - item_id: "I-001"
+                  support_role: "Supports the instructional definition of algorithm."
+        lecturing_guide_block:
+          title: "Lecturing Guide"
+          teaching_intent: "Help learners distinguish an algorithmic procedure from its later implementation in code."
+          explanation: "Walk through the procedure as a sequence of state changes before introducing any programming syntax."
+          emphasis: "Emphasize explicit procedure, maintained state, and conditional updating."
+          learner_check: "Ask learners what information must remain known after each inspected value."
+          caution: "Do not collapse the algorithm directly into Python syntax."
+        artifacts_block:
+          title: "Artifacts"
+          artifacts:
+            - artifact_name: "Maximum-Value Algorithm Notebook"
+              artifact_type: "jupyter_notebook"
+              short_description: "Executable demonstration for tracing changes to the current maximum."
+              external_link: null
+              targets:
+                - item_id: "I-002"
+                  support_role: "Would provide an executable demonstration of the procedure when a valid artifact exists."
+    page_branding_runtime_metadata:
+      optional: true

@@ -1,0 +1,25 @@
+{
+  "ccs": {
+    "course_ref": "SIM-101",
+    "fields": [
+      {
+        "field": "Computer Science",
+        "stems": [
+          {
+            "stem": "Algorithms",
+            "sub_knowledge_points": [
+              {
+                "knowledge_point": "Algorithmic Procedure",
+                "sub_knowledge_points": [
+                  {"knowledge_point": "Ordered Steps", "sub_knowledge_points": []},
+                  {"knowledge_point": "State Update", "sub_knowledge_points": []},
+                  {"knowledge_point": "Input-Process-Output", "sub_knowledge_points": []}
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

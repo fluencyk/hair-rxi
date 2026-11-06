@@ -1,0 +1,130 @@
+id: WKBCH-CTX-GEN-CONTROLLER
+
+name: Workbench Context Generation Controller
+
+purpose: >
+  Define the runtime context, generation constraints,
+  execution switches, and pre-generation gate
+  for one RXI Course Workbench generation run.
+
+principles:
+  - >
+    This controller governs a specific Workbench generation run.
+    It does not define curriculum semantics, academic knowledge,
+    or the canonical Workbench structure.
+
+  - >
+    Runtime selectors identify existing semantic entities.
+    They must not reinterpret or mutate those entities.
+
+  - >
+    Generation constraints define the required physical and
+    instructional scope of the current generation run.
+
+  - >
+    Existing Week Slide State may be preserved, expanded,
+    reorganized, or supplemented when required by the current
+    generation constraints.
+
+  - >
+    Generation must stop when required prerequisite entities
+    are missing, inconsistent, or unresolved.
+
+
+runtime_context:
+
+  pipeline_mode: "mixed"
+
+  generation_mode: "state_informed_regeneration"
+
+
+selectors:
+
+  course_ref: "RXI-210"
+
+  week_num: 1
+
+
+generation_constraints:
+
+  slide_set_len: 25
+
+  preserve_existing_instructional_value: true
+
+  preserve_academic_lineage: true
+
+  preserve_objective_alignment: true
+
+  preserve_ccs_traceability: true
+
+  allow_slide_expansion: true
+
+  allow_slide_reorganization: true
+
+  allow_slide_supplementation: true
+
+
+generation_switches:
+
+  generate_workbench_population: true
+
+  generate_html: true
+
+  enable_interaction: true
+
+  include_provenance: true
+
+  include_lecturing_guide: true
+
+  include_artifacts: true
+
+
+validation:
+
+  prerequisite_review: true
+
+  required_semantic_states:
+    - syllabus
+    - ccs
+    - objective
+    - existing_week_slide_state
+
+  required_workbench_controls:
+    - structure_instruction
+    - explainability_item_association
+    - typical_unit_simulation_sample
+    - interaction_control
+
+  require_course_ref_consistency: true
+
+  require_week_consistency: true
+
+  require_objective_alignment: true
+
+  require_valid_ccs_references: true
+
+  require_valid_item_associations: true
+
+  allow_null_provenance_url: true
+
+  allow_fabricated_urls: false
+
+
+execution_gate:
+
+  status: "pending_review"
+
+  proceed_on_pass: true
+
+  stop_on_failure: true
+
+
+output:
+
+  artifact_family: "mvp_html"
+
+  build_version: "ver_alpha_2026_11_05"
+
+  slide_set_len: 25
+
+  filename: "rxi_210_week_01_wkbch.html"

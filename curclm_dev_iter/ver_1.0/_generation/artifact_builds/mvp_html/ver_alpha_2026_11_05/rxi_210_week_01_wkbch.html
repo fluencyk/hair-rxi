@@ -1,0 +1,1555 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RXI-210 Week 01 Workbench — 25 Slides</title>
+<style>
+:root{--bg:#f2f1ed;--paper:#fff;--ink:#151515;--muted:#6a6a67;--line:#d8d6cf;--soft:#f7f6f2;--accent:#111}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.runtime-bar{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;gap:16px;padding:10px 22px;background:#111;color:#fff;font-size:12px;letter-spacing:.04em}
+.runtime-bar b{font-weight:700} .runtime-bar span{opacity:.72}
+.wb-page{min-height:100vh;padding:28px 34px 42px;border-bottom:1px solid #c8c6bf}
+.page-header{max-width:1500px;margin:0 auto 18px;display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.eyebrow,.panel-label{font-size:11px;letter-spacing:.14em;font-weight:750;color:var(--muted)}
+h1{font-size:clamp(28px,3vw,48px);line-height:1.02;margin:8px 0 0;max-width:1000px;letter-spacing:-.035em}
+.page-index{display:flex;align-items:baseline;gap:6px;white-space:nowrap} .page-index strong{font-size:36px} .page-index span{color:var(--muted)}
+.workbench{max-width:1500px;margin:auto;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(380px,.82fr);height:calc(100vh - 150px);min-height:650px;background:var(--paper);border:1px solid var(--line);box-shadow:0 8px 30px rgba(0,0,0,.04)}
+.slide-panel,.review-panel{overflow-y:auto;padding:28px 30px} .slide-panel{position:relative;border-right:1px solid var(--line);padding-bottom:80px}
+.slide-panel h2{font-size:27px;margin:10px 0 24px;letter-spacing:-.02em}
+.items{display:flex;flex-direction:column;gap:13px}
+.item{border:1px solid var(--line);padding:17px 18px;background:#fff;cursor:pointer;transition:.15s ease;outline:none}
+.item:hover,.item:focus{border-color:#777} .item.active{border:2px solid #111;padding:16px 17px;background:#faf9f5}
+.item-kicker{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800;margin-bottom:8px}
+.item-content{font-size:18px;line-height:1.5;white-space:normal}
+.explainability{margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);font-size:13px;line-height:1.55;color:#555}
+.explainability span{display:block;color:#111;font-weight:750;font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.rxi-logo{position:absolute;left:30px;bottom:24px;font-weight:850;letter-spacing:-.02em} .rxi-logo small{display:block;font-weight:500;color:var(--muted);letter-spacing:0;margin-top:2px}
+.review-panel{background:var(--soft)} .review-block{padding-bottom:24px;margin-bottom:24px;border-bottom:1px solid var(--line)} .review-block:last-child{border:0}
+.review-block h3{font-size:18px;margin:8px 0 14px}
+.resource{position:relative;background:#fff;border:1px solid var(--line);padding:14px 15px;margin:10px 0;cursor:pointer;transition:.15s ease}
+.resource:hover,.resource:focus{border-color:#777;outline:none} .resource.active{border:2px solid #111;padding:13px 14px}
+.resource h4{margin:0 0 4px;font-size:14px} .resource p{font-size:12px;line-height:1.5;color:#555;margin:8px 0}
+.resource a{font-size:12px;color:#111;text-underline-offset:2px} .authority,.artifact-type,.targets{font-size:10px;color:var(--muted);line-height:1.4}
+.resource-index{position:absolute;right:10px;top:10px;font-size:11px;font-weight:800}
+.guide dl{margin:0} .guide dt{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;margin-top:12px} .guide dd{margin:3px 0 0;font-size:12.5px;line-height:1.55;color:#444}
+.empty{font-size:12px;color:var(--muted);font-style:italic}
+@media(max-width:900px){.workbench{grid-template-columns:1fr;height:auto}.slide-panel,.review-panel{overflow:visible}.slide-panel{border-right:0;border-bottom:1px solid var(--line);min-height:620px}.page-header{align-items:flex-start}}
+@media print{.runtime-bar{display:none}.wb-page{page-break-after:always;min-height:auto;padding:12mm}.workbench{height:auto;min-height:0;box-shadow:none}.slide-panel,.review-panel{overflow:visible}}
+</style>
+</head>
+<body>
+<div class="runtime-bar"><b>RXI-Lab · Course-Slide Review & Lecturability Workbench</b><span>Mixed Mode · RXI-210 · Week 01 · 25 Slides</span></div>
+
+<section class="wb-page" data-page="1">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Computational Problems, Algorithms, and Abstractions</h1>
+    </div>
+    <div class="page-index"><strong>01</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Computational Problems, Algorithms, and Abstractions</h2>
+      <div class="items">
+        <article class="item" id="s1-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">How can a real-world problem become something a computer can solve?</div>
+          <div class="explainability"><span>Explainability</span>Begin from an informal situation and ask what must become explicit before computation can occur.</div>
+        </article>
+        <article class="item" id="s1-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">Computational problem solving begins by representing a problem precisely enough that computational steps can operate on it.</div>
+          <div class="explainability"><span>Explainability</span>A computer operates on an explicit representation, not directly on an informal human intention.</div>
+        </article>
+        <article class="item" id="s1-I-003" data-item-id="I-003" tabindex="0">
+          <div class="item-kicker">learning_path</div>
+          <div class="item-content">Problem → Representation → Algorithm → Implementation → Execution → Observable Result</div>
+          <div class="explainability"><span>Explainability</span>Use this as the Week 01 map. Each stage answers a different question about the same computational activity.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-002" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>MIT 6.006 — Introduction to Algorithms</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Grounds computational problems and algorithms as distinct objects of reasoning.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-002</div>
+        </article>
+        <article class="resource provenance-resource" data-targets="I-003" tabindex="0">
+          <div class="resource-index">[2]</div>
+          <h4>MIT 6.006 — Models of Computation</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Supports the distinction among computational problems, algorithms, programs, and execution models.</p>
+          <a href="https://www.ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/mit6_006f11_lec02/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-003</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Frame the entire week before introducing implementation.</dd>
+          <dt>Explanation</dt><dd>Let learners propose what information a computer would need; then reveal the reasoning chain.</dd>
+          <dt>Emphasis</dt><dd>Representation precedes executable procedure.</dd>
+          <dt>Learner Check</dt><dd>Ask which stage Python belongs to.</dd>
+          <dt>Caution</dt><dd>Do not begin with syntax or present the chain as a universal lifecycle.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">open_courseware</div>
+          <h4>MIT OpenCourseWare — 6.006 Introduction to Algorithms</h4>
+          <p>Open course material for further exploration of computational problems and algorithms.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="2">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>From a Situation to a Bounded Problem</h1>
+    </div>
+    <div class="page-index"><strong>02</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>From a Situation to a Bounded Problem</h2>
+      <div class="items">
+        <article class="item" id="s2-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">scenario</div>
+          <div class="item-content">A school has electricity-use readings from several classrooms.</div>
+          <div class="explainability"><span>Explainability</span>The real situation contains many details; the computational task will use only a bounded subset.</div>
+        </article>
+        <article class="item" id="s2-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">What exactly are we asking the computer to determine?</div>
+          <div class="explainability"><span>Explainability</span>A computational problem needs a required result, not merely a topic such as “classroom electricity.”</div>
+        </article>
+        <article class="item" id="s2-I-003" data-item-id="I-003" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">A bounded computational problem states what information is available and what result is required.</div>
+          <div class="explainability"><span>Explainability</span>Bounding the task makes later representation and algorithm design possible.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-002 I-003" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>MIT 6.006 — Introduction to Algorithms</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Supports input/output-oriented formulation of computational problems.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-002, I-003</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Move from a rich real-world situation to a precise computational task.</dd>
+          <dt>Explanation</dt><dd>Keep asking what the machine receives and what it must return.</dd>
+          <dt>Emphasis</dt><dd>A topic is not yet a computational problem.</dd>
+          <dt>Learner Check</dt><dd>Ask the learner to restate the task in one sentence.</dd>
+          <dt>Caution</dt><dd>Do not introduce Python or mathematical formalism yet.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">open_courseware</div>
+          <h4>MIT OpenCourseWare — 6.006 Introduction to Algorithms</h4>
+          <p>Open course material for further exploration of computational problems and algorithms.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="3">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Inputs, Outputs, and Constraints</h1>
+    </div>
+    <div class="page-index"><strong>03</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Inputs, Outputs, and Constraints</h2>
+      <div class="items">
+        <article class="item" id="s3-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">model</div>
+          <div class="item-content">Input: classroom electricity readings; Output: the classroom with the largest reading; Constraint: every available reading must be considered.</div>
+          <div class="explainability"><span>Explainability</span>Input and output define the problem boundary; constraints specify conditions a valid solution must respect.</div>
+        </article>
+        <article class="item" id="s3-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">If one classroom reading is ignored, are we still solving the same problem?</div>
+          <div class="explainability"><span>Explainability</span>This tests whether the learner recognizes constraints as part of the problem definition.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>MIT 6.006 — Introduction to Algorithms</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Grounds problem formulation in inputs and correct outputs.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Give learners a minimal vocabulary for computational problem formulation.</dd>
+          <dt>Explanation</dt><dd>Reveal input, output, and constraint separately.</dd>
+          <dt>Emphasis</dt><dd>Problem definition comes before implementation.</dd>
+          <dt>Learner Check</dt><dd>Change one constraint and ask whether the problem changed.</dd>
+          <dt>Caution</dt><dd>Do not imply every problem has only one valid representation.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="4">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Reality Contains More Than the Model</h1>
+    </div>
+    <div class="page-index"><strong>04</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Reality Contains More Than the Model</h2>
+      <div class="items">
+        <article class="item" id="s4-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">scenario</div>
+          <div class="item-content">A classroom includes students, furniture, schedules, lighting, temperature, wall color, and electricity readings.</div>
+          <div class="explainability"><span>Explainability</span>Most real situations contain more information than one computational task requires.</div>
+        </article>
+        <article class="item" id="s4-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Which details can be left outside our representation—and why?</div>
+          <div class="explainability"><span>Explainability</span>Relevance is judged relative to the current problem, not by whether a detail is interesting.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        <p class='empty'>No external provenance required for the instructional items on this page.</p>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Prepare learners to perform abstraction rather than memorize a definition.</dd>
+          <dt>Explanation</dt><dd>Have them remove details one by one and justify each removal.</dd>
+          <dt>Emphasis</dt><dd>Relevance is purpose-dependent.</dd>
+          <dt>Learner Check</dt><dd>Ask whether wall color changes the requested result.</dd>
+          <dt>Caution</dt><dd>Do not reward arbitrary simplification.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="5">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Abstraction Preserves What Matters</h1>
+    </div>
+    <div class="page-index"><strong>05</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Abstraction Preserves What Matters</h2>
+      <div class="items">
+        <article class="item" id="s5-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">Abstraction preserves information relevant to a computational problem while leaving irrelevant detail outside the representation.</div>
+          <div class="explainability"><span>Explainability</span>Abstraction is purposeful selection, not indiscriminate deletion.</div>
+        </article>
+        <article class="item" id="s5-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">example</div>
+          <div class="item-content">For the maximum-use problem, classroom identity and electricity reading matter; wall color does not.</div>
+          <div class="explainability"><span>Explainability</span>The retained attributes are those needed to produce and interpret the requested output.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001 I-002" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>ACM CS2023 — Computer Science Foundations</h4>
+          <div class="authority">Association for Computing Machinery</div>
+          <p>Identifies abstraction as a foundational computing idea.</p>
+          <a href="https://csed.acm.org/computer-science-foundations/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001, I-002</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Stabilize the meaning of abstraction.</dd>
+          <dt>Explanation</dt><dd>Compare the full classroom with the reduced computational representation.</dd>
+          <dt>Emphasis</dt><dd>Abstraction preserves what matters for a purpose.</dd>
+          <dt>Learner Check</dt><dd>Give a new scenario and ask what should remain.</dd>
+          <dt>Caution</dt><dd>Do not teach abstraction as merely making things simpler.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="6">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Represent the Classroom Data</h1>
+    </div>
+    <div class="page-index"><strong>06</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Represent the Classroom Data</h2>
+      <div class="items">
+        <article class="item" id="s6-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">representation</div>
+          <div class="item-content">[[&#x27;Room A&#x27;, 12], [&#x27;Room B&#x27;, 7], [&#x27;Room C&#x27;, 19], [&#x27;Room D&#x27;, 15]]</div>
+          <div class="explainability"><span>Explainability</span>The representation keeps an identifier and the measurement needed by the problem.</div>
+        </article>
+        <article class="item" id="s6-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">What information has disappeared from the real classroom?</div>
+          <div class="explainability"><span>Explainability</span>The question makes the abstraction visible by contrasting represented and omitted information.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        <p class='empty'>No external provenance required for the instructional items on this page.</p>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Make abstraction concrete as a data representation.</dd>
+          <dt>Explanation</dt><dd>Point from each real-world attribute to whether it survives in the representation.</dd>
+          <dt>Emphasis</dt><dd>A representation is selective and purpose-bound.</dd>
+          <dt>Learner Check</dt><dd>Ask whether removing room identity would still satisfy the requested output.</dd>
+          <dt>Caution</dt><dd>Do not drift into data-structure syntax.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="7">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Input → Process → Output</h1>
+    </div>
+    <div class="page-index"><strong>07</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Input → Process → Output</h2>
+      <div class="items">
+        <article class="item" id="s7-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">model</div>
+          <div class="item-content">Input: room readings → Process: compare readings → Output: [&#x27;Room C&#x27;, 19]</div>
+          <div class="explainability"><span>Explainability</span>This simple model makes the computational transformation visible.</div>
+        </article>
+        <article class="item" id="s7-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Is “compare the readings” precise enough for a computer to execute?</div>
+          <div class="explainability"><span>Explainability</span>The intentionally vague process creates the need for an explicit algorithm.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>NIST CSRC Glossary — Computer</h4>
+          <div class="authority">National Institute of Standards and Technology</div>
+          <p>Supports the idea of data being manipulated according to processing instructions.</p>
+          <a href="https://csrc.nist.gov/glossary/term/computer" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[2]</div>
+          <h4>MIT 6.006 — Introduction to Algorithms</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Supports computational transformation from problem input toward correct output.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Create the transition from representation to procedure.</dd>
+          <dt>Explanation</dt><dd>Treat input/process/output as a deliberately simple model.</dd>
+          <dt>Emphasis</dt><dd>The process must become explicit enough to execute.</dd>
+          <dt>Learner Check</dt><dd>Ask for the first exact comparison step.</dd>
+          <dt>Caution</dt><dd>Do not call this a complete theory of computation.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="8">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>An Algorithm Makes the Process Explicit</h1>
+    </div>
+    <div class="page-index"><strong>08</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>An Algorithm Makes the Process Explicit</h2>
+      <div class="items">
+        <article class="item" id="s8-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">An algorithm expresses an ordered procedure for transforming a problem state toward a required result.</div>
+          <div class="explainability"><span>Explainability</span>The key move is from a humanly understandable intention to explicit computational steps.</div>
+        </article>
+        <article class="item" id="s8-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">procedure</div>
+          <div class="item-content">Take the first reading as current maximum → inspect next reading → update if larger → repeat → return the final maximum.</div>
+          <div class="explainability"><span>Explainability</span>The procedure exposes initialization, comparison, update, repetition, and termination.</div>
+        </article>
+        <article class="item" id="s8-I-003" data-item-id="I-003" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">What must remain known while this procedure is running?</div>
+          <div class="explainability"><span>Explainability</span>This prepares the learner to recognize computational state.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>NIST CSRC — Algorithm</h4>
+          <div class="authority">National Institute of Standards and Technology</div>
+          <p>Provides authoritative grounding for algorithm as a clearly specified process or set of rules.</p>
+          <a href="https://csrc.nist.gov/glossary/term/algorithm" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+        <article class="resource provenance-resource" data-targets="I-002" tabindex="0">
+          <div class="resource-index">[2]</div>
+          <h4>NIST Dictionary of Algorithms and Data Structures</h4>
+          <div class="authority">National Institute of Standards and Technology</div>
+          <p>Supports the procedural interpretation of the algorithm example.</p>
+          <a href="https://xlinux.nist.gov/dads/HTML/algorithm.html" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-002</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Establish algorithm as explicit procedure rather than code.</dd>
+          <dt>Explanation</dt><dd>Act out the steps with four cards containing readings.</dd>
+          <dt>Emphasis</dt><dd>Procedure is distinct from programming-language implementation.</dd>
+          <dt>Learner Check</dt><dd>Ask what must be remembered after each comparison.</dd>
+          <dt>Caution</dt><dd>Do not equate algorithm with Python.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">open_courseware</div>
+          <h4>MIT OpenCourseWare — 6.006 Introduction to Algorithms</h4>
+          <p>Open course material for further exploration of computational problems and algorithms.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="9">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>State: What Must Persist?</h1>
+    </div>
+    <div class="page-index"><strong>09</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>State: What Must Persist?</h2>
+      <div class="items">
+        <article class="item" id="s9-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">Computational state is information required for the computation to continue from its current point.</div>
+          <div class="explainability"><span>Explainability</span>In this procedure, the current maximum must persist across comparisons.</div>
+        </article>
+        <article class="item" id="s9-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">example</div>
+          <div class="item-content">After observing 12, 7, and 19, the current maximum is 19.</div>
+          <div class="explainability"><span>Explainability</span>The algorithm need not retain every previous comparison to continue this particular procedure.</div>
+        </article>
+        <article class="item" id="s9-I-003" data-item-id="I-003" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">What happens if current_max is forgotten after every comparison?</div>
+          <div class="explainability"><span>Explainability</span>Forgetting required state breaks the continuity of the computation.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        <p class='empty'>No external provenance required for the instructional items on this page.</p>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Make the idea of state intuitive before formal terminology.</dd>
+          <dt>Explanation</dt><dd>Pause the procedure midway and ask what information is needed to resume.</dd>
+          <dt>Emphasis</dt><dd>State is carried across steps.</dd>
+          <dt>Learner Check</dt><dd>Ask for the one stored value needed after three observations.</dd>
+          <dt>Caution</dt><dd>Do not generalize this minimal-state property to all algorithms.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="10">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Trace the Algorithm</h1>
+    </div>
+    <div class="page-index"><strong>10</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Trace the Algorithm</h2>
+      <div class="items">
+        <article class="item" id="s10-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">trace</div>
+          <div class="item-content">12 → current_max 12; 7 → 12; 19 → 19; 15 → 19; output → 19</div>
+          <div class="explainability"><span>Explainability</span>Tracing turns a static procedure into observable state transitions.</div>
+        </article>
+        <article class="item" id="s10-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Before revealing each next state, what should current_max become?</div>
+          <div class="explainability"><span>Explainability</span>Prediction forces active reasoning rather than passive reading.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>MIT 6.006 — Algorithm coursework guidance</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Supports worked algorithm reasoning and explicit explanation of algorithm behavior.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2008/pages/syllabus/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Make execution observable.</dd>
+          <dt>Explanation</dt><dd>Reveal one transition at a time and require prediction.</dd>
+          <dt>Emphasis</dt><dd>Execution is a sequence of changing states.</dd>
+          <dt>Learner Check</dt><dd>Replace 19 with 9 and retrace.</dd>
+          <dt>Caution</dt><dd>Do not show the completed trace all at once.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">open_courseware</div>
+          <h4>MIT OpenCourseWare — 6.006 Introduction to Algorithms</h4>
+          <p>Open course material for further exploration of computational problems and algorithms.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="11">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Iteration Repeats a Computational Step</h1>
+    </div>
+    <div class="page-index"><strong>11</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Iteration Repeats a Computational Step</h2>
+      <div class="items">
+        <article class="item" id="s11-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">Iteration repeats a computational operation while preserving the state needed between repetitions.</div>
+          <div class="explainability"><span>Explainability</span>The maximum procedure repeatedly inspects a new value while carrying current_max forward.</div>
+        </article>
+        <article class="item" id="s11-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">procedure</div>
+          <div class="item-content">Inspect → compare → optionally update → move to next value → repeat.</div>
+          <div class="explainability"><span>Explainability</span>The repeated unit can be identified independently of Python syntax.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001 I-002" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>Python Tutorial — More Control Flow Tools</h4>
+          <div class="authority">Python Software Foundation</div>
+          <p>Documents iteration and conditional control flow used later in the implementation.</p>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001, I-002</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Name repetition as a computational structure before showing code.</dd>
+          <dt>Explanation</dt><dd>Circle the repeated part of the manual trace.</dd>
+          <dt>Emphasis</dt><dd>Iteration organizes repeated work.</dd>
+          <dt>Learner Check</dt><dd>Ask which operation repeats and which state persists.</dd>
+          <dt>Caution</dt><dd>Do not turn this into a syntax lesson.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">official_tutorial</div>
+          <h4>Python Tutorial — More Control Flow Tools</h4>
+          <p>Official Python tutorial for the control-flow mechanisms used in the guided implementation.</p>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="12">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Decision and State Update</h1>
+    </div>
+    <div class="page-index"><strong>12</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Decision and State Update</h2>
+      <div class="items">
+        <article class="item" id="s12-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">A conditional decision determines whether the current state should change.</div>
+          <div class="explainability"><span>Explainability</span>The comparison value &gt; current_max controls whether current_max is replaced.</div>
+        </article>
+        <article class="item" id="s12-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">example</div>
+          <div class="item-content">If current_max = 12 and the next value is 7, keep 12; if the next value is 19, update to 19.</div>
+          <div class="explainability"><span>Explainability</span>The same rule produces different state transitions depending on observed input.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001 I-002" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>Python Tutorial — More Control Flow Tools</h4>
+          <div class="authority">Python Software Foundation</div>
+          <p>Documents conditional control flow that will later express this decision.</p>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001, I-002</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Connect comparison to state transition.</dd>
+          <dt>Explanation</dt><dd>Use two contrasting values and ask whether the state changes.</dd>
+          <dt>Emphasis</dt><dd>A decision rule controls an update.</dd>
+          <dt>Learner Check</dt><dd>Ask the learner to predict state before revealing it.</dd>
+          <dt>Caution</dt><dd>Do not make Python&#x27;s if statement the concept itself.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">official_tutorial</div>
+          <h4>Python Tutorial — More Control Flow Tools</h4>
+          <p>Official Python tutorial for the control-flow mechanisms used in the guided implementation.</p>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="13">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Termination: When Is the Procedure Finished?</h1>
+    </div>
+    <div class="page-index"><strong>13</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Termination: When Is the Procedure Finished?</h2>
+      <div class="items">
+        <article class="item" id="s13-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">An executable procedure needs a condition under which its required work is complete.</div>
+          <div class="explainability"><span>Explainability</span>For this bounded collection, the procedure finishes after every available reading has been inspected.</div>
+        </article>
+        <article class="item" id="s13-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Why would returning current_max after only two readings be invalid?</div>
+          <div class="explainability"><span>Explainability</span>The problem constraint requires every available reading to be considered.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>NIST CSRC — Algorithm</h4>
+          <div class="authority">National Institute of Standards and Technology</div>
+          <p>Grounds the algorithm as a specified process that produces a prescribed result.</p>
+          <a href="https://csrc.nist.gov/glossary/term/algorithm" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Make completion part of procedural reasoning.</dd>
+          <dt>Explanation</dt><dd>Tie termination back to the original problem constraint.</dd>
+          <dt>Emphasis</dt><dd>A result is returned only after required work is complete.</dd>
+          <dt>Learner Check</dt><dd>Ask what marks completion in this example.</dd>
+          <dt>Caution</dt><dd>Do not introduce formal computability or halting theory.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="14">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Problem ≠ Algorithm ≠ Program</h1>
+    </div>
+    <div class="page-index"><strong>14</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Problem ≠ Algorithm ≠ Program</h2>
+      <div class="items">
+        <article class="item" id="s14-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">comparison</div>
+          <div class="item-content">Problem: find largest reading | Representation: identifiable numeric readings | Algorithm: maintain largest observed value | Program: express the algorithm in a language such as Python</div>
+          <div class="explainability"><span>Explainability</span>These are related but distinct reasoning layers.</div>
+        </article>
+        <article class="item" id="s14-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">If we replace Python with JavaScript, which layer changes?</div>
+          <div class="explainability"><span>Explainability</span>The implementation changes while the bounded problem and algorithm can remain the same.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001 I-002" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>MIT 6.006 — Models of Computation</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Explicitly distinguishes computational problems, algorithms, and programs.</p>
+          <a href="https://www.ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/mit6_006f11_lec02/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001, I-002</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Stabilize the central conceptual separation of LO-01.</dd>
+          <dt>Explanation</dt><dd>Read each layer independently, then connect them.</dd>
+          <dt>Emphasis</dt><dd>Algorithm is not synonymous with program.</dd>
+          <dt>Learner Check</dt><dd>Ask what remains invariant across programming languages.</dd>
+          <dt>Caution</dt><dd>Do not drift into language comparison.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">open_courseware</div>
+          <h4>MIT OpenCourseWare — 6.006 Introduction to Algorithms</h4>
+          <p>Open course material for further exploration of computational problems and algorithms.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="15">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Test the Procedure with Different Inputs</h1>
+    </div>
+    <div class="page-index"><strong>15</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Test the Procedure with Different Inputs</h2>
+      <div class="items">
+        <article class="item" id="s15-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">test_cases</div>
+          <div class="item-content">[12,7,19,15]→19 | [4,4,4,4]→4 | [-8,-2,-11,-5]→-2 | [100]→100</div>
+          <div class="explainability"><span>Explainability</span>Structurally different inputs probe different assumptions.</div>
+        </article>
+        <article class="item" id="s15-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Why is one convenient positive-number example insufficient?</div>
+          <div class="explainability"><span>Explainability</span>A narrow example may hide assumptions that fail on equal, negative, or singleton inputs.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        <p class='empty'>No external provenance required for the instructional items on this page.</p>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Build intuition for testing before formal correctness.</dd>
+          <dt>Explanation</dt><dd>Have learners predict each result and explain why each case is useful.</dd>
+          <dt>Emphasis</dt><dd>Different cases expose different assumptions.</dd>
+          <dt>Learner Check</dt><dd>Ask for one additional useful test case.</dd>
+          <dt>Caution</dt><dd>Do not imply passing examples proves correctness.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="16">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Observed Success Is Not General Correctness</h1>
+    </div>
+    <div class="page-index"><strong>16</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Observed Success Is Not General Correctness</h2>
+      <div class="items">
+        <article class="item" id="s16-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">Correctness reasoning asks whether an algorithm satisfies the required behavior across valid inputs, not merely whether one execution happens to work.</div>
+          <div class="explainability"><span>Explainability</span>A successful run is evidence about one case; correctness is a broader claim.</div>
+        </article>
+        <article class="item" id="s16-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Do four successful test cases prove the algorithm correct for every valid input?</div>
+          <div class="explainability"><span>Explainability</span>The expected answer is no; examples and general reasoning provide different strengths of evidence.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>MIT 6.006 — Introduction to Algorithms</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Treats an algorithm as solving a problem when it returns a correct output for every problem input and requires correctness reasoning.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2008/pages/syllabus/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Separate testing evidence from general correctness claims.</dd>
+          <dt>Explanation</dt><dd>Contrast one observed run with the full valid input domain.</dd>
+          <dt>Emphasis</dt><dd>Testing and correctness reasoning are not equivalent.</dd>
+          <dt>Learner Check</dt><dd>Ask whether more tests change the logical status of proof.</dd>
+          <dt>Caution</dt><dd>Do not demand formal proof at this learner level.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">open_courseware</div>
+          <h4>MIT OpenCourseWare — 6.006 Introduction to Algorithms</h4>
+          <p>Open course material for further exploration of computational problems and algorithms.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="17">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Reason Informally About Why It Works</h1>
+    </div>
+    <div class="page-index"><strong>17</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Reason Informally About Why It Works</h2>
+      <div class="items">
+        <article class="item" id="s17-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">reasoning</div>
+          <div class="item-content">After each inspected value, current_max equals the largest value seen so far.</div>
+          <div class="explainability"><span>Explainability</span>This maintained relationship explains why the final state is meaningful.</div>
+        </article>
+        <article class="item" id="s17-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">reasoning</div>
+          <div class="item-content">When all values have been inspected, the largest value seen so far is the largest value in the entire input.</div>
+          <div class="explainability"><span>Explainability</span>The termination condition connects the maintained state to the required output.</div>
+        </article>
+        <article class="item" id="s17-I-003" data-item-id="I-003" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Which assumption would fail if some input values were never inspected?</div>
+          <div class="explainability"><span>Explainability</span>The reasoning depends on complete coverage of the bounded input.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001 I-002" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>MIT 6.006 — Introduction to Algorithms</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Supports correctness reasoning as part of algorithm analysis.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2008/pages/syllabus/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001, I-002</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Give a pre-formal taste of correctness reasoning.</dd>
+          <dt>Explanation</dt><dd>Use ordinary language: &#x27;largest seen so far&#x27;.</dd>
+          <dt>Emphasis</dt><dd>Reason about why the procedure works, not just what it outputs.</dd>
+          <dt>Learner Check</dt><dd>Ask the learner to finish the sentence &#x27;after each step…&#x27;.</dd>
+          <dt>Caution</dt><dd>Do not introduce loop-invariant proof notation.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="18">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Pseudocode Bridges Idea and Implementation</h1>
+    </div>
+    <div class="page-index"><strong>18</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Pseudocode Bridges Idea and Implementation</h2>
+      <div class="items">
+        <article class="item" id="s18-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">pseudocode</div>
+          <div class="item-content">current_max ← first value<br>FOR each remaining value<br>  IF value &gt; current_max<br>    current_max ← value<br>RETURN current_max</div>
+          <div class="explainability"><span>Explainability</span>Pseudocode exposes procedural structure without committing to Python syntax.</div>
+        </article>
+        <article class="item" id="s18-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Where are state, repetition, decision, update, and return?</div>
+          <div class="explainability"><span>Explainability</span>Annotating roles prepares semantic reading of the implementation.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>ACM — Software Development Fundamentals</h4>
+          <div class="authority">Association for Computing Machinery</div>
+          <p>Connects algorithms, implementation strategies, pseudocode-level problem solving, and programming-language implementation.</p>
+          <a href="https://csed.acm.org/knowledge-areas-software-development-fundamentals-sdf-cs2013-version/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Bridge language-independent reasoning to executable code.</dd>
+          <dt>Explanation</dt><dd>Annotate computational roles before showing Python.</dd>
+          <dt>Emphasis</dt><dd>Pseudocode represents structure, not a standardized language.</dd>
+          <dt>Learner Check</dt><dd>Ask the learner to label each line by role.</dd>
+          <dt>Caution</dt><dd>Do not assess pseudocode punctuation.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="19">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>From Algorithm to Python</h1>
+    </div>
+    <div class="page-index"><strong>19</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>From Algorithm to Python</h2>
+      <div class="items">
+        <article class="item" id="s19-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">code</div>
+          <div class="item-content">values = [12, 7, 19, 15]<br>current_max = values[0]<br>for value in values[1:]:<br>    if value &gt; current_max:<br>        current_max = value<br>print(current_max)</div>
+          <div class="explainability"><span>Explainability</span>The code realizes data, state initialization, iteration, decision, update, and observation.</div>
+        </article>
+        <article class="item" id="s19-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Which exact lines implement STATE, REPEAT, DECIDE, and UPDATE?</div>
+          <div class="explainability"><span>Explainability</span>Semantic annotation keeps attention on computational roles rather than vocabulary memorization.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>Python Tutorial — More Control Flow Tools</h4>
+          <div class="authority">Python Software Foundation</div>
+          <p>Documents sequence iteration and if control flow used in the implementation.</p>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Map algorithmic roles onto concrete Python mechanisms.</dd>
+          <dt>Explanation</dt><dd>Reveal code only after pseudocode has been understood.</dd>
+          <dt>Emphasis</dt><dd>Every important line should map back to a computational role.</dd>
+          <dt>Learner Check</dt><dd>Ask what breaks if current_max is reset inside the loop.</dd>
+          <dt>Caution</dt><dd>Do not turn the slide into a general Python tutorial.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">official_tutorial</div>
+          <h4>Python Tutorial — More Control Flow Tools</h4>
+          <p>Official Python tutorial for the control-flow mechanisms used in the guided implementation.</p>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="20">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>The Code Is Not the Computational Idea</h1>
+    </div>
+    <div class="page-index"><strong>20</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>The Code Is Not the Computational Idea</h2>
+      <div class="items">
+        <article class="item" id="s20-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">comparison</div>
+          <div class="item-content">Computational reasoning: maintain candidate, inspect values, replace when larger, return final candidate. Python mechanisms: variable, list, for loop, if statement.</div>
+          <div class="explainability"><span>Explainability</span>Implementation mechanisms realize the reasoning but do not define the original problem.</div>
+        </article>
+        <article class="item" id="s20-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">concept</div>
+          <div class="item-content">Programming languages provide mechanisms for expressing computation; they do not define the computational problem itself.</div>
+          <div class="explainability"><span>Explainability</span>The electricity problem exists independently of the selected implementation language.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>ACM CS2023 — Computer Science Foundations</h4>
+          <div class="authority">Association for Computing Machinery</div>
+          <p>Separates foundational algorithmic ideas from programming-language mechanisms.</p>
+          <a href="https://csed.acm.org/computer-science-foundations/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+        <article class="resource provenance-resource" data-targets="I-002" tabindex="0">
+          <div class="resource-index">[2]</div>
+          <h4>MIT 6.006 — Models of Computation</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Supports the distinction between algorithm and program.</p>
+          <a href="https://www.ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/resources/mit6_006f11_lec02/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-002</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Reinforce the abstraction boundary after implementation appears.</dd>
+          <dt>Explanation</dt><dd>Read the reasoning without Python terms, then map it to mechanisms.</dd>
+          <dt>Emphasis</dt><dd>Problem, algorithm, and implementation are distinct layers.</dd>
+          <dt>Learner Check</dt><dd>Ask what changes if the language changes.</dd>
+          <dt>Caution</dt><dd>Do not imply implementation details never matter.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="21">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Predict Before You Execute</h1>
+    </div>
+    <div class="page-index"><strong>21</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Predict Before You Execute</h2>
+      <div class="items">
+        <article class="item" id="s21-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">experiment</div>
+          <div class="item-content">For each input collection: predict the output first, then run the program, then record the observed output.</div>
+          <div class="explainability"><span>Explainability</span>Prediction makes the learner commit to a reasoning claim before using execution as evidence.</div>
+        </article>
+        <article class="item" id="s21-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">evidence</div>
+          <div class="item-content">Record: Input | Predicted result | Observed result | Explanation</div>
+          <div class="explainability"><span>Explainability</span>The explanation connects observation back to the computational model.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>ACM — Software Development Fundamentals</h4>
+          <div class="authority">Association for Computing Machinery</div>
+          <p>Includes implementing, testing, and debugging algorithms and programs as foundational learning outcomes.</p>
+          <a href="https://csed.acm.org/knowledge-areas-software-development-fundamentals-sdf-cs2013-version/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Turn execution into a guided computational investigation.</dd>
+          <dt>Explanation</dt><dd>Require prediction before running code.</dd>
+          <dt>Emphasis</dt><dd>Observation becomes evidence when compared with an expectation.</dd>
+          <dt>Learner Check</dt><dd>Ask the learner to explain one match or mismatch.</dd>
+          <dt>Caution</dt><dd>Do not equate successful execution with proof.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        
+        <article class="resource artifact-resource" data-targets="I-001" tabindex="0">
+          <div class="artifact-type">official_tutorial</div>
+          <h4>Python Tutorial — More Control Flow Tools</h4>
+          <p>Official Python tutorial for the control-flow mechanisms used in the guided implementation.</p>
+          <a href="https://docs.python.org/3/tutorial/controlflow.html" target="_blank" rel="noopener noreferrer">Open learning resource ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="22">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Change the Input, Observe the State</h1>
+    </div>
+    <div class="page-index"><strong>22</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Change the Input, Observe the State</h2>
+      <div class="items">
+        <article class="item" id="s22-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">experiment</div>
+          <div class="item-content">Replace [12,7,19,15] with [-8,-2,-11,-5]. Predict every current_max state before execution.</div>
+          <div class="explainability"><span>Explainability</span>Changing the data tests whether the learner understands the procedure rather than memorizing one trace.</div>
+        </article>
+        <article class="item" id="s22-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">At which observation does the state change, and why?</div>
+          <div class="explainability"><span>Explainability</span>The answer should invoke the comparison rule, not Python syntax.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        <p class='empty'>No external provenance required for the instructional items on this page.</p>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Use variation to test transfer of the algorithmic model.</dd>
+          <dt>Explanation</dt><dd>Have the learner construct the trace before execution.</dd>
+          <dt>Emphasis</dt><dd>The same procedure can operate on different valid inputs.</dd>
+          <dt>Learner Check</dt><dd>Ask why initializing current_max to 0 would fail here.</dd>
+          <dt>Caution</dt><dd>Do not introduce optimization concerns yet.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="23">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Explain a Prediction–Observation Mismatch</h1>
+    </div>
+    <div class="page-index"><strong>23</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Explain a Prediction–Observation Mismatch</h2>
+      <div class="items">
+        <article class="item" id="s23-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">scenario</div>
+          <div class="item-content">Suppose your prediction is 19 but the program prints 15.</div>
+          <div class="explainability"><span>Explainability</span>A mismatch is a signal to inspect representation, procedure, implementation, or observation rather than immediately blaming the machine.</div>
+        </article>
+        <article class="item" id="s23-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">diagnostic_chain</div>
+          <div class="item-content">Check input → trace expected state → inspect implementation → rerun → compare evidence.</div>
+          <div class="explainability"><span>Explainability</span>The diagnostic chain preserves traceability between reasoning and execution.</div>
+        </article>
+        <article class="item" id="s23-I-003" data-item-id="I-003" tabindex="0">
+          <div class="item-kicker">question</div>
+          <div class="item-content">Which layer would you inspect first, and what evidence would you look for?</div>
+          <div class="explainability"><span>Explainability</span>The learner should justify a bounded diagnostic move.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        <p class='empty'>No external provenance required for the instructional items on this page.</p>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Make debugging an evidence-oriented reasoning activity.</dd>
+          <dt>Explanation</dt><dd>Treat mismatch as a question about layers, not as failure.</dd>
+          <dt>Emphasis</dt><dd>Use evidence to locate disagreement between expectation and execution.</dd>
+          <dt>Learner Check</dt><dd>Ask for one plausible implementation error and one reasoning error.</dd>
+          <dt>Caution</dt><dd>Do not turn this into a full debugging curriculum.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="24">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Construct Your Own Computational Solution</h1>
+    </div>
+    <div class="page-index"><strong>24</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Construct Your Own Computational Solution</h2>
+      <div class="items">
+        <article class="item" id="s24-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">assignment</div>
+          <div class="item-content">Choose a small bounded problem. Define it; identify inputs, outputs, constraints; explain abstraction; describe or trace an algorithm; implement a small artifact; run it; record behavior; explain how implementation expresses the reasoning.</div>
+          <div class="explainability"><span>Explainability</span>The assignment reconstructs the complete Week 01 chain rather than assessing code alone.</div>
+        </article>
+        <article class="item" id="s24-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">learning_evidence</div>
+          <div class="item-content">Required evidence: structured problem representation; algorithm explanation or trace; short computational artifact connecting abstraction with observable execution.</div>
+          <div class="explainability"><span>Explainability</span>These directly align with LO-01.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        <p class='empty'>No external provenance required for the instructional items on this page.</p>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Require independent reconstruction of the Week 01 reasoning chain.</dd>
+          <dt>Explanation</dt><dd>Treat the required elements as checkpoints in one coherent artifact.</dd>
+          <dt>Emphasis</dt><dd>Traceability from problem to evidence matters more than code polish.</dd>
+          <dt>Learner Check</dt><dd>Ask the learner to state problem, input, and output before work begins.</dd>
+          <dt>Caution</dt><dd>Keep the selected problem bounded enough that programming complexity does not dominate.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<section class="wb-page" data-page="25">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">RXI-210 · WEEK 01 · LO-01</div>
+      <h1>Week 01 — Computational Reasoning Chain</h1>
+    </div>
+    <div class="page-index"><strong>25</strong><span>/ 25</span></div>
+  </header>
+  <div class="workbench">
+    <section class="slide-panel">
+      <div class="panel-label">SLIDE PANEL</div>
+      <h2>Week 01 — Computational Reasoning Chain</h2>
+      <div class="items">
+        <article class="item" id="s25-I-001" data-item-id="I-001" tabindex="0">
+          <div class="item-kicker">knowledge_chain</div>
+          <div class="item-content">Real-world situation → Bounded problem → Abstraction → Computational representation → Algorithm → Implementation → Execution → Observable evidence</div>
+          <div class="explainability"><span>Explainability</span>This is the reusable synthesis of Week 01.</div>
+        </article>
+        <article class="item" id="s25-I-002" data-item-id="I-002" tabindex="0">
+          <div class="item-kicker">reflection</div>
+          <div class="item-content">Which stages describe the problem, which describe computational reasoning, and which describe implementation/execution?</div>
+          <div class="explainability"><span>Explainability</span>Defensible grouping matters more than memorizing labels.</div>
+        </article>
+        <article class="item" id="s25-I-003" data-item-id="I-003" tabindex="0">
+          <div class="item-kicker">transition</div>
+          <div class="item-content">Once problems can be represented computationally, we can ask how intelligent systems represent states, search possible solutions, and reason about what to do next.</div>
+          <div class="explainability"><span>Explainability</span>This creates anticipation for the next course segment without teaching it prematurely.</div>
+        </article></div>
+      <div class="rxi-logo">RXI-Lab <small>Course Workbench · Alpha-1</small></div>
+    </section>
+    <aside class="review-panel">
+      <div class="panel-label">REVIEW PANEL</div>
+      <section class="review-block">
+        <h3>Provenance</h3>
+        
+        <article class="resource provenance-resource" data-targets="I-001" tabindex="0">
+          <div class="resource-index">[1]</div>
+          <h4>ACM CS2023 — Computer Science Foundations</h4>
+          <div class="authority">Association for Computing Machinery</div>
+          <p>Grounds the synthesis in foundational abstraction and computing concepts.</p>
+          <a href="https://csed.acm.org/computer-science-foundations/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001</div>
+        </article>
+        <article class="resource provenance-resource" data-targets="I-001 I-003" tabindex="0">
+          <div class="resource-index">[2]</div>
+          <h4>MIT 6.006 — Introduction to Algorithms</h4>
+          <div class="authority">Massachusetts Institute of Technology</div>
+          <p>Grounds the synthesis in computational problem formulation and algorithmic reasoning.</p>
+          <a href="https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/" target="_blank" rel="noopener noreferrer">Open authoritative source ↗</a>
+          <div class="targets">Targets: I-001, I-003</div>
+        </article>
+      </section>
+      <section class="review-block guide">
+        <h3>Lecturing Guide</h3>
+        <dl>
+          <dt>Teaching Intent</dt><dd>Compress the week into one reusable reasoning model.</dd>
+          <dt>Explanation</dt><dd>Reconstruct the chain with learners rather than displaying it all immediately.</dd>
+          <dt>Emphasis</dt><dd>Each stage answers a different question about the same computational activity.</dd>
+          <dt>Learner Check</dt><dd>Remove two nodes and ask the learner to restore them.</dd>
+          <dt>Caution</dt><dd>Present the chain as a Week 01 scaffold, not a universal mandatory process.</dd>
+        </dl>
+      </section>
+      <section class="review-block">
+        <h3>Artifacts</h3>
+        <p class='empty'>No external artifact is required for this page.</p>
+      </section>
+    </aside>
+  </div>
+</section>
+<script>
+document.querySelectorAll('.wb-page').forEach(page => {
+  const items=[...page.querySelectorAll('.item')];
+  const resources=[...page.querySelectorAll('.resource')];
+  const clear=()=>{items.forEach(x=>x.classList.remove('active'));resources.forEach(x=>x.classList.remove('active'));};
+  items.forEach(item=>item.addEventListener('click',()=>{
+    clear(); item.classList.add('active');
+    const id=item.dataset.itemId;
+    const hits=resources.filter(r=>(r.dataset.targets||'').split(/\s+/).includes(id));
+    hits.forEach(r=>r.classList.add('active'));
+    if(hits[0]) hits[0].scrollIntoView({behavior:'smooth',block:'nearest'});
+  }));
+  resources.forEach(r=>r.addEventListener('click',(ev)=>{
+    if(ev.target.closest('a')) return;
+    clear(); r.classList.add('active');
+    (r.dataset.targets||'').split(/\s+/).filter(Boolean).forEach(id=>{
+      const target=items.find(x=>x.dataset.itemId===id); if(target) target.classList.add('active');
+    });
+  }));
+});
+</script>
+</body></html>
