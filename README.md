@@ -1,147 +1,52 @@
-# HAIR-RXI — Human-AI Resonance Infrastructure
+# RXI-Lab — Research & Innovation Curriculum Development
 
-## 1. Overview
+RXI-Lab is a curriculum research, design, and engineering initiative developed for **Artslink Study Abroad Services Company (零创)**.
 
-`_hair_rxi/` is the Human-AI Resonance infrastructure within the Artslink
-Workspace.
+The project focuses on the development of **research-oriented and innovation-oriented academic programs for students in international schools in Mainland China**, with particular emphasis on interdisciplinary learning across science, engineering, computing, artificial intelligence, design, and emerging technologies.
 
-It provides a dedicated space for organizing collaboration context,
-session baselines, memory, state, and supporting mechanisms that help
-maintain continuity across human-AI interactions.
+The repository contains the evolving curriculum architecture, academic knowledge models, generation workflows, instructional structures, and prototype learning artifacts developed through the RXI-Lab initiative.
 
-The goal is to establish a structured and maintainable foundation for
-contextual consistency, knowledge alignment, and AI-assisted engineering
-workflows.
+---
 
-HAIR-RXI is intended to evolve incrementally. Its directory structure
-defines logical responsibilities; it does not imply that every component
-or capability has already been implemented.
+## 1. Project Scope
 
-## 2. Architectural Boundary
+RXI-Lab explores how structured academic knowledge, curriculum design, project-based learning, and computational methods can be integrated into coherent research and innovation programs for pre-university learners.
 
-The Artslink Workspace separates two complementary domains:
+The curriculum system is intended to support students who are preparing for international higher education and who seek structured exposure to:
 
-- **HAIR-RXI (`_hair_rxi/`)** — Human-AI collaboration infrastructure:
-  context organization, session continuity, knowledge alignment, and
-  supporting collaboration mechanisms.
-- **RXI-Lab (`rxi-lab/`)** — Research and engineering workspace:
-  requirements, experiments, implementation, verification, and project
-  deliverables.
+- scientific and engineering thinking;
+- computing and artificial intelligence;
+- interdisciplinary research;
+- design and technology convergence;
+- computational investigation and prototyping;
+- project-based academic practice;
+- research communication and presentation.
 
-HAIR-RXI supports the process through which human-AI collaboration is
-organized and maintained. RXI-Lab is where concrete research and
-engineering work is conducted.
+The objective is not to reproduce a conventional university curriculum at a reduced scale.
 
-The two domains are logically separated but operationally connected.
-Relevant context and decisions may inform engineering work, while
-verified findings and project outcomes may contribute to future
-collaboration context.
+Instead, RXI-Lab develops academically grounded learning pathways that preserve authentic disciplinary structures while adapting breadth, depth, sequencing, and instructional complexity to the capabilities and goals of pre-university learners.
 
-## 3. Directory Structure
+---
 
-| Directory / File | Responsibility |
-| --- | --- |
-| `sessions/` | Organizes persistent workstreams and their session baselines. |
-| `context/` | Intended for contextual materials and alignment inputs. |
-| `memory/` | Intended for curated knowledge and reusable information. |
-| `state/` | Intended for state-related information required by collaboration workflows. |
-| `ccc/` | Reserved for CCC-related materials and mechanisms. |
-| `_util/` | Supporting utilities for the infrastructure. |
-| `README.md` | Entry point and architectural overview. |
+## 2. Curriculum Architecture
 
-These responsibilities are logical boundaries to guide development.
-Detailed schemas, operational rules, and implementation details should
-be documented as the corresponding components mature.
+The curriculum is organized around a layered academic structure that connects broad areas of study with progressively more specific knowledge and instructional artifacts.
 
-## 4. Session and Context Governance
+At a high level:
 
-The `sessions/` directory organizes ongoing collaboration by workstream,
-rather than treating each individual chat session as an isolated unit.
-
-Its global baseline is maintained in:
-
-- `sessions/BASELINE_GLOBAL.md`
-
-Domain-specific baselines belong in their respective workstream
-directories.
-
-The global baseline defines shared governance conventions, including
-naming, organization, cross-workstream references, baseline maintenance,
-and knowledge continuity.
-
-A baseline is a curated alignment artifact, not an automatic record of
-every conversation. Information should be reviewed and structured before
-being promoted into reusable context.
-
-## 5. Collaboration Workflow
-
-The intended collaboration workflow is:
-
-1. Identify the relevant workstream and its baseline.
-2. Retrieve the necessary context and supporting materials.
-3. Align the current session with established decisions and constraints.
-4. Conduct analysis, planning, or engineering work.
-5. Record meaningful decisions, verified findings, and unresolved issues.
-6. Update the appropriate baseline or project documentation when warranted.
-
-Context retrieval may use repository files, explicit URLs, indexes, or
-other supported access mechanisms.
-
-Providing a repository URL does not itself guarantee access to private
-content or automatically execute a retrieval process. Access permissions,
-retrieval procedures, and source references must be handled explicitly.
-
-## 6. Engineering Principles
-
-HAIR-RXI follows these principles:
-
-- **Contextual Consistency** — Preserve relevant decisions and constraints
-  across workstreams and sessions.
-- **Explicit Boundaries** — Separate collaboration context from project
-  implementation and deliverables.
-- **Evidence-Based Alignment** — Distinguish established facts, hypotheses,
-  decisions, implemented capabilities, and verified results.
-- **Incremental Development** — Establish a working minimum before
-  introducing additional mechanisms or abstractions.
-- **Traceability** — Keep important decisions and claims connected to
-  identifiable source materials where practical.
-- **Controlled Change** — Prefer reviewable, reversible changes and
-  explicit updates to shared baselines.
-- **Human Oversight** — Treat AI-generated interpretations and
-  recommendations as subject to human review.
-
-## 7. Security and Information Boundaries
-
-HAIR-RXI operates within the Artslink Workspace and must respect
-organizational policies, information classifications, and authorization
-requirements.
-
-- Do not place credentials, private keys, access tokens, or other secrets
-  in tracked files.
-- Do not publish company materials or proprietary information without
-  appropriate authorization.
-- Do not assume that a private repository alone satisfies every
-  confidentiality or access-control requirement.
-- Keep personal research and organizational work appropriately separated.
-- Record and reuse work-related information only within its authorized
-  scope.
-
-## 8. Development Status
-
-HAIR-RXI is an evolving collaboration infrastructure.
-
-The current directory structure establishes an initial organizational
-foundation. Individual components may remain conceptual, partially
-implemented, or subject to further refinement.
-
-Architecture and documentation should evolve according to demonstrated
-workflow needs rather than speculative complexity.
-
-## 9. Guiding Principle
-
-> Separate collaboration context from engineering execution, while
-> maintaining an explicit, verifiable connection between them.
-
-HAIR-RXI provides the foundation for maintaining human-AI collaboration
-continuity. RXI-Lab provides the workspace in which that collaboration
-is translated into concrete research and engineering outcomes.
+```text
+Academic Domain
+    ↓
+Academic Field
+    ↓
+Knowledge Stems
+    ↓
+Course Cognition Space
+    ↓
+Course Syllabus
+    ↓
+Learning Objectives
+    ↓
+Instructional Units
+    ↓
+Slides / Activities / Projects / Research Artifacts

@@ -1,0 +1,261 @@
+RXI-LAB PROPRIETARY LICENSE
+Version 0.1 — 2026
+
+Copyright © 2026 Artslink Study Abroad Services Company,
+Yujun Kong, and Vivian Lab.
+All rights reserved.
+
+
+1. PURPOSE
+
+This License governs access to and use of the RXI-Lab repository and
+the materials contained within it.
+
+RXI-Lab is a proprietary curriculum research, design, engineering,
+and development project associated with Artslink Study Abroad Services
+Company ("Artslink").
+
+The project includes contributions relating to curriculum architecture,
+academic knowledge modeling, research and innovation education,
+instructional design, computational curriculum engineering,
+Human-AI collaborative methods, software, structured data,
+documentation, and related research and development artifacts.
+
+
+2. PROPRIETARY STATUS
+
+This repository and its contents are proprietary.
+
+Except where expressly stated otherwise in writing, no part of the
+Materials is released as open-source software, open educational
+resources, public-domain material, or under any permissive,
+copyleft, Creative Commons, MIT, Apache, BSD, or similar public license.
+
+Public accessibility of a repository, file, document, demonstration,
+website, or generated artifact does not constitute a grant of rights
+to reproduce, modify, redistribute, commercialize, sublicense,
+or create derivative works from the Materials.
+
+
+3. COVERED MATERIALS
+
+For purposes of this License, "Materials" includes, without limitation:
+
+(a) curriculum architectures and course structures;
+
+(b) Broad Study Direction (BSD) models and related academic mappings;
+
+(c) academic field, knowledge-stem, cognition-space, and other
+    knowledge-structure models;
+
+(d) syllabi, learning objectives, instructional sequences,
+    slide structures, assignments, projects, rubrics, and
+    educational artifacts;
+
+(e) curriculum-generation workflows, transformation models,
+    reasoning procedures, semantic-state models, and related
+    methodological materials;
+
+(f) Human-AI collaborative workflows and methods developed
+    in connection with RXI-Lab;
+
+(g) JSON, YAML, schemas, configuration files, structured datasets,
+    and intermediate semantic states;
+
+(h) source code, scripts, software components, renderers,
+    prototypes, interfaces, and Workbench implementations;
+
+(i) diagrams, documentation, research notes, specifications,
+    visual materials, and design artifacts; and
+
+(j) derivative or substantially similar implementations based upon
+    protected expression contained in the foregoing Materials.
+
+
+4. PRODUCT AND PROJECT RIGHTS
+
+The RXI-Lab curriculum-development system and its deployment as a
+curriculum product for Artslink are developed for and in connection
+with Artslink Study Abroad Services Company.
+
+Artslink retains the applicable product, operational, commercial,
+deployment, and organizational rights arising from its role in the
+RXI-Lab project, subject to applicable law and any separate written
+agreements among the relevant rights holders.
+
+Nothing in this License is intended to limit rights lawfully held by
+Artslink under employment, commissioning, contractual, copyright,
+trade-secret, or other applicable legal arrangements.
+
+
+5. INTELLECTUAL PROPERTY RIGHTS
+
+Intellectual-property interests associated with the Materials may be
+held by, contributed by, or otherwise attributable to:
+
+    Artslink Study Abroad Services Company;
+    Yujun Kong; and
+    Vivian Lab.
+
+Each party retains any intellectual-property rights that it lawfully
+owns or controls, including rights arising from original authorship,
+pre-existing materials, independent research, contractual arrangements,
+or subsequent development.
+
+This License does not itself determine the allocation, percentage,
+transfer, assignment, or internal exercise of intellectual-property
+rights among Artslink, Yujun Kong, and Vivian Lab.
+
+Such matters shall be governed by applicable law and, where applicable,
+separate written agreements among the relevant parties.
+
+
+6. NO PUBLIC LICENSE GRANTED
+
+Unless prior written authorization has been obtained from the
+applicable rights holder or rights holders, no person or organization
+may:
+
+(a) copy or reproduce substantial portions of the Materials;
+
+(b) modify, adapt, translate, or create derivative works from
+    the Materials;
+
+(c) redistribute, publish, sublicense, sell, rent, or commercially
+    exploit the Materials;
+
+(d) incorporate the Materials into another curriculum, educational
+    product, software system, commercial service, dataset,
+    knowledge base, or AI system;
+
+(e) use the Materials to reproduce or substantially imitate the
+    RXI-Lab curriculum architecture, generation workflow,
+    instructional system, or Workbench;
+
+(f) remove or alter copyright, proprietary, attribution,
+    or intellectual-property notices; or
+
+(g) represent the Materials or substantially derived materials
+    as independently created where such representation would
+    misstate their origin.
+
+
+7. VIEWING AND EVALUATION
+
+Where the Materials are made publicly accessible, they may be viewed
+for informational, demonstrative, academic-review, or evaluation
+purposes only.
+
+Such access does not grant permission for reproduction,
+redistribution, implementation, commercial exploitation,
+or derivative development.
+
+Any additional use requires prior written authorization from the
+applicable rights holder or rights holders.
+
+
+8. METHODOLOGICAL MATERIALS
+
+Descriptions of methodologies, workflows, architectures, processes,
+or research approaches contained in this repository may include both
+protectable expression and underlying ideas, procedures, principles,
+or concepts whose legal protection may vary by jurisdiction.
+
+Nothing in this License should be interpreted as claiming exclusive
+copyright over ideas, methods, systems, procedures, facts, or other
+subject matter that applicable law does not protect through copyright.
+
+However, the specific textual expression, documentation, diagrams,
+software implementations, structured representations, instructional
+materials, and other protectable expression embodying those methods
+remain subject to the proprietary rights described in this License.
+
+
+9. THIRD-PARTY MATERIALS
+
+Third-party materials, references, libraries, datasets, publications,
+standards, software, or other external resources remain subject to
+their respective licenses, copyright notices, and terms of use.
+
+Nothing in this License grants additional rights in third-party
+materials.
+
+Where third-party materials are referenced for academic provenance,
+instructional support, or research purposes, such references do not
+imply ownership by RXI-Lab, Artslink, Yujun Kong, or Vivian Lab.
+
+
+10. ARTIFICIAL INTELLIGENCE AND GENERATED MATERIALS
+
+The project may employ artificial-intelligence systems as tools in
+research, reasoning, drafting, analysis, transformation, generation,
+or implementation workflows.
+
+The presence of AI-assisted or AI-generated material does not expand
+the rights granted to third parties under this License.
+
+Ownership, authorship, and protectability of individual AI-assisted
+or AI-generated elements remain subject to applicable law and the
+specific circumstances of their creation.
+
+
+11. CONFIDENTIAL AND INTERNAL MATERIALS
+
+Nothing in this License authorizes disclosure of confidential,
+restricted, unpublished, personally identifiable, commercially
+sensitive, or internally controlled information.
+
+Materials inadvertently made accessible do not thereby become
+licensed for public use.
+
+
+12. NO WARRANTY
+
+THE MATERIALS ARE PROVIDED FOR RESEARCH, DEVELOPMENT, DEMONSTRATION,
+AND EVALUATION PURPOSES ON AN "AS IS" BASIS.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE RIGHTS HOLDERS
+MAKE NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY,
+NONINFRINGEMENT, OR FITNESS FOR EDUCATIONAL OR COMMERCIAL DEPLOYMENT.
+
+
+13. LIMITATION OF LIABILITY
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE RIGHTS HOLDERS
+SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+CONSEQUENTIAL, OR OTHER DAMAGES ARISING FROM UNAUTHORIZED OR
+AUTHORIZED ACCESS TO OR USE OF THE MATERIALS, EXCEPT WHERE SUCH
+LIMITATION IS PROHIBITED BY APPLICABLE LAW.
+
+
+14. SEPARATE AGREEMENTS
+
+Separate employment agreements, consulting agreements,
+intellectual-property agreements, confidentiality agreements,
+commercial agreements, or other written instruments may establish
+additional or different rights among Artslink Study Abroad Services
+Company, Yujun Kong, Vivian Lab, or other authorized parties.
+
+Where such a valid written agreement governs the relationship among
+those parties, that agreement shall control their internal rights and
+obligations to the extent of any inconsistency with this repository
+notice.
+
+
+15. RESERVATION OF RIGHTS
+
+All rights not expressly granted in writing are reserved.
+
+No implied license, estoppel-based license, or other authorization
+should be inferred solely from access to the repository or Materials.
+
+
+16. CONTACT
+
+Requests for authorization, licensing, collaboration, or permitted use
+should be directed to the applicable RXI-Lab / Artslink project
+representative or other authorized rights holder.
+
+
+END OF LICENSE
